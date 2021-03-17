@@ -12,7 +12,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
 
                             <div class="footer-widget about-column">
-                                <figure class="footer-logo"><a href="index.html"><img src="<?php echo get_theme_file_uri('assets/images/logo/logo2.png'); ?> " alt=""></a></figure>
+                                <figure class="footer-logo"><a href="<?php echo site_url() ?>"><img src="<?php echo get_theme_file_uri('assets/images/logo/logo2.png'); ?> " alt=""></a></figure>
 
                                 <div class="text"><p>When you give to us you know your donation is making a diffe. </p> </div>
                                 <ul class="contact-info">
@@ -30,7 +30,7 @@
                                 </div>
                                 <div class="widget-content">
                                     <ul class="list">
-                                        <li><a href="about.html">About Our Eco green</a></li>
+                                        <li><a href="<?php echo site_url('about-us') ?>">About Our Eco green</a></li>
                                         <li><a href="Eco-System.html">Eco System</a></li>
                                         <li><a href="Organic-Living.html">Organic Living</a></li>
                                         <li><a href="Good-Nature">Good Nature</a></li>

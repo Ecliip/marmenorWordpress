@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>Eco Green || Responsive HTML 5 Template</title>
+<!--    <title>Eco Green || Responsive HTML 5 Template</title>-->
 
     <!-- mobile responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,13 +66,14 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="main-logo">
-                        <a href="index.html"><img src="<?php echo get_theme_file_uri('/assets/images/logo/logo.png'); ?>" alt=""></a>
+                        <a href="<?php echo site_url() ?>"><img src="<?php echo get_theme_file_uri('/assets/images/logo/logo.png'); ?>" alt=""></a>
                     </div>
                 </div>
                 <div class="col-md-9 menu-column">
                     <nav class="menuzord" id="main_menu">
                         <ul class="menuzord-menu">
                             <li><a href="index.html">Home</a></li>
+                            <li><a href="<?php echo site_url('/about-us') ?>">Sobre nosotros</a></li>
 
                             <li><a href="service.html">Service</a>
                                 <ul class="dropdown">
