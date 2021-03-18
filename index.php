@@ -54,7 +54,7 @@ Blog Grid View
                             <div class="date"><?php the_time('d/m/Y'); ?></div>
 <!--                            <div class="post-meta">by --><?php //the_author_posts_link(); ?><!--  |  14 Comments</div>-->
                             <div class="post-meta">Autor: <?php the_author_posts_link(); ?></div>
-                            <a href="blog-details.html"><h4><?php the_title(); ?></h4></a>
+                            <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
                             <div class="text">
                                 <p><?php the_excerpt(); ?></p>
                             </div>
