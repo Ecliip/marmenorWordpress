@@ -36,290 +36,49 @@ Blog Grid View
 <section class="all-blog blog-section sec-padd">
     <div class="container">
         <div class="row">
-            <article class="col-md-3 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/1.jpg') ?>" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+            <?php while(have_posts()) {
+                the_post(); ?>
+                <article class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
+                        <figure class="img-holder">
+                            <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/1.jpg') ?>" alt="News"></a>
+                            <figcaption class="overlay">
+                                <div class="box">
+                                    <div class="content">
+                                        <a href="<?php the_permalink() ?>"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                    </div>
                                 </div>
+                            </figcaption>
+                        </figure>
+                        <div class="lower-content">
+                            <div class="date"><?php the_time('d/m/Y'); ?></div>
+<!--                            <div class="post-meta">by --><?php //the_author_posts_link(); ?><!--  |  14 Comments</div>-->
+                            <div class="post-meta">Autor: <?php the_author_posts_link(); ?></div>
+                            <a href="blog-details.html"><h4><?php the_title(); ?></h4></a>
+                            <div class="text">
+                                <p><?php the_excerpt(); ?></p>
                             </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">March 02, 2017</div>
-                        <div class="post-meta">by fletcher  |  14 Comments</div>
-                        <a href="blog-details.html"><h4>Steps for Save Animals</h4></a>
-                        <div class="text">
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis sed praesentium voluptatum...</p>
+                            <p>Categorías: <?php echo get_the_category_list(', ') ?></p>
                         </div>
                     </div>
-                </div>
 
-            </article>
-            <article class="col-md-3 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/2.jpg') ?>" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">January 14, 2017</div>
-                        <div class="post-meta">by stephen  |  22 Comments</div>
-                        <a href="blog-details.html"><h4>The Ozone Layer</h4></a>
-                        <div class="text">
-                            <p>How all this mistaken idea denouncing pleasure & praising pain was born and  will give you a complete...</p>
-                        </div>
-                    </div>
-                </div>
+                </article>
 
-            </article>
-            <article class="col-md-3 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/3.jpg') ?>" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">August 21, 2016</div>
-                        <div class="post-meta">by Vincent  |  03 Comments</div>
-                        <a href="blog-details.html"><h4>Dispose Plastic Products</h4></a>
-                        <div class="text">
-                            <p>The great explorer of the truth master builder of human happinessone rejects, dislikes, or avoids pleasure...</p>
-                        </div>
-                    </div>
-                </div>
+           <?php }
 
-            </article>
-            <article class="col-md-3 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/4.jpg') ?>" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">July 15, 2016</div>
-                        <div class="post-meta">by fletcher  |  14 Comments</div>
-                        <a href="blog-details.html"><h4>Ideas for Save Energy</h4></a>
-                        <div class="text">
-                            <p>Know how to pursue pleasure rationally encounter consequences that extremely painful rationally encounter... </p>
-                        </div>
-                    </div>
-                </div>
 
-            </article>
-            <article class="col-md-3 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/5.jpg') ?>" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">August 21, 2016</div>
-                        <div class="post-meta">by Vincent  |  03 Comments</div>
-                        <a href="blog-details.html"><h4>Dispose Plastic Products</h4></a>
-                        <div class="text">
-                            <p>The great explorer of the truth master builder of human happinessone rejects, dislikes, or avoids pleasure...</p>
-                        </div>
-                    </div>
-                </div>
-
-            </article>
-            <article class="col-md-3 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/6.jpg') ?>" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">January 14, 2017</div>
-                        <div class="post-meta">by stephen  |  22 Comments</div>
-                        <a href="blog-details.html"><h4>Technology Integration</h4></a>
-                        <div class="text">
-                            <p>How all this mistaken idea denouncing pleasure & praising pain was born and  will give you a complete...</p>
-                        </div>
-                    </div>
-                </div>
-
-            </article>
-            <article class="col-md-3 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/7.jpg') ?>" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">August 21, 2016</div>
-                        <div class="post-meta">by Vincent  |  03 Comments</div>
-                        <a href="blog-details.html"><h4>My Zero Waste</h4></a>
-                        <div class="text">
-                            <p>The great explorer of the truth master builder of human happinessone rejects, dislikes, or avoids pleasure...</p>
-                        </div>
-                    </div>
-                </div>
-
-            </article>
-            <article class="col-md-3 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/8.jpg') ?>" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">January 14, 2017</div>
-                        <div class="post-meta">by stephen  |  22 Comments</div>
-                        <a href="blog-details.html"><h4>The Ozone Layer</h4></a>
-                        <div class="text">
-                            <p>How all this mistaken idea denouncing pleasure & praising pain was born and  will give you a complete...</p>
-                        </div>
-                    </div>
-                </div>
-
-            </article>
-            <article class="col-md-3 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/9.jpg') ?>" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">July 15, 2016</div>
-                        <div class="post-meta">by fletcher  |  14 Comments</div>
-                        <a href="blog-details.html"><h4>Ideas for Save Energy</h4></a>
-                        <div class="text">
-                            <p>Know how to pursue pleasure rationally encounter consequences that extremely painful rationally encounter... </p>
-                        </div>
-                    </div>
-                </div>
-
-            </article>
-            <article class="col-md-3 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/10.jpg') ?>" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">March 02, 2017</div>
-                        <div class="post-meta">by fletcher  |  14 Comments</div>
-                        <a href="blog-details.html"><h4>Steps for Save Animals</h4></a>
-                        <div class="text">
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis sed praesentium voluptatum...</p>
-                        </div>
-                    </div>
-                </div>
-
-            </article>
-            <article class="col-md-3 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/11.jpg') ?>" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">January 14, 2017</div>
-                        <div class="post-meta">by stephen  |  22 Comments</div>
-                        <a href="blog-details.html"><h4>The Ozone Layer</h4></a>
-                        <div class="text">
-                            <p>How all this mistaken idea denouncing pleasure & praising pain was born and  will give you a complete...</p>
-                        </div>
-                    </div>
-                </div>
-
-            </article>
-            <article class="col-md-3 col-sm-6 col-xs-12">
-                <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                    <figure class="img-holder">
-                        <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/12.jpg') ?>" alt="News"></a>
-                        <figcaption class="overlay">
-                            <div class="box">
-                                <div class="content">
-                                    <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                </div>
-                            </div>
-                        </figcaption>
-                    </figure>
-                    <div class="lower-content">
-                        <div class="date">August 21, 2016</div>
-                        <div class="post-meta">by Vincent  |  03 Comments</div>
-                        <a href="blog-details.html"><h4>Reduce Your Waste</h4></a>
-                        <div class="text">
-                            <p>The great explorer of the truth master builder of human happinessone rejects, dislikes, or avoids pleasure...</p>
-                        </div>
-                    </div>
-                </div>
-
-            </article>
+           ?>
 
 
         </div>
+
         <ul class="page_pagination center">
-            <li><a href="#" class="tran3s"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
-            <li><a href="#" class="active tran3s">1</a></li>
-            <li><a href="#" class="tran3s">2</a></li>
-            <li><a href="#" class="tran3s"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+            <!--        // TODO add styling later https://developer.wordpress.org/reference/functions/paginate_links/-->
+            <? echo paginate_links(); ?>
+<!--            <li><a href="#" class="tran3s"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>-->
+<!--            <li><a href="#" class="active tran3s">1</a></li>-->
+<!--            <li><a href="#" class="tran3s">2</a></li>-->
+<!--            <li><a href="#" class="tran3s"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>-->
         </ul>
     </div>
 </section>
