@@ -14,15 +14,34 @@ while(have_posts()) {
         <div class="container">
             <div class="pull-left">
 <!--                LINKS UNCOMMENT LATER-->
-<!--                <ul class="list-inline link-list">-->
-<!--                    <li>-->
-<!--                        <a href="index.html">Home</a>-->
-<!--                    </li>-->
-<!---->
-<!--                    <li>-->
-<!--                        about us-->
-<!--                    </li>-->
-<!--                </ul>-->
+                <?php
+                $parentID = wp_get_post_parent_id(get_the_ID());
+                    if ($parentID) { ?>
+                <ul class="list-inline link-list">
+                    <li>
+                        <a href="<?php echo site_url(); ?>">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="<?php echo get_permalink($parentID) ?>"><?php echo get_the_title($parentID) ?></a>
+                    </li>
+
+                    <li>
+                       <?php the_title() ?>
+                    </li>
+                </ul>
+                   <?php  } else { ?>
+                        <ul class="list-inline link-list">
+                            <li>
+                                <a href="<?php echo site_url(); ?>">Home</a>
+                            </li>
+
+                            <li>
+                                <?php the_title() ?>
+                            </li>
+                        </ul>
+                   <?php } ?>
+
             </div>
             <div class="pull-right">
                 <a href="#" class="get-qoute"><i class="fa fa-arrow-circle-right"></i>Become a Volunteer</a>
@@ -38,12 +57,51 @@ while(have_posts()) {
                 <p>REPLACE THIS TEXT LATER</p>
             </div>
             <div class="row">
-                <div class="col-md-6 col-sm-12">
+<!--CHILD PAGES BLOCK-->
+                <?php
+                $pages = get_pages(array(
+                        'child_of' => get_the_ID()
+                ));
+                if ($parentID or $pages) { ?>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <div class="default-sidebar">
+                        <h2 style="margin-bottom: 20px"><a href="<?php echo get_permalink($parentID) ?>"><?php echo get_the_title($parentID) ?></a></h2>
+                        <ul class="service-catergory">
+
+                            <?php if ($parentID) {
+                                $findChildrenOf = $parentID;
+                            } else {
+                                $findChildrenOf = get_the_ID();
+                            }?>
+
+                            <?php wp_list_pages(array(
+                                    'title_li' => NULL,
+                                    'child_of' => $findChildrenOf,
+                            )) ?>
+<!--                            <li><a href="recycling.html">Recycling</a></li>-->
+<!--                            <li><a href="Eco-System.html">Eco System</a></li>-->
+<!--                            <li><a href="Save-Water.html">Save Water</a></li>-->
+<!--                            <li><a href="Save-Animals.html">Save Animals</a></li>-->
+<!--                            <li><a href="Organic-Living.html">Organic Living</a></li>-->
+<!--                            <li><a href="Good-Nature.html">Good Nature</a></li>-->
+                        </ul>
+<!--                        <div class="link"><a href="#" class="thm-btn style-2">Become a Volunteer</a></div>-->
+                    </div>
+                </div>
+                <?php
+                    wp_reset_query(); // this function fix me a bug...
+                } ?>
+<!--END CHILD PAGES BLOCK-->
+                <div class="col-md-6 col-sm-12" style="margin: auto">
                     <iframe src="https://player.vimeo.com/video/9519939" width="570" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>
                 </div>
+            </div>
+            <div class="row" style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+                <div class="link" style="margin-bottom: 2rem"><a href="#" class="thm-btn style-2">Become a Volunteer</a></div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="content">
 <!--                        <h2>Together we can make a difference</h2>-->
+
                         <div class="text">
                             <?php the_content(); ?>
                         </div>
@@ -51,9 +109,10 @@ while(have_posts()) {
                         <div class="text">
                             <p>We partner with over 320 amazing projects worldwide, and have given over $150 million in cash and product grants to other groups since 2011. We also operate our own dynamic suite of Signature Programs.</p>
                         </div>
-                        <div class="link"><a href="#" class="thm-btn style-2">Join With Us</a></div>
+
                     </div>
                 </div>
+                <div class="link"><a href="#" class="thm-btn style-2">Join With Us</a></div>
             </div>
         </div>
     </section>
