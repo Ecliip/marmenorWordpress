@@ -92,7 +92,7 @@ while(have_posts()) {
                     wp_reset_query(); // this function fixes a bug...
                 } ?>
 <!--END CHILD PAGES BLOCK-->
-                <div class="col-md-6 col-sm-12" style="margin: auto">
+                <div class="col-md-6 col-sm-12" style="display: flex; justify-content: center; width: 100%">
                     <iframe src="https://player.vimeo.com/video/9519939" width="570" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>
                 </div>
             </div>
