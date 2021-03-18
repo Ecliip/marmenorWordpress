@@ -52,53 +52,59 @@ while(have_posts()) {
 
     <section class="about sec-padd2">
         <div class="container">
+
+
             <div class="section-title center">
                 <h2>Words About Us</h2>
                 <p>REPLACE THIS TEXT LATER</p>
             </div>
-            <div class="row">
-<!--CHILD PAGES BLOCK-->
+            <div class="row" style="display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap">
+
+                <!--CHILD PAGES BLOCK-->
                 <?php
                 $pages = get_pages(array(
-                        'child_of' => get_the_ID()
+                    'child_of' => get_the_ID()
                 ));
                 if ($parentID or $pages) { ?>
-                <div class="col-lg-3 col-md-4 col-sm-12">
-                    <div class="default-sidebar">
-                        <h2 style="margin-bottom: 20px"><a href="<?php echo get_permalink($parentID) ?>"><?php echo get_the_title($parentID) ?></a></h2>
-                        <ul class="service-catergory">
+                    <div class="col-lg-3 col-md-4 col-sm-12" style="flex: 1 1 200px">
+                        <div class="default-sidebar">
+                            <h2 style="margin-bottom: 20px"><a href="<?php echo get_permalink($parentID) ?>"><?php echo get_the_title($parentID) ?></a></h2>
+                            <ul class="service-catergory">
 
-                            <?php if ($parentID) {
-                                $findChildrenOf = $parentID;
-                            } else {
-                                $findChildrenOf = get_the_ID();
-                            }?>
+                                <?php if ($parentID) {
+                                    $findChildrenOf = $parentID;
+                                } else {
+                                    $findChildrenOf = get_the_ID();
+                                }?>
 
-                            <?php wp_list_pages(array(
+                                <?php wp_list_pages(array(
                                     'title_li' => NULL,
                                     'child_of' => $findChildrenOf,
-                            )) ?>
-<!--                            <li><a href="recycling.html">Recycling</a></li>-->
-<!--                            <li><a href="Eco-System.html">Eco System</a></li>-->
-<!--                            <li><a href="Save-Water.html">Save Water</a></li>-->
-<!--                            <li><a href="Save-Animals.html">Save Animals</a></li>-->
-<!--                            <li><a href="Organic-Living.html">Organic Living</a></li>-->
-<!--                            <li><a href="Good-Nature.html">Good Nature</a></li>-->
-                        </ul>
-<!--                        <div class="link"><a href="#" class="thm-btn style-2">Become a Volunteer</a></div>-->
+                                )) ?>
+                                <!--                            <li><a href="recycling.html">Recycling</a></li>-->
+                                <!--                            <li><a href="Eco-System.html">Eco System</a></li>-->
+                                <!--                            <li><a href="Save-Water.html">Save Water</a></li>-->
+                                <!--                            <li><a href="Save-Animals.html">Save Animals</a></li>-->
+                                <!--                            <li><a href="Organic-Living.html">Organic Living</a></li>-->
+                                <!--                            <li><a href="Good-Nature.html">Good Nature</a></li>-->
+                            </ul>
+                            <!--                        <div class="link"><a href="#" class="thm-btn style-2">Become a Volunteer</a></div>-->
+                        </div>
                     </div>
-                </div>
-                <?php
+                    <?php
                     wp_reset_query(); // this function fixes a bug...
                 } ?>
-<!--END CHILD PAGES BLOCK-->
-                <div class="col-md-6 col-sm-12" style="display: flex; justify-content: center; width: 100%">
+                <!--END CHILD PAGES BLOCK-->
+
+                <div class="col-md-6 col-sm-12" style="display: flex; justify-content: center; width: 100%; flex: 1 1 300px">
                     <iframe src="https://player.vimeo.com/video/9519939" width="570" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>
                 </div>
             </div>
             <div class="row" style="display: flex; flex-direction: column; align-items: center; justify-content: center">
                 <div class="link" style="margin-bottom: 2rem"><a href="#" class="thm-btn style-2">Become a Volunteer</a></div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
+
+
                     <div class="content">
 <!--                        <h2>Together we can make a difference</h2>-->
 
