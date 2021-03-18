@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+    <html <?php language_attributes(); ?>>
+    <head>
 
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
 <!--    <title>Eco Green || Responsive HTML 5 Template</title>-->
 
     <!-- mobile responsive meta -->
@@ -19,7 +19,7 @@
 <!--    <link rel="icon" type="image/png" href="assets/images/fav-icon/favicon-16x16.png" sizes="16x16">-->
 
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 <div class="boxed_wrapper">
 
@@ -73,7 +73,7 @@
                     <nav class="menuzord" id="main_menu">
                         <ul class="menuzord-menu">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="<?php echo site_url('/about-us') ?>">Quienes somos</a>
+                            <li <?php if (is_page('about-us') or wp_get_post_parent_id(0) == 12) echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo get_permalink(12) ?>"><?php echo get_the_title(12) ?></a>
                                 <ul class="dropdown">
                                     <?php wp_list_pages(array(
                                         'title_li' => NULL,

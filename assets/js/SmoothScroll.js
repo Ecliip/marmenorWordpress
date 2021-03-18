@@ -355,7 +355,8 @@ function wheel(event) {
     }
     
     scrollArray(overflowing, deltaX, deltaY);
-    event.preventDefault();
+    // event.preventDefault();  // ORIGINAL LINE produces an error in chrome
+    if (event.preventDefault ) {  event.target.blur(); }  // THIS LINE FIXES A BUG
     scheduleClearCache();
 }
 
