@@ -89,7 +89,7 @@ while(have_posts()) {
                     </div>
                 </div>
                 <?php
-                    wp_reset_query(); // this function fix me a bug...
+                    wp_reset_query(); // this function fixes a bug...
                 } ?>
 <!--END CHILD PAGES BLOCK-->
                 <div class="col-md-6 col-sm-12" style="margin: auto">

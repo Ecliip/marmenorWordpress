@@ -73,7 +73,14 @@
                     <nav class="menuzord" id="main_menu">
                         <ul class="menuzord-menu">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="<?php echo site_url('/about-us') ?>">Sobre nosotros</a></li>
+                            <li><a href="<?php echo site_url('/about-us') ?>">Quienes somos</a>
+                                <ul class="dropdown">
+                                    <?php wp_list_pages(array(
+                                        'title_li' => NULL,
+                                        'child_of' => 12,
+                                    )) ?>
+                                </ul>
+                            </li>
 
                             <li><a href="service.html">Service</a>
                                 <ul class="dropdown">
