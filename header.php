@@ -111,7 +111,7 @@
                                 </ul>
                             </li>
 
-                            <li><a href="contact.html">Contáctanos</a></li>
+                            <li><a href="<?php echo site_url('/contactos') ?>">Contáctanos</a></li>
 
 
                         </ul>

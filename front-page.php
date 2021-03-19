@@ -7,18 +7,7 @@ get_header();
     <section class="rev_slider_wrapper">
         <div id="slider1" class="rev_slider"  data-version="5.0">
             <ul>
-                <?php
-                    $homepagePosts = new WP_Query(array(
-                            'posts_per_page' => 3
-                    ));
 
-                    while($homepagePosts->have_posts()) {
-                        $homepagePosts->the_post();
-                        ?>
-
-
-                   <?php }
-                ?>
                 <li data-transition="fade">
                     <img src="<?php echo get_theme_file_uri('/assets/images/slider/1.jpg') ?>"  alt="" width="1920" height="888" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
 
@@ -67,7 +56,7 @@ get_header();
                          data-start="2600">
                         <div class="slide-content-box">
                             <div class="button">
-                                <a class="thm-btn style-3" href="cause.html">forma parte del equipo</a>
+                                <a class="thm-btn style-3" href="<?php echo site_url('/contactos') ?>">forma parte del equipo</a>
                             </div>
                         </div>
                     </div>
@@ -172,7 +161,7 @@ get_header();
                          data-start="2600">
                         <div class="slide-content-box">
                             <div class="button">
-                                <a class="thm-btn style-3" href="cause.html">Get Involved</a>
+                                <a class="thm-btn style-3" href="<?php echo site_url('/contactos') ?>">Get Involved</a>
                             </div>
                         </div>
                     </div>
@@ -189,7 +178,7 @@ get_header();
 
 
             <div class="section-title center">
-                <h2>We are ECO Green, Our Mission is <span class="thm-color">save water, animals and environment</span>our activities are taken around the world.</h2>
+                <h2>Somos "Abracemos el Mar Menor" <span class="thm-color">una organización que lucha contra la contaminación de aguas en el Mar Menor </span>en la región de Murcia</h2>
             </div>
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-x-12">
@@ -197,8 +186,8 @@ get_header();
                         <div class="icon-box">
                             <span class="icon-can"></span>
                         </div>
-                        <h4>Recycling</h4>
-                        <p>Praising pain was born & I will give  you a complete ac of the all systems, expound the actual great.</p>
+                        <h4>Recogidas de basura</h4>
+                        <p>El paraiso perdido. Un ecositema echado a perder por la falta de voluntad política y ciudadana</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-x-12">
@@ -206,8 +195,8 @@ get_header();
                         <div class="icon-box">
                             <span class="icon-tool"></span>
                         </div>
-                        <h4>Eco System</h4>
-                        <p>Praising pain was born & I will give  you a complete ac of the all systems, expound the actual great.</p>
+                        <h4>Ecosistema único</h4>
+                        <p>Un medio ambiente único en todos los sentidos, con una variedad de flora y fauna.</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-x-12">
@@ -215,8 +204,8 @@ get_header();
                         <div class="icon-box">
                             <span class="icon-nature-1"></span>
                         </div>
-                        <h4>Save Water</h4>
-                        <p>Praising pain was born & I will give  you a complete ac of the all systems, expound the actual great.</p>
+                        <h4>Aguas contaminadas</h4>
+                        <p>Pondremos fin a la injusticia medioambiental. El Mar Menor suplica que lo protejamos</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-x-12">
@@ -224,8 +213,8 @@ get_header();
                         <div class="icon-box">
                             <span class="icon-deer"></span>
                         </div>
-                        <h4>Save Animals</h4>
-                        <p>Praising pain was born & I will give  you a complete ac of the all systems, expound the actual great.</p>
+                        <h4>Especies en riesgo</h4>
+                        <p>Muchas especies del Mar Menor morirán si no paramos a los culpables</p>
                     </div>
                 </div>
             </div>
@@ -236,7 +225,7 @@ get_header();
     <section class="fact-counter style-2 sec-padd" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/background/5.jpg') ?> );">
         <div class="container">
             <div class="section-title center">
-                <h2>Some Interesting Facts</h2>
+                <h2>¿Sabías que...?</h2>
             </div>
             <div class="row clearfix">
                 <div class="counter-outer clearfix">
@@ -307,7 +296,7 @@ get_header();
                         <div class="text">
                             <p>We partner with over 320 amazing projects worldwide, and have given over $150 million in cash and product grants to other groups since 2011. We also operate our own dynamic suite of Signature Programs.</p>
                         </div>
-                        <div class="link"><a href="#" class="thm-btn style-2">Join With Us</a></div>
+                        <div class="link"><a href="<?php echo site_url('/contactos') ?>" class="thm-btn style-2">Join With Us</a></div>
                     </div>
                 </div>
             </div>
@@ -476,9 +465,10 @@ get_header();
     <section class="urgent-cause2 sec-padd">
         <div class="container">
             <div class="section-title">
-                <h2>Fundraising Campaigns</h2>
-                <p>You can help lots of people by donating little.</p>
+                <h2>Campañas actuales</h2>
+                <p>Incorpórate y cambiamos el Mar Menor juntos</p>
             </div>
+<!--            TODO do WP loop with events here-->
             <div class="cause-carousel">
                 <div class="item clearfix">
                     <figure class="img-box">
@@ -649,102 +639,48 @@ get_header();
     <section class="blog-section sec-padd2">
         <div class="container">
             <div class="section-title center">
-                <h2>latest news</h2>
+                <h2>Últimas noticias</h2>
             </div>
             <div class="row">
-                <article class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                        <figure class="img-holder">
-                            <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/1.jpg') ?> " alt="News"></a>
-                            <figcaption class="overlay">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+
+
+                <?php
+                $homepagePosts = new WP_Query(array(
+                    'posts_per_page' => 4
+                ));
+
+                while($homepagePosts->have_posts()) {
+                    $homepagePosts->the_post();
+                    ?>
+
+                    <article class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
+                            <figure class="img-holder">
+                                <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/1.jpg') ?> " alt="News"></a>
+                                <figcaption class="overlay">
+                                    <div class="box">
+                                        <div class="content">
+                                            <a href="<?php the_permalink(); ?>"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </div>
                                     </div>
+                                </figcaption>
+                            </figure>
+                            <div class="lower-content">
+                                <div class="date"><?php the_time('d/m/Y'); ?></div>
+                                <div class="post-meta">Autor: <?php the_author_posts_link(); ?></div>
+                                <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
+                                <div class="text">
+                                    <p><?php the_excerpt(); ?></p>
                                 </div>
-                            </figcaption>
-                        </figure>
-                        <div class="lower-content">
-                            <div class="date">March 02, 2017</div>
-                            <div class="post-meta">by fletcher  |  14 Comments</div>
-                            <a href="blog-details.html"><h4>Steps for Save Animals</h4></a>
-                            <div class="text">
-                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis sed praesentium voluptatum...</p>
                             </div>
                         </div>
-                    </div>
 
-                </article>
-                <article class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                        <figure class="img-holder">
-                            <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/2.jpg') ?> " alt="News"></a>
-                            <figcaption class="overlay">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <div class="lower-content">
-                            <div class="date">January 14, 2017</div>
-                            <div class="post-meta">by stephen  |  22 Comments</div>
-                            <a href="blog-details.html"><h4>The Ozone Layer</h4></a>
-                            <div class="text">
-                                <p>How all this mistaken idea denouncing pleasure & praising pain was born and  will give you a complete...</p>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
 
-                </article>
-                <article class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                        <figure class="img-holder">
-                            <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/3.jpg') ?> " alt="News"></a>
-                            <figcaption class="overlay">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <div class="lower-content">
-                            <div class="date">August 21, 2016</div>
-                            <div class="post-meta">by Vincent  |  03 Comments</div>
-                            <a href="blog-details.html"><h4>Dispose Plastic Products</h4></a>
-                            <div class="text">
-                                <p>The great explorer of the truth master builder of human happinessone rejects, dislikes, or avoids pleasure...</p>
-                            </div>
-                        </div>
-                    </div>
 
-                </article>
-                <article class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
-                        <figure class="img-holder">
-                            <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/4.jpg') ?> " alt="News"></a>
-                            <figcaption class="overlay">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-details.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                        <div class="lower-content">
-                            <div class="date">July 15, 2016</div>
-                            <div class="post-meta">by fletcher  |  14 Comments</div>
-                            <a href="blog-details.html"><h4>Ideas for Save Energy</h4></a>
-                            <div class="text">
-                                <p>Know how to pursue pleasure rationally encounter consequences that extremely painful rationally encounter... </p>
-                            </div>
-                        </div>
-                    </div>
 
-                </article>
-
+                <?php }
+                ?>
             </div>
         </div>
     </section>
