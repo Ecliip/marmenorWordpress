@@ -14,15 +14,11 @@ get_header();
         <div class="pull-left">
             <ul class="list-inline link-list">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="<?php echo site_url(); ?>">Principal</a>
                 </li>
                 <li>
-                    <a href="blog-1.html">blog</a>
+                    Blog
                 </li>
-
-                <li>
-Blog Grid View
-</li>
             </ul>
         </div>
         <div class="pull-right">

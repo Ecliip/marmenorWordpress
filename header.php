@@ -72,67 +72,46 @@
                 <div class="col-md-9 menu-column">
                     <nav class="menuzord" id="main_menu">
                         <ul class="menuzord-menu">
-                            <li><a href="index.html">Home</a></li>
-                            <li <?php if (is_page('about-us') or wp_get_post_parent_id(0) == 12) echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo get_permalink(12) ?>"><?php echo get_the_title(12) ?></a>
+                            <li><a href="<?php echo site_url('inicio') ?>"><?php echo get_the_title(40); ?></a></li>
+                            <li <?php if (is_page('conocenos') or wp_get_post_parent_id(0) == 42) echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo get_permalink(42) ?>"><?php echo get_the_title(42) ?></a>
                                 <ul class="dropdown">
                                     <?php wp_list_pages(array(
                                         'title_li' => NULL,
-                                        'child_of' => 12,
+                                        'child_of' => 42,
                                     )) ?>
                                 </ul>
                             </li>
 
-                            <li><a href="service.html">Service</a>
+                            <li <?php if (is_page('colabora') or wp_get_post_parent_id(0) == 50) echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo get_permalink(50) ?>"><?php echo get_the_title(50) ?></a>
                                 <ul class="dropdown">
-                                    <li><a href="service.html">All Services</a></li>
-                                    <li><a href="recycling.html">Recycling</a></li>
-                                    <li><a href="Eco-System.html">Eco System</a></li>
-                                    <li><a href="Save-Water.html">Save Water</a></li>
-                                    <li><a href="Save-Animals.html">Save Animals</a></li>
-                                    <li><a href="Organic-Living.html">Organic Living</a></li>
-                                    <li><a href="Good-Nature.html">Good Nature</a></li>
+                                    <?php wp_list_pages(array(
+                                        'title_li' => NULL,
+                                        'child_of' => 50,
+                                    )) ?>
                                 </ul>
                             </li>
 
-                            <li><a href="#">Pages</a>
+                            <li <?php if (is_page('eventos') or wp_get_post_parent_id(0) == 63) echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo get_permalink(63) ?>"><?php echo get_the_title(63) ?></a>
                                 <ul class="dropdown">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="Campaign-Grid-View.html">Campaign Grid View</a></li>
-                                    <li><a href="Campaign-List-View.html">Campaign List View</a></li>
-                                    <li><a href="Events.html">Events</a></li>
-                                    <li><a href="testimonial.html">Testimonials</a></li>
-                                    <li><a href="faq.html">FAQ’s</a></li>
-                                    <li><a href="error.html">404 Page</a></li>
+                                    <?php wp_list_pages(array(
+                                        'title_li' => NULL,
+                                        'child_of' => 63,
+                                    )) ?>
                                 </ul>
                             </li>
 
-                            <li><a href="blog-1.html">blog</a>
+                            <li><a href="<?php echo site_url('blog') ?>">Blog</a></li>
+
+                            <li <?php if (is_page('galeria') or wp_get_post_parent_id(0) == 71) echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo get_permalink(71) ?>"><?php echo get_the_title(71) ?></a>
                                 <ul class="dropdown">
-                                    <li><a href="blog-1.html">Blog Grid View</a></li>
-                                    <li><a href="blog-large.html">Blog With Sidebar</a></li>
-                                    <li><a href="blog-details.html">Single Post</a></li>
+                                    <?php wp_list_pages(array(
+                                        'title_li' => NULL,
+                                        'child_of' => 71,
+                                    )) ?>
                                 </ul>
                             </li>
 
-                            <li><a href="gallery-1.html">Gallery</a>
-                                <ul class="dropdown">
-                                    <li><a href="gallery-1.html">gallery Grid View</a></li>
-                                    <li><a href="gallery-3.html">gallery manasory</a></li>
-                                    <li><a href="single-gallery.html">Single gallery</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="#">Shop</a>
-                                <ul class="dropdown">
-                                    <li><a href="shop.html">Shop Products</a></li>
-                                    <li><a href="shop-single.html">Single Shop</a></li>
-                                    <li><a href="shop-cart.html">Shopping Cart</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="account.html">My Account</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a href="contact.html">contact</a></li>
+                            <li><a href="contact.html">Contáctanos</a></li>
 
 
                         </ul>

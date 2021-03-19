@@ -49,6 +49,7 @@ get_header();
                         <div class="lower-content">
                             <div class="date"><?php the_time('d/m/Y'); ?></div>
                             <div class="post-meta">Autor: <?php the_author_posts_link(); ?> </div>
+                            <div class="post-meta">Categorías: <?php echo get_the_category_list(', '); ?> </div>
                             <h4><?php the_title(); ?></h4>
                         </div>
                     </article>
