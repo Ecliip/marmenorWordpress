@@ -564,75 +564,44 @@ get_header();
                 </div>
             </div>
             <div class="row">
-                <article class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="item style-1">
-                        <div class="img-column">
-                            <figure class="img-holder">
-                                <a href="single-event.html"><img src="<?php echo get_theme_file_uri('/assets/images/resource/1.jpg') ?> " alt=""></a>
-                                <div class="date">21 <br><span>Mar</span></div>
-                            </figure>
-                        </div>
-                        <div class="text-column">
-                            <div class="lower-content">
-                                <p>Organizer: Tom Maddy</p>
-                                <a href="single-event.html"><h4>A Walk for Healthy Environment</h4></a>
-                                <div class="text">
-                                    <p>Mauris tortor diam, laoreet quis commodo vitae, sodales vel augue.| Sed <br>rutrum, libero non pretium tristique, arcu mi sollicitudin...</p>
+                <?php
+                $homepageEvents = new WP_Query(array(
+                        'posts_per_page' => 2,
+                        'post_type' => 'evento'
+                ));
+                    while($homepageEvents->have_posts()) {
+                        $homepageEvents->the_post();
+                        ?>
+                        <article class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="item style-1">
+                                <div class="img-column">
+                                    <figure class="img-holder">
+                                        <a href="<?php the_permalink(); ?>"><img src="<?php echo get_theme_file_uri('/assets/images/resource/1.jpg') ?> " alt=""></a>
+                                        <div class="date"><?php echo the_time('d') ?> <br><span><?php echo the_time('m') ?></span></div>
+                                    </figure>
                                 </div>
-                            </div>
-                            <ul class="post-meta list_inline">
-                                <li><i class="fa fa-clock-o"></i>Started On: 11.00am </li> |&nbsp;&nbsp;&nbsp;
-                                <li><i class="fa fa-map-marker"></i> New Grand Street, California</li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-                <article class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="item style-2">
-                        <div class="clearfix">
-                            <div class="img-column">
-                                <figure class="img-holder">
-                                    <a href="single-event.html"><img src="<?php echo get_theme_file_uri('/assets/images/resource/2.jpg') ?> " alt=""></a>
-                                </figure>
-                            </div>
-                            <div class="text-column">
-                                <div class="lower-content">
-                                    <p>Organizer: Tom Maddy</p>
-                                    <a href="single-event.html"><h4>Recycling Plastic Bottle</h4></a>
-                                    <div class="text">
-                                        <p>Mauris tortor diam, laoreet quis commodo vitae, sodales vel augueed rutrum, libero non sed our pretium tristique, arcu mi sollicitudin...</p>
+                                <div class="text-column">
+                                    <div class="lower-content">
+                                        <p>Anunciado por: <?php the_author_posts_link(); ?> </p>
+                                        <a href="<?php the_permalink(); ?>"><h4><?php the_title() ?></h4></a>
+                                        <div class="text">
+                                            <p><?php echo wp_trim_words(get_the_content(), 18) ?></p>
+                                        </div>
                                     </div>
+                                    <ul class="post-meta list_inline">
+                                        <li><i class="fa fa-clock-o"></i>Started On: 11.00am </li> |&nbsp;&nbsp;&nbsp;
+                                        <li><i class="fa fa-map-marker"></i> New Grand Street, California</li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>
-                        <ul class="post-meta list_inline">
-                            <li><i class="fa fa-clock-o"></i>Started On: 11.00am </li>  |&nbsp;&nbsp;&nbsp;
-                            <li><i class="fa fa-map-marker"></i> New Grand Street, California</li>
-                        </ul>
-                    </div>
-                    <div class="item style-2">
-                        <div class="clearfix">
-                            <div class="img-column">
-                                <figure class="img-holder">
-                                    <a href="single-event.html"><img src="<?php echo get_theme_file_uri('/assets/images/resource/3.jpg') ?> " alt=""></a>
-                                </figure>
-                            </div>
-                            <div class="text-column">
-                                <div class="lower-content">
-                                    <p>Organizer: Tom Maddy</p>
-                                    <a href="single-event.html"><h4>Green Construction Practice</h4></a>
-                                    <div class="text">
-                                        <p>Mauris tortor diam, laoreet quis commodo vitae, sodales vel augueed rutrum, libero non sed our pretium tristique, arcu mi sollicitudin...</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <ul class="post-meta list_inline">
-                            <li><i class="fa fa-clock-o"></i>Started On: 11.00am </li> |&nbsp;&nbsp;&nbsp;
-                            <li><i class="fa fa-map-marker"></i> New Grand Street, California</li>
-                        </ul>
-                    </div>
-                </article>
+                        </article>
+
+                <?php } wp_reset_postdata();
+
+                ?>
+
+
+
             </div>
         </div>
     </section>
@@ -721,7 +690,7 @@ get_header();
     <section class="call-out">
         <div class="container">
             <div class="float_left">
-                <h4>Participa en la misión y haz que la tierra sea un lugar mejor</h4>
+                <h4>Involúcrate y haz que nuestro planeta sea un lugar mejor</h4>
             </div>
             <div class="float_right">
                 <a href="<?php echo site_url('/contactos') ?>" class="thm-btn style-3">Incorpórate</a>
