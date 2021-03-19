@@ -178,7 +178,7 @@ get_header();
 
 
             <div class="section-title center">
-                <h2>Somos "Abracemos el Mar Menor" <span class="thm-color">una organización que lucha contra la contaminación de aguas en el Mar Menor </span>en la región de Murcia</h2>
+                <h2>Somos "Abracemos al Mar Menor" <span class="thm-color">una organización que lucha contra la contaminación de aguas en el Mar Menor </span>en la región de Murcia</h2>
             </div>
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-x-12">
@@ -277,7 +277,7 @@ get_header();
     <section class="about sec-padd2">
         <div class="container">
             <div class="section-title center">
-                <h2>Abracemos el Mar Menor</h2>
+                <h2>Abracemos al Mar Menor</h2>
                 <p>Cada voz cuenta, elige en que campaña quieres participar y haz algo por el Mar Menor</p>
             </div>
             <div class="row">

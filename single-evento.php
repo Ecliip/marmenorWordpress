@@ -21,7 +21,7 @@ while(have_posts()) {
                         <a href="<?php echo site_url(); ?>">Principal</a>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('/blog'); ?>">Todos Eventos</a>
+                        <a href="<?php echo site_url('/eventos'); ?>">Todos Eventos</a>
                     </li>
 
                     <li>
@@ -30,7 +30,7 @@ while(have_posts()) {
                 </ul>
             </div>
             <div class="pull-right">
-                <a href="#" class="get-qoute"><i class="fa fa-arrow-circle-right"></i>Become a Volunteer</a>
+                <a href="<?php echo site_url('/contactos') ?>" class="get-qoute"><i class="fa fa-arrow-circle-right"></i>Hazte voluntario</a>
             </div>
         </div>
     </div>
