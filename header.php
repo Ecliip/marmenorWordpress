@@ -72,7 +72,7 @@
                 <div class="col-md-9 menu-column">
                     <nav class="menuzord" id="main_menu">
                         <ul class="menuzord-menu">
-                            <li><a href="<?php echo site_url('inicio') ?>"><?php echo get_the_title(40); ?></a></li>
+                            <li><a href="<?php echo site_url() ?>"><?php echo get_the_title(40); ?></a></li>
                             <li <?php if (is_page('conocenos') or wp_get_post_parent_id(0) == 42) echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo get_permalink(42) ?>"><?php echo get_the_title(42) ?></a>
                                 <ul class="dropdown">
                                     <?php wp_list_pages(array(

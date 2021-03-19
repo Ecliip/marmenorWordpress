@@ -3,11 +3,22 @@ get_header();
 ?>
 
 
-
+    <!--SLIDER START-->
     <section class="rev_slider_wrapper">
         <div id="slider1" class="rev_slider"  data-version="5.0">
             <ul>
+                <?php
+                    $homepagePosts = new WP_Query(array(
+                            'posts_per_page' => 3
+                    ));
 
+                    while($homepagePosts->have_posts()) {
+                        $homepagePosts->the_post();
+                        ?>
+
+
+                   <?php }
+                ?>
                 <li data-transition="fade">
                     <img src="<?php echo get_theme_file_uri('/assets/images/slider/1.jpg') ?>"  alt="" width="1920" height="888" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
 
@@ -23,9 +34,9 @@ get_header();
                          data-responsive_offset="on"
                          data-start="700">
                         <div class="slide-content-box">
-                            <h1>Let’s<span>... go With ECO green</span></h1>
-                            <h3>to get our global clean</h3>
-                            <p>Great explorer of the truth, the master-builder of human happiness <br>not know how to pursue pleasure rationally...  </p>
+                            <h1>Anímate<span>... a participar en la campaña de firmas</span></h1>
+                            <h3>cambia el futúro con tu firma</h3>
+                            <p>Descubre la felicidad cuidando del Mar Menor<br>y sus playas lucirán con nuevo brillo...  </p>
                         </div>
                     </div>
                     <div class="tp-caption tp-resizeme"
@@ -40,7 +51,7 @@ get_header();
                          data-start="2300">
                         <div class="slide-content-box">
                             <div class="button">
-                                <a class="thm-btn" href="#">read more</a>
+                                <a class="thm-btn" href="#">leer</a>
                             </div>
                         </div>
                     </div>
@@ -56,7 +67,7 @@ get_header();
                          data-start="2600">
                         <div class="slide-content-box">
                             <div class="button">
-                                <a class="thm-btn style-3" href="cause.html">Get Involved</a>
+                                <a class="thm-btn style-3" href="cause.html">forma parte del equipo</a>
                             </div>
                         </div>
                     </div>
@@ -76,8 +87,8 @@ get_header();
                          data-responsive_offset="on"
                          data-start="700">
                         <div class="slide-content-box center">
-                            <h2>Protect the Wild animals</h2>
-                            <p>Great explorer of the truth, the master-builder of human happiness <br>not know how to pursue pleasure rationally... </p>
+                            <h2>Protege las playas del Mar Menor</h2>
+                            <p>Participa en las actividades de recogida de basura <br>descubre el lado sucio del Mar Menor... </p>
                         </div>
                     </div>
                     <div class="tp-caption tp-resizeme"
@@ -92,7 +103,7 @@ get_header();
                          data-start="2300">
                         <div class="slide-content-box">
                             <div class="button">
-                                <a class="thm-btn" href="#">read more</a>
+                                <a class="thm-btn" href="#">leer</a>
                             </div>
                         </div>
                     </div>
@@ -108,7 +119,7 @@ get_header();
                          data-start="2600">
                         <div class="slide-content-box">
                             <div class="button">
-                                <a class="thm-btn style-3" href="#">get involved</a>
+                                <a class="thm-btn style-3" href="#">únete al equipo</a>
                             </div>
                         </div>
                     </div>
@@ -128,9 +139,9 @@ get_header();
                          data-responsive_offset="on"
                          data-start="700">
                         <div class="slide-content-box">
-                            <h1>Save<span>...World By Planting</span></h1>
-                            <h3>trees Your Surrounding</h3>
-                            <p>Great explorer of the truth, the master-builder of human happiness <br>not know how to pursue pleasure rationally...  </p>
+                            <h1>Ayúdanos<span>...con las tereas</span></h1>
+                            <h3>tenemos muchas cosas por hacer</h3>
+                            <p>Explora nuestra web y <br>encuentra las actividades en que te gustaría participar...  </p>
                         </div>
                     </div>
                     <div class="tp-caption tp-resizeme"
@@ -169,12 +180,14 @@ get_header();
             </ul>
         </div>
     </section>
-
+    <!--SLIDER END-->
 
 
 
     <section class="service sec-padd3">
         <div class="container">
+
+
             <div class="section-title center">
                 <h2>We are ECO Green, Our Mission is <span class="thm-color">save water, animals and environment</span>our activities are taken around the world.</h2>
             </div>
