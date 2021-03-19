@@ -52,7 +52,7 @@ get_header();
                             <div class="post-meta">Autor: <?php the_author_posts_link(); ?></div>
                             <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
                             <div class="text">
-                                <p><?php the_excerpt(); ?></p>
+                                <p><?php echo wp_trim_words(get_the_content(), 18); ?></p>
                             </div>
                             <p>Categorías: <?php echo get_the_category_list(', ') ?></p>
                         </div>
@@ -60,7 +60,7 @@ get_header();
 
                 </article>
 
-           <?php }
+           <?php } wp_reset_postdata();
 
 
            ?>

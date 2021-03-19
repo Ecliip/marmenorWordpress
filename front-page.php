@@ -128,9 +128,9 @@ get_header();
                          data-responsive_offset="on"
                          data-start="700">
                         <div class="slide-content-box">
-                            <h1>Ayúdanos<span>...con las tereas</span></h1>
+                            <h1>Explora<span>... la web para encontrar tareas pendientes</span></h1>
                             <h3>tenemos muchas cosas por hacer</h3>
-                            <p>Explora nuestra web y <br>encuentra las actividades en que te gustaría participar...  </p>
+                            <p>Este portal te ayudará a <br>descubrir las actividades en las cuales te interesará participar...  </p>
                         </div>
                     </div>
                     <div class="tp-caption tp-resizeme"
@@ -482,15 +482,15 @@ get_header();
                             <a href="#"><h4 class="title">Wind Power Grows Up</h4></a>
                             <p>We are dedicated to ending homelessness by delive- ring life-changing services for change the poor childrens life...</p>
                         </div>
-                        <div class="progress-box">
-                            <div class="bar">
-                                <div class="bar-inner animated-bar" data-percent="48%"><div class="count-text">48%</div></div>
-                            </div>
-                        </div>
-                        <div class="donate clearfix">
-                            <div class="donate float_left"><span>Goal: $54000 </span></div>
-                            <div class="donate float_right">Raised: $24000</div>
-                        </div>
+<!--                        <div class="progress-box">-->
+<!--                            <div class="bar">-->
+<!--                                <div class="bar-inner animated-bar" data-percent="48%"><div class="count-text">48%</div></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="donate clearfix">-->
+<!--                            <div class="donate float_left"><span>Goal: $54000 </span></div>-->
+<!--                            <div class="donate float_right">Raised: $24000</div>-->
+<!--                        </div>-->
 
                     </div>
 
@@ -507,15 +507,15 @@ get_header();
                             <a href="#"><h4 class="title">Save White Tiger</h4></a>
                             <p>We are dedicated to ending homelessness by delive- ring life-changing services for change the poor childrens life...</p>
                         </div>
-                        <div class="progress-box">
-                            <div class="bar">
-                                <div class="bar-inner animated-bar" data-percent="48%"><div class="count-text">48%</div></div>
-                            </div>
-                        </div>
-                        <div class="donate clearfix">
-                            <div class="donate float_left"><span>Goal: $92000 </span></div>
-                            <div class="donate float_right">Raised: $69000</div>
-                        </div>
+<!--                        <div class="progress-box">-->
+<!--                            <div class="bar">-->
+<!--                                <div class="bar-inner animated-bar" data-percent="48%"><div class="count-text">48%</div></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="donate clearfix">-->
+<!--                            <div class="donate float_left"><span>Goal: $92000 </span></div>-->
+<!--                            <div class="donate float_right">Raised: $69000</div>-->
+<!--                        </div>-->
 
                     </div>
 
@@ -532,15 +532,15 @@ get_header();
                             <a href="#"><h4 class="title">Go Green Movement</h4></a>
                             <p>We are dedicated to ending homelessness by delive- ring life-changing services for change the poor childrens life...</p>
                         </div>
-                        <div class="progress-box">
-                            <div class="bar">
-                                <div class="bar-inner animated-bar" data-percent="48%"><div class="count-text">48%</div></div>
-                            </div>
-                        </div>
-                        <div class="donate clearfix">
-                            <div class="donate float_left"><span>Goal: $78000 </span></div>
-                            <div class="donate float_right">Raised: $49000</div>
-                        </div>
+<!--                        <div class="progress-box">-->
+<!--                            <div class="bar">-->
+<!--                                <div class="bar-inner animated-bar" data-percent="48%"><div class="count-text">48%</div></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="donate clearfix">-->
+<!--                            <div class="donate float_left"><span>Goal: $78000 </span></div>-->
+<!--                            <div class="donate float_right">Raised: $49000</div>-->
+<!--                        </div>-->
 
                     </div>
 
@@ -672,18 +672,18 @@ get_header();
                                 <div class="post-meta">Autor: <?php the_author_posts_link(); ?></div>
                                 <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
                                 <div class="text">
-                                    <p><?php the_excerpt(); ?></p>
+                                    <p><?php echo wp_trim_words(get_the_content(), 18); ?></p>
                                 </div>
                             </div>
                         </div>
-
                     </article>
 
 
 
-                <?php }
+                <?php } wp_reset_postdata();
                 ?>
             </div>
+            <a class="thm-btn" href="<?php echo site_url('/blog'); ?>">Leer todas las noticias</a>
         </div>
     </section>
 

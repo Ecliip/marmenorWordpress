@@ -50,7 +50,8 @@
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fa fa-feed"></i></a></li>
                     </ul>
-                    <button class="thm-btn donate-box-btn">donate now</button>
+<!--                    <button  class="thm-btn donate-box-btn">se voluntario</button>-->
+                    <a  class="thm-btn" href="<?php echo site_url('/contactos'); ?>">se voluntario</a>
 
                 </div>
 
