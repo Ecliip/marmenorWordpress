@@ -214,7 +214,7 @@ get_header();
                             <span class="icon-deer"></span>
                         </div>
                         <h4>Especies en riesgo</h4>
-                        <p>Muchas especies del Mar Menor morirán si no paramos a los culpables</p>
+                        <p>Muchas especies del Mar Menor morirán si no pararémos el ecocidio</p>
                     </div>
                 </div>
             </div>
@@ -277,8 +277,8 @@ get_header();
     <section class="about sec-padd2">
         <div class="container">
             <div class="section-title center">
-                <h2>Words About Us</h2>
-                <p>Every voice counts! Choose campaign, donate and help us change the world</p>
+                <h2>Abracemos el Mar Menor</h2>
+                <p>Cada voz cuenta, elige en que campaña quieres participar y haz algo por el Mar Menor</p>
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-12">
@@ -288,7 +288,7 @@ get_header();
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="content">
-                        <h2>Together we can make a difference</h2>
+                        <h2>Juntos podemos cambiar la realidad, incorporate, te necesitamos</h2>
                         <div class="text">
                             <p>When you give to Our Ecogreen, you know your donation is making a difference. Whether you are supporting one of our Signature Programs or our carefully curated list of Gifts That Give More, our professional staff works hard every day <br>to ensure every dollar has impact for the cause of your choice. </p>
                         </div>
@@ -350,7 +350,7 @@ get_header();
     </section>
 
 
-
+<!--TODO has to do gallery section-->
     <section class="gallery sec-padd3 style-2" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/background/8.jpg') ?> )";>
         <div class="container">
             <div class="section-title">
@@ -461,14 +461,14 @@ get_header();
     </section>
 
 
-
+    <!--            TODO do WP loop with events here-->
     <section class="urgent-cause2 sec-padd">
         <div class="container">
             <div class="section-title">
                 <h2>Campañas actuales</h2>
                 <p>Incorpórate y cambiamos el Mar Menor juntos</p>
             </div>
-<!--            TODO do WP loop with events here-->
+
             <div class="cause-carousel">
                 <div class="item clearfix">
                     <figure class="img-box">
@@ -550,6 +550,7 @@ get_header();
         </div>
     </section>
 
+<!--TODO The upcoming event-->
     <section class="event-style1" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/background/3.jpg') ?> )";>
         <div class="container">
             <div class="row">
@@ -636,6 +637,7 @@ get_header();
         </div>
     </section>
 
+<!-- Blog posts-->
     <section class="blog-section sec-padd2">
         <div class="container">
             <div class="section-title center">
@@ -687,10 +689,12 @@ get_header();
 
     <div class="border-bottom"></div>
 
+
+<!-- photos de voluntarios -->
     <section class="clients-section sec-padd">
         <div class="container">
             <div class="section-title center">
-                <h2>our partners</h2>
+                <h2>Voluntarios y voluntaris</h2>
             </div>
             <div class="client-carousel owl-carousel owl-theme">
 
@@ -717,10 +721,10 @@ get_header();
     <section class="call-out">
         <div class="container">
             <div class="float_left">
-                <h4>Join Our Mission to Improve a Child's Feature, Pet’s Life and Our Planet.</h4>
+                <h4>Participa en la misión y haz que la tierra sea un lugar mejor</h4>
             </div>
             <div class="float_right">
-                <a href="#" class="thm-btn style-3">Get Involeved</a>
+                <a href="<?php echo site_url('/contactos') ?>" class="thm-btn style-3">Incorpórate</a>
             </div>
 
         </div>
