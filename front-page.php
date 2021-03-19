@@ -567,7 +567,7 @@ get_header();
                 <?php
                 $homepageEvents = new WP_Query(array(
                         'posts_per_page' => 2,
-                        'post_type' => 'evento'
+                        'post_type' => 'evento',
                 ));
                     while($homepageEvents->have_posts()) {
                         $homepageEvents->the_post();

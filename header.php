@@ -94,6 +94,10 @@
 
                             <li <?php if (is_page('eventos') or wp_get_post_parent_id(0) == 63) echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo get_permalink(63) ?>"><?php echo get_the_title(63) ?></a>
                                 <ul class="dropdown">
+
+                                    <li><a href="<?php echo site_url('/category/recogidadebasura/'); ?>">Recogidas de basura</a></li>
+
+
                                     <?php wp_list_pages(array(
                                         'title_li' => NULL,
                                         'child_of' => 63,
