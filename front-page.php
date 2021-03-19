@@ -128,8 +128,8 @@ get_header();
                          data-responsive_offset="on"
                          data-start="700">
                         <div class="slide-content-box">
-                            <h1>Explora<span>... la web para encontrar tareas pendientes</span></h1>
-                            <h3>tenemos muchas cosas por hacer</h3>
+                            <h1>Explora<span>... y Abraza </span></h1>
+                            <h3>...al Mar Menor</h3>
                             <p>Este portal te ayudará a <br>descubrir las actividades en las cuales te interesará participar...  </p>
                         </div>
                     </div>
