@@ -101,9 +101,9 @@
                                 </ul>
                             </li>
 
-                            <li><a href="<?php echo site_url('blog') ?>">Blog</a></li>
+                            <li  <?php if (get_post_type() === 'post') echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo site_url('blog') ?>">Blog</a></li>
 
-                            <li <?php if (is_page('galeria') or wp_get_post_parent_id(0) == 71) echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo get_permalink(71) ?>"><?php echo get_the_title(71) ?></a>
+                            <li <?php if (is_page('eventos') or wp_get_post_parent_id(0) == 71) echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo get_permalink(71) ?>"><?php echo get_the_title(71) ?></a>
                                 <ul class="dropdown">
                                     <?php wp_list_pages(array(
                                         'title_li' => NULL,

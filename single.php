@@ -6,7 +6,7 @@ get_header();
                 the_post();
                 ?>
 
-                    <div class="inner-banner has-base-color-overlay text-center" style="background: url(images/background/4.jpg);">
+                    <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php echo get_theme_file_uri('assets/images/background/4.jpg') ?>);">
                         <div class="container">
                             <div class="box">
                                 <h1> <?php the_title(); ?></h1>
@@ -44,7 +44,7 @@ get_header();
                 <div class="post-area">
                     <article class="default-blog-news">
                         <figure class="img-holder">
-                            <img src="images/blog/l1.jpg" alt="News">
+                            <img src="<?php echo get_theme_file_uri('assets/images/blog/l1.jpg') ?>" alt="News">
                         </figure>
                         <div class="lower-content">
                             <div class="date"><?php the_time('d/m/Y'); ?></div>
@@ -59,7 +59,7 @@ get_header();
                         </div>
                         <div class="author">
                             <!-- Image -->
-                            <img src="images/blog/author.jpg" alt="">
+                            <img src="<?php echo get_theme_file_uri('assets/images/blog/author.jpg') ?>" alt="">
                             <div class="author-comment">
                                 <div class="quote">
                                     <i class="fa fa-quote-left"></i>
@@ -94,7 +94,7 @@ get_header();
 
                             <div class="post-author">
                                 <div class="inner-box">
-                                    <figure class="author-thumb"><img src="images/blog/author2.jpg" alt=""></figure>
+                                    <figure class="author-thumb"><img src="<?php echo get_theme_file_uri('assets/images/blog/author2.jpg') ?>" alt=""></figure>
                                     <h4>Mark Richardson</h4>
                                     <div class=""><p>We will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
                                         <ul class="list-inline social">
@@ -123,7 +123,7 @@ get_header();
 
                                 <div class="single-comment">
                                     <div class="img-holder">
-                                        <img src="images/blog/thumb6.jpg" alt="Awesome Image">
+                                        <img src="<?php echo get_theme_file_uri('assets/images/blog/thumb6.jpg') ?>" alt="Awesome Image">
                                     </div>
                                     <div class="text-holder">
                                         <div class="top">
@@ -147,7 +147,7 @@ get_header();
                                 </div>
                                 <div class="single-comment">
                                     <div class="img-holder">
-                                        <img src="images/blog/thumb7.jpg" alt="Awesome Image">
+                                        <img src="<?php echo get_theme_file_uri('assets/images/blog/thumb7.jpg') ?>" alt="Awesome Image">
                                     </div>
                                     <div class="text-holder">
                                         <div class="top">
@@ -281,17 +281,17 @@ get_header();
 
                         <div class="popular-post">
                             <div class="item">
-                                <div class="post-thumb"><a href="blog-details.html"><img src="images/blog/thumb3.jpg" alt=""></a></div>
+                                <div class="post-thumb"><a href="blog-details.html"><img src="<?php echo get_theme_file_uri('assets/images/blog/thumb3.jpg') ?>" alt=""></a></div>
                                 <a href="blog-details.html"><h4>Change the lives of 40 <br> disabled people </h4></a>
                                 <div class="post-info"><i class="fa fa-calendar"></i>October 21, 2016 </div>
                             </div>
                             <div class="item">
-                                <div class="post-thumb"><a href="blog-details.html"><img src="images/blog/thumb4.jpg" alt=""></a></div>
+                                <div class="post-thumb"><a href="blog-details.html"><img src="<?php echo get_theme_file_uri('assets/images/blog/thumb4.jpg') ?>" alt=""></a></div>
                                 <a href="blog-details.html"><h4>Gorantalo earthquake <br> Relief Project </h4></a>
                                 <div class="post-info"><i class="fa fa-calendar"></i>January 14, 2016</div>
                             </div>
                             <div class="item">
-                                <div class="post-thumb"><a href="blog-details.html"><img src="images/blog/thumb5.jpg" alt=""></a></div>
+                                <div class="post-thumb"><a href="blog-details.html"><img src="<?php echo get_theme_file_uri('assets/images/blog/thumb5.jpg') ?>" alt=""></a></div>
                                 <a href="blog-details.html"><h4>Used equipments can <br> treat poor patients</h4></a>
                                 <div class="post-info"><i class="fa fa-calendar"></i>December 17, 2015 </div>
                             </div>
@@ -317,7 +317,7 @@ get_header();
                         <ul class="list-inline clearfix">
                             <li>
                                 <div class="inner-box">
-                                    <img src="images/blog/i1.jpg" alt="Awesome Image">
+                                    <img src="<?php echo get_theme_file_uri('assets/images/blog/i1.jpg') ?>" alt="Awesome Image">
                                     <div class="overlay">
                                         <div class="box">
                                             <div class="content">
@@ -329,7 +329,7 @@ get_header();
                             </li>
                             <li>
                                 <div class="inner-box">
-                                    <img src="images/blog/i2.jpg" alt="Awesome Image">
+                                    <img src="<?php echo get_theme_file_uri('assets/images/blog/i2.jpg') ?>" alt="Awesome Image">
                                     <div class="overlay">
                                         <div class="box">
                                             <div class="content">
@@ -341,7 +341,7 @@ get_header();
                             </li>
                             <li>
                                 <div class="inner-box">
-                                    <img src="images/blog/i3.jpg" alt="Awesome Image">
+                                    <img src="<?php echo get_theme_file_uri('assets/images/blog/i3.jpg') ?>" alt="Awesome Image">
                                     <div class="overlay">
                                         <div class="box">
                                             <div class="content">
@@ -353,7 +353,7 @@ get_header();
                             </li>
                             <li>
                                 <div class="inner-box">
-                                    <img src="images/blog/i4.jpg" alt="Awesome Image">
+                                    <img src="<?php echo get_theme_file_uri('assets/images/blog/i4.jpg') ?>" alt="Awesome Image">
                                     <div class="overlay">
                                         <div class="box">
                                             <div class="content">
@@ -365,7 +365,7 @@ get_header();
                             </li>
                             <li>
                                 <div class="inner-box">
-                                    <img src="images/blog/i5.jpg" alt="Awesome Image">
+                                    <img src="<?php echo get_theme_file_uri('assets/images/blog/i5.jpg') ?>" alt="Awesome Image">
                                     <div class="overlay">
                                         <div class="box">
                                             <div class="content">
@@ -377,7 +377,7 @@ get_header();
                             </li>
                             <li>
                                 <div class="inner-box">
-                                    <img src="images/blog/i6.jpg" alt="Awesome Image">
+                                    <img src="<?php echo get_theme_file_uri('assets/images/blog/i6.jpg') ?>" alt="Awesome Image">
                                     <div class="overlay">
                                         <div class="box">
                                             <div class="content">
@@ -389,7 +389,7 @@ get_header();
                             </li>
                             <li>
                                 <div class="inner-box">
-                                    <img src="images/blog/i7.jpg" alt="Awesome Image">
+                                    <img src="<?php echo get_theme_file_uri('assets/images/blog/i7.jpg') ?>" alt="Awesome Image">
                                     <div class="overlay">
                                         <div class="box">
                                             <div class="content">
@@ -401,7 +401,7 @@ get_header();
                             </li>
                             <li>
                                 <div class="inner-box">
-                                    <img src="images/blog/i8.jpg" alt="Awesome Image">
+                                    <img src="<?php echo get_theme_file_uri('assets/images/blog/i8.jpg') ?>" alt="Awesome Image">
                                     <div class="overlay">
                                         <div class="box">
                                             <div class="content">
@@ -413,7 +413,7 @@ get_header();
                             </li>
                             <li>
                                 <div class="inner-box">
-                                    <img src="images/blog/i9.jpg" alt="Awesome Image">
+                                    <img src="<?php echo get_theme_file_uri('assets/images/blog/i9.jpg') ?>" alt="Awesome Image">
                                     <div class="overlay">
                                         <div class="box">
                                             <div class="content">
@@ -434,10 +434,10 @@ get_header();
                         </div>
                         <div class="facebook-feed">
                             <figure class="img-box">
-                                <img src="images/blog/feedbg.jpg" alt="">
+                                <img src="<?php echo get_theme_file_uri('assets/images/blog/feedbg.jpg') ?>" alt="">
                                 <div class="overlay">
                                     <div class="inner-box">
-                                        <div class="logo"><img src="images/logo/1.jpg" alt=""></div>
+                                        <div class="logo"><img src="<?php echo get_theme_file_uri('assets/images/logo/1.jpg') ?>" alt=""></div>
                                         <h4>The Ecogreen</h4>
                                         <div class="like">890 likes</div>
                                     </div>
@@ -450,14 +450,14 @@ get_header();
                             <div class="like-people">
                                 <p>Be the first of your friends to like this</p>
                                 <ul class="list_inline">
-                                    <li><a href="#"><img src="images/blog/p1.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="images/blog/p1.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="images/blog/p1.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="images/blog/p1.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="images/blog/p1.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="images/blog/p1.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="images/blog/p1.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="images/blog/p1.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="<?php echo get_theme_file_uri('assets/images/blog/p1.jpg') ?>" alt=""></a></li>
+                                    <li><a href="#"><img src="<?php echo get_theme_file_uri('assets/images/blog/p1.jpg') ?>" alt=""></a></li>
+                                    <li><a href="#"><img src="<?php echo get_theme_file_uri('assets/images/blog/p1.jpg') ?>" alt=""></a></li>
+                                    <li><a href="#"><img src="<?php echo get_theme_file_uri('assets/images/blog/p1.jpg') ?>" alt=""></a></li>
+                                    <li><a href="#"><img src="<?php echo get_theme_file_uri('assets/images/blog/p1.jpg') ?>" alt=""></a></li>
+                                    <li><a href="#"><img src="<?php echo get_theme_file_uri('assets/images/blog/p1.jpg') ?>" alt=""></a></li>
+                                    <li><a href="#"><img src="<?php echo get_theme_file_uri('assets/images/blog/p1.jpg') ?>" alt=""></a></li>
+                                    <li><a href="#"><img src="<?php echo get_theme_file_uri('assets/images/blog/p1.jpg') ?>" alt=""></a></li>
                                 </ul>
                             </div>
 

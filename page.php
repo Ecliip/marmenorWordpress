@@ -419,7 +419,7 @@ while(have_posts()) {
         </div>
     </section>
     <?php
-}
+} wp_reset_postdata();
 
 
 get_footer();
