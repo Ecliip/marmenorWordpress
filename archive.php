@@ -5,7 +5,12 @@ get_header();
 <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php echo get_theme_file_uri('/assets/images/background/4.jpg') ?>);">
     <div class="container">
         <div class="box">
-            <h1>Sigue las últimas noticias</h1>
+            <h1>
+                <?php the_archive_title();?>
+                <br>
+                <p><i style="color: white"><?php the_archive_description(); ?></i></p>
+            </h1>
+
         </div>
     </div>
 </div>
@@ -48,7 +53,7 @@ get_header();
                         </figure>
                         <div class="lower-content">
                             <div class="date"><?php the_time('d/m/Y'); ?></div>
-<!--                            <div class="post-meta">by --><?php //the_author_posts_link(); ?><!--  |  14 Comments</div>-->
+                            <!--                            <div class="post-meta">by --><?php //the_author_posts_link(); ?><!--  |  14 Comments</div>-->
                             <div class="post-meta">Autor: <?php the_author_posts_link(); ?></div>
                             <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
                             <div class="text">
@@ -60,10 +65,10 @@ get_header();
 
                 </article>
 
-           <?php }
+            <?php }
 
 
-           ?>
+            ?>
 
 
         </div>
@@ -71,10 +76,10 @@ get_header();
         <ul class="page_pagination center">
             <!--        // TODO add styling later https://developer.wordpress.org/reference/functions/paginate_links/-->
             <? echo paginate_links(); ?>
-<!--            <li><a href="#" class="tran3s"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>-->
-<!--            <li><a href="#" class="active tran3s">1</a></li>-->
-<!--            <li><a href="#" class="tran3s">2</a></li>-->
-<!--            <li><a href="#" class="tran3s"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>-->
+            <!--            <li><a href="#" class="tran3s"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>-->
+            <!--            <li><a href="#" class="active tran3s">1</a></li>-->
+            <!--            <li><a href="#" class="tran3s">2</a></li>-->
+            <!--            <li><a href="#" class="tran3s"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>-->
         </ul>
     </div>
 </section>
@@ -88,7 +93,7 @@ get_header();
         <div class="float_right">
             <a href="#" class="thm-btn style-3">Get Involeved</a>
         </div>
-                
+
     </div>
 </section>
 
