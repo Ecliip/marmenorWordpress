@@ -46,3 +46,10 @@ function marmenor_features() {
 add_action('after_setup_theme', 'marmenor_features');
 
 
+function marmenor_adjust_queries($query) {
+    if (!is_admin() and is_post_type_archive('evento')) {
+        $query->set('posts_per_page', 1);
+    }
+}
+
+add_action('pre_get_posts', 'marmenor_adjust_queries');

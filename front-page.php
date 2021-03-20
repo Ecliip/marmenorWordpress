@@ -567,7 +567,18 @@ get_header();
                 <?php
                 $homepageEvents = new WP_Query(array(
                         'posts_per_page' => 2,
+                        'meta_key' => 'fecha_de_evento',
+                        'orderby' => 'meta_value_num',
                         'post_type' => 'evento',
+                        'order' => 'ASC',
+                        'meta_query' => array(
+                                array(
+                                    'key' => 'fecha_de_evento',
+                                    'compare' => '>=',
+                                    'value' => date('Ymd'),
+                                    'type' => 'numeric'
+                                )
+                        )
                 ));
                     while($homepageEvents->have_posts()) {
                         $homepageEvents->the_post();

@@ -37,6 +37,13 @@ get_header();
 
 
                         <?php
+//                        $eventsOrdered = new WP_Query(array(
+//                            'meta_key' => 'fecha_de_evento',
+//                            'orderedby' => 'meta_value_num',
+//                            'post_type' => 'evento',
+//                            'order' => 'ASC',
+//                        ));
+
                         while(have_posts()) {
                             the_post();
                             ?>
