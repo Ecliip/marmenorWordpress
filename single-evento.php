@@ -47,8 +47,33 @@ while(have_posts()) {
                 <img src="<?php echo get_theme_file_uri('assets/images/blog/l1.jpg') ?>" alt="News">
             </figure>
             <div class="lower-content">
-                <div class="date"><?php the_time('d/m/Y'); ?></div>
-                <div class="post-meta">Categorías: <?php echo get_the_category_list(', '); ?> </div>
+                <?php
+                    $eventDate = new DateTime(get_field('fecha_de_evento'));
+                ?>
+
+
+                <div class="date"><?php echo $eventDate->format('d/m/Y'); ?></div>
+<!--                TODO figure out how to add custom categories and taxonomies-->
+                <?php
+
+                $eventCategories = get_categories(array(
+                    'taxonomy' => 'category',
+                    'type' => 'evento',
+                ));
+
+
+                ?>
+
+                <div class="post-meta">Categorías:
+                    <?php
+                    foreach ($eventCategories as $the_category) { ?>
+                        <span><?php echo $the_category->name; ?></span>
+
+                  <?php  }
+
+                    ?>
+                </div>
+                <div class="post-meta">Categorías: <?php echo get_the_ID(); ?></div>
                 <h4><?php the_title(); ?></h4>
             </div>
         </article>

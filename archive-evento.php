@@ -53,7 +53,9 @@ get_header();
                                     </figcaption>
                                 </figure>
                                 <div class="lower-content">
-                                    <div class="date">March 02, 2017</div>
+                                    <?php $eventDate = new DateTime(get_field('fecha_de_evento')) ?>
+
+                                    <div class="date"><?php  echo $eventDate->format('d/m/Y'); ?></div>
                                     <a href="<?php the_permalink()?>"><h4><?php the_title(); ?></h4></a>
                                     <div class="text">
                                         <p><?php echo wp_trim_words(get_the_content(), 100) ?></p>

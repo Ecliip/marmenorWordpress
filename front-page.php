@@ -571,13 +571,15 @@ get_header();
                 ));
                     while($homepageEvents->have_posts()) {
                         $homepageEvents->the_post();
+
+                        $eventDate =  new DateTime(get_field('fecha_de_evento'))
                         ?>
                         <article class="col-md-6 col-sm-12 col-xs-12">
                             <div class="item style-1">
                                 <div class="img-column">
                                     <figure class="img-holder">
                                         <a href="<?php the_permalink(); ?>"><img src="<?php echo get_theme_file_uri('/assets/images/resource/1.jpg') ?> " alt=""></a>
-                                        <div class="date"><?php echo the_time('d') ?> <br><span><?php echo the_time('m') ?></span></div>
+                                        <div class="date"><?php echo $eventDate->format('d'); ?> <br><span><?php echo $eventDate->format('m'); ?></span></div>
                                     </figure>
                                 </div>
                                 <div class="text-column">
