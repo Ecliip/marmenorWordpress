@@ -7,165 +7,74 @@ get_header();
     <section class="rev_slider_wrapper">
         <div id="slider1" class="rev_slider"  data-version="5.0">
             <ul>
+    <?php
+        $collaboratePages = new WP_Query(array(
+            'post_type'      => 'page',
+            'posts_per_page' => -1,
+            'post_parent'    => 50,
+            'order'          => 'ASC',
+            'orderby'        => 'menu_order'
+        ));
 
-                <li data-transition="fade">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/slider/1.jpg') ?>"  alt="" width="1920" height="888" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
+        while ($collaboratePages->have_posts()) {
+            $collaboratePages->the_post();
+            ?>
+            <li data-transition="fade">
+<!--                <img src="--><?php //echo get_theme_file_uri('/assets/images/slider/1.jpg') ?><!--"  alt="" width="1920" height="888" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >-->
+                <img src="<?php the_post_thumbnail_url('1920_790') ?>"  alt="" width="1920" height="888" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
+                <div class="tp-caption  tp-resizeme"
+                     data-x="left" data-hoffset="15"
+                     data-y="top" data-voffset="260"
+                     data-transform_idle="o:1;"
+                     data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;"
+                     data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                     data-mask_in="x:[100%];y:0;s:inherit;e:inherit;"
+                     data-splitin="none"
+                     data-splitout="none"
+                     data-responsive_offset="on"
+                     data-start="700">
+                    <div class="slide-content-box">
+                        <h1><?php the_title() ?></h1>
+                        <h3 style="width: 50vw; white-space: break-spaces"><?php the_field('subtitulo'); ?></h3>
+                        <p><?php echo wp_trim_words(get_the_content(), 20) ?></p>
+                    </div>
+                </div>
+                <div class="tp-caption tp-resizeme"
+                     data-x="left" data-hoffset="15"
+                     data-y="top" data-voffset="480"
+                     data-transform_idle="o:1;"
+                     data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                     data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                     data-splitin="none"
+                     data-splitout="none"
+                     data-responsive_offset="on"
+                     data-start="2300">
+                    <div class="slide-content-box">
+                        <div class="button">
+                            <a class="thm-btn" href=<?php the_permalink(); ?>>leer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-caption tp-resizeme"
+                     data-x="left" data-hoffset="200"
+                     data-y="top" data-voffset="480"
+                     data-transform_idle="o:1;"
+                     data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
+                     data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
+                     data-splitin="none"
+                     data-splitout="none"
+                     data-responsive_offset="on"
+                     data-start="2600">
+                    <div class="slide-content-box">
+                        <div class="button">
+                            <a class="thm-btn style-3" href="<?php echo site_url('/contactos') ?>">forma parte del equipo</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        <?php } wp_reset_postdata();
 
-                    <div class="tp-caption  tp-resizeme"
-                         data-x="left" data-hoffset="15"
-                         data-y="top" data-voffset="260"
-                         data-transform_idle="o:1;"
-                         data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-mask_in="x:[100%];y:0;s:inherit;e:inherit;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         data-start="700">
-                        <div class="slide-content-box">
-                            <h1>Anímate<span>... a participar en la campaña de firmas</span></h1>
-                            <h3>cambia el futúro con tu firma</h3>
-                            <p>Descubre la felicidad cuidando del Mar Menor<br>y sus playas lucirán con nuevo brillo...  </p>
-                        </div>
-                    </div>
-                    <div class="tp-caption tp-resizeme"
-                         data-x="left" data-hoffset="15"
-                         data-y="top" data-voffset="480"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         data-start="2300">
-                        <div class="slide-content-box">
-                            <div class="button">
-                                <a class="thm-btn" href="#">leer</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tp-caption tp-resizeme"
-                         data-x="left" data-hoffset="200"
-                         data-y="top" data-voffset="480"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         data-start="2600">
-                        <div class="slide-content-box">
-                            <div class="button">
-                                <a class="thm-btn style-3" href="<?php echo site_url('/contactos') ?>">forma parte del equipo</a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li data-transition="fade">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/slider/2.jpg') ?>"  alt="" width="1920" height="580" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
-
-                    <div class="tp-caption  tp-resizeme"
-                         data-x="center" data-hoffset=""
-                         data-y="top" data-voffset="275"
-                         data-transform_idle="o:1;"
-                         data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-mask_in="x:[100%];y:0;s:inherit;e:inherit;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         data-start="700">
-                        <div class="slide-content-box center">
-                            <h2>Protege las playas del Mar Menor</h2>
-                            <p>Participa en las actividades de recogida de basura <br>descubre el lado sucio del Mar Menor... </p>
-                        </div>
-                    </div>
-                    <div class="tp-caption tp-resizeme"
-                         data-x="center" data-hoffset="-90"
-                         data-y="top" data-voffset="450"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         data-start="2300">
-                        <div class="slide-content-box">
-                            <div class="button">
-                                <a class="thm-btn" href="#">leer</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tp-caption tp-resizeme"
-                         data-x="center" data-hoffset="100"
-                         data-y="top" data-voffset="450"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         data-start="2600">
-                        <div class="slide-content-box">
-                            <div class="button">
-                                <a class="thm-btn style-3" href="#">únete al equipo</a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li data-transition="fade">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/slider/3.jpg') ?>"  alt="" width="1920" height="888" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
-
-                    <div class="tp-caption  tp-resizeme"
-                         data-x="left" data-hoffset="500"
-                         data-y="top" data-voffset="260"
-                         data-transform_idle="o:1;"
-                         data-transform_in="x:[-175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0.01;s:3000;e:Power3.easeOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-mask_in="x:[100%];y:0;s:inherit;e:inherit;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         data-start="700">
-                        <div class="slide-content-box">
-                            <h1>Explora<span>... y Abraza </span></h1>
-                            <h3>...al Mar Menor</h3>
-                            <p>Este portal te ayudará a <br>descubrir las actividades en las cuales te interesará participar...  </p>
-                        </div>
-                    </div>
-                    <div class="tp-caption tp-resizeme"
-                         data-x="left" data-hoffset="500"
-                         data-y="top" data-voffset="480"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         data-start="2300">
-                        <div class="slide-content-box">
-                            <div class="button">
-                                <a class="thm-btn" href="#">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tp-caption tp-resizeme"
-                         data-x="left" data-hoffset="700"
-                         data-y="top" data-voffset="480"
-                         data-transform_idle="o:1;"
-                         data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                         data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
-                         data-splitin="none"
-                         data-splitout="none"
-                         data-responsive_offset="on"
-                         data-start="2600">
-                        <div class="slide-content-box">
-                            <div class="button">
-                                <a class="thm-btn style-3" href="<?php echo site_url('/contactos') ?>">Get Involved</a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+    ?>
             </ul>
         </div>
     </section>
@@ -551,7 +460,7 @@ get_header();
     </section>
 
 <!--TODO The upcoming event-->
-    <section class="event-style1" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/background/3.jpg') ?> )";>
+    <section class="event-style1" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/background/mountain_1920_776.jpg') ?> )";>
         <div class="container">
             <div class="row">
                 <div class="col-md-9 col-sm-10 col-xs-12">
@@ -589,7 +498,8 @@ get_header();
                             <div class="item style-1">
                                 <div class="img-column">
                                     <figure class="img-holder">
-                                        <a href="<?php the_permalink(); ?>"><img src="<?php echo get_theme_file_uri('/assets/images/resource/1.jpg') ?> " alt=""></a>
+<!--                                        <a href="--><?php //the_permalink(); ?><!--"><img src="--><?php //echo get_theme_file_uri('/assets/images/resource/1.jpg') ?><!-- " alt=""></a>-->
+                                        <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url('570_300'); ?> " alt=""></a>
                                         <div class="date"><?php echo $eventDate->format('d'); ?> <br><span><?php echo $eventDate->format('m'); ?></span></div>
                                     </figure>
                                 </div>

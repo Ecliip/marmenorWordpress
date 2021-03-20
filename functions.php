@@ -41,14 +41,22 @@ add_action('wp_enqueue_scripts', 'marmenor_assets');
 
 function marmenor_features() {
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+    add_image_size('1920_790', 1920, 790, true);
+    add_image_size('1920_280', 1920, 280, true);
+    add_image_size('770_430', 770, 430, true);
+    add_image_size('570_300', 570, 300, true);
 }
 
 add_action('after_setup_theme', 'marmenor_features');
 
 
 function marmenor_adjust_queries($query) {
-    if (!is_admin() and is_post_type_archive('evento')) {
-        $query->set('posts_per_page', 1);
+    if (!is_admin() and is_post_type_archive('evento') and $query->is_main_query()) {
+//        $query->set('posts_per_page', 1);
+        $query->set('meta_key', 'fecha_de_evento');
+        $query->set('orderby', 'meta_value_num');
+        $query->set('order', 'DESC');
     }
 }
 

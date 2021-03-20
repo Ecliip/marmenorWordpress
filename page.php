@@ -3,7 +3,8 @@ get_header();
 
 while(have_posts()) {
     the_post(); ?>
-    <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php echo get_theme_file_uri('/assets/images/background/4.jpg')?> );">
+<!--    <div class="inner-banner has-base-color-overlay text-center" style="background: url(--><?php //echo get_theme_file_uri('/assets/images/background/4.jpg')?>/* );">*/
+    <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php the_post_thumbnail_url('1920_280');?> );">
         <div class="container">
             <div class="box">
                 <h1><?php the_title(); ?></h1>
@@ -55,10 +56,10 @@ while(have_posts()) {
 
 
             <div class="section-title center">
-                <h2>Words About Us</h2>
-                <p>REPLACE THIS TEXT LATER</p>
+                <h2><?php the_title(); ?></h2>
+                <p><?php the_field('subtitulo') ?></p>
             </div>
-            <div class="row" style="display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap">
+            <div class="row" style="display: flex;  align-items: center; flex-wrap: wrap; width: 100vw;">
 
                 <!--CHILD PAGES BLOCK-->
                 <?php
@@ -66,7 +67,7 @@ while(have_posts()) {
                     'child_of' => get_the_ID()
                 ));
                 if ($parentID or $pages) { ?>
-                    <div class="col-lg-3 col-md-4 col-sm-12" style="flex: 1 1 200px">
+                    <div class="col-lg-3 col-md-4 col-sm-12" style="flex: 0 1 300px; margin-right: 20px">
                         <div class="default-sidebar">
                             <h2 style="margin-bottom: 20px"><a href="<?php echo get_permalink($parentID) ?>"><?php echo get_the_title($parentID) ?></a></h2>
                             <ul class="service-catergory">
@@ -96,9 +97,15 @@ while(have_posts()) {
                 } ?>
                 <!--END CHILD PAGES BLOCK-->
 
-                <div class="col-md-6 col-sm-12" style="display: flex; justify-content: center; width: 100%; flex: 1 1 300px">
-                    <iframe src="https://player.vimeo.com/video/9519939" width="570" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>
-                </div>
+<!--                <div class="col-md-6 col-sm-12" style="display: flex; justify-content: center; width: 100%; flex: 1 1 300px">-->
+<!--                    <iframe src="https://player.vimeo.com/video/9519939" width="570" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>-->
+<!--                </div>-->
+
+
+                <figure class="img-holder" style="margin-bottom: 20px;">
+                    <!--                <img src="--><?php //echo get_theme_file_uri('assets/images/blog/l1.jpg') ?><!--" alt="News">-->
+                    <img src="<?php the_post_thumbnail_url('770_430'); ?>" alt="News">
+                </figure>
             </div>
             <div class="row" style="display: flex; flex-direction: column; align-items: center; justify-content: center">
                 <div class="link" style="margin-bottom: 2rem"><a href="#" class="thm-btn style-2">Become a Volunteer</a></div>

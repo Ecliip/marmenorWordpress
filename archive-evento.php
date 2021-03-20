@@ -50,7 +50,8 @@ get_header();
 
                             <article class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
                                 <figure class="img-holder">
-                                    <a href="<?php the_permalink()?>"><img src="<?php echo get_theme_file_uri('/assets/images/blog/l1.jpg') ?>" alt="News"></a>
+<!--                                    <a href="--><?php //the_permalink()?><!--"><img src="--><?php //echo get_theme_file_uri('/assets/images/blog/l1.jpg') ?><!--" alt="News"></a>-->
+                                    <a href="<?php the_permalink()?>"><img src="<?php the_post_thumbnail_url('770_430'); ?>" alt="News"></a>
                                     <figcaption class="overlay">
                                         <div class="box">
                                             <div class="content">

@@ -42,9 +42,20 @@ while(have_posts()) {
     <div class="row">
     <div class="col-md-9 col-sm-12">
     <div class="post-area">
+        <?php
+
+        $eventCategories = get_categories(array(
+            'taxonomy' => 'category',
+            'type' => 'evento',
+        ));
+
+
+        ?>
+
         <article class="default-blog-news">
             <figure class="img-holder">
-                <img src="<?php echo get_theme_file_uri('assets/images/blog/l1.jpg') ?>" alt="News">
+<!--                <img src="--><?php //echo get_theme_file_uri('assets/images/blog/l1.jpg') ?><!--" alt="News">-->
+                <img src="<?php the_post_thumbnail_url('770_430'); ?>" alt="News">
             </figure>
             <div class="lower-content">
                 <?php
@@ -54,36 +65,24 @@ while(have_posts()) {
 
                 <div class="date"><?php echo $eventDate->format('d/m/Y'); ?></div>
 <!--                TODO figure out how to add custom categories and taxonomies-->
-                <?php
-
-                $eventCategories = get_categories(array(
-                    'taxonomy' => 'category',
-                    'type' => 'evento',
-                ));
 
 
-                ?>
-
-                <div class="post-meta">Categorías:
-                    <?php
-                    foreach ($eventCategories as $the_category) { ?>
-                        <span><?php echo $the_category->name; ?></span>
-
-                  <?php  }
-
-                    ?>
-                </div>
+                <div class="post-meta">Categorías:</div>
                 <div class="post-meta">Categorías: <?php echo get_the_ID(); ?></div>
                 <h4><?php the_title(); ?></h4>
             </div>
         </article>
         <div class="content-box">
-            <div class="text">
-                <p><?php the_content(); ?></p>
+            <span class="text">
+<!--                <figure style="width: 200px; height: 300px; overflow: hidden; display: flex; justify-content: center; align-items: center">-->
+<!--                    --><?php //the_post_thumbnail();?>
+<!--                </figure>-->
+                <p> <?php the_content(); ?></p>
             </div>
             <div class="author">
                 <!-- Image -->
                 <img src="<?php echo get_theme_file_uri('assets/images/blog/author.jpg') ?>" alt="">
+<!--                <img src="--><?php //the_post_thumbnail_url(); ?><!--" alt="">-->
                 <div class="author-comment">
                     <div class="quote">
                         <i class="fa fa-quote-left"></i>
