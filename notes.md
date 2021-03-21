@@ -9,3 +9,8 @@ scrollArray(overflowing, deltaX, deltaY);
 if (e.preventDefault && !releaseScroll) {  e.target.blur(); }  // THIS LINE FIXES A BUG
 scheduleClearCache();
 ```
+
+
+### Good solution for Gallery
+<https://wordpress.stackexchange.com/questions/124169/how-to-paginate-attachments-in-a-secondary-query-as-gallery>
+<https://gist.github.com/radiovisual/9070765>
