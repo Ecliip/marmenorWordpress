@@ -131,6 +131,9 @@ get_header();
     </section>
 
 
+    x-special/nautilus-clipboard
+    copy
+    file:///home/mikhaylo/Downloads/5.jpg
     <section class="fact-counter style-2 sec-padd" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/background/5.jpg') ?> );">
         <div class="container">
             <div class="section-title center">
