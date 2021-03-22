@@ -519,7 +519,7 @@ get_header();
                     <article class="col-md-3 col-sm-6 col-xs-12">
                         <div class="default-blog-news wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">
                             <figure class="img-holder">
-                                <a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/1.jpg') ?> " alt="News"></a>
+                                <a href="blog-details.html"><img src="<?php echo the_post_thumbnail_url('570_300') ?> " alt="News"></a>
                                 <figcaption class="overlay">
                                     <div class="box">
                                         <div class="content">

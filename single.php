@@ -6,7 +6,7 @@ get_header();
                 the_post();
                 ?>
 
-                    <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php echo get_theme_file_uri('assets/images/background/4.jpg') ?>);">
+                    <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php echo the_post_thumbnail_url('1920_280') ?>);">
                         <div class="container">
                             <div class="box">
                                 <h1> <?php the_title(); ?></h1>
@@ -44,7 +44,7 @@ get_header();
                 <div class="post-area">
                     <article class="default-blog-news">
                         <figure class="img-holder">
-                            <img src="<?php echo get_theme_file_uri('assets/images/blog/l1.jpg') ?>" alt="News">
+                            <img src="<?php echo the_post_thumbnail_url('770_430') ?>" alt="News">
                         </figure>
                         <div class="lower-content">
                             <div class="date"><?php the_time('d/m/Y'); ?></div>

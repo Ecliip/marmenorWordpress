@@ -29,26 +29,26 @@
             <div class="clearfix">
 
                 <ul class="float_left top-bar-info">
-                    <li><i class="icon-phone-call"></i>Phone: (123) 0200 12345</li>
-                    <li><i class="icon-e-mail-envelope"></i>Supportus@Ecogreen.com</li>
+<!--                    <li><i class="icon-phone-call"></i>Phone: (123) 0200 12345</li>-->
+                    <li><i class="icon-e-mail-envelope"></i>salmarmenor@gmail.com</li>
                 </ul>
                 <div class="right-column float_right">
-                    <div id="polyglotLanguageSwitcher" class="">
-                        <form action="#">
-                            <select id="polyglot-language-options">
-                                <option id="en" value="en" selected>Eng</option>
-                                <option id="fr" value="fr">Fre</option>
-                                <option id="de" value="de">Ger</option>
-                                <option id="it" value="it">Ita</option>
-                                <option id="es" value="es">Spa</option>
-                            </select>
-                        </form>
-                    </div>
+<!--                    <div id="polyglotLanguageSwitcher" class="">-->
+<!--                        <form action="#">-->
+<!--                            <select id="polyglot-language-options">-->
+<!--                                <option id="en" value="en" selected>Eng</option>-->
+<!--                                <option id="fr" value="fr">Fre</option>-->
+<!--                                <option id="de" value="de">Ger</option>-->
+<!--                                <option id="it" value="it">Ita</option>-->
+<!--                                <option id="es" value="es">Spa</option>-->
+<!--                            </select>-->
+<!--                        </form>-->
+<!--                    </div>-->
                     <ul class="social list_inline">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-feed"></i></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/Abracemos-al-MAR-MENOR-102408421266462"><i class="fa fa-facebook"></i></a></li>
+<!--                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+                        <li><a target="_blank" href="https://twitter.com/abrazamarmenor?lang=es"><i class="fa fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/abracemos_al_mar_menor/"><i class="fa fa-instagram"></i></a></li>
                     </ul>
 <!--                    <button  class="thm-btn donate-box-btn">se voluntario</button>-->
                     <a  class="thm-btn" href="<?php echo site_url('/contactos'); ?>">sé voluntario</a>
@@ -127,17 +127,17 @@
                     </nav>
                 </div>
                 <div class="right-column">
-                    <div class="right-area">
-                        <div class="nav_side_content">
-                            <div class="search_option">
-                                <button class="search tran3s dropdown-toggle color1_bg" id="searchDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                <form action="#" class="dropdown-menu" aria-labelledby="searchDropdown">
-                                    <input type="text" placeholder="Search...">
-                                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+<!--                    <div class="right-area">-->
+<!--                        <div class="nav_side_content">-->
+<!--                            <div class="search_option">-->
+<!--                                <button class="search tran3s dropdown-toggle color1_bg" id="searchDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search" aria-hidden="true"></i></button>-->
+<!--                                <form action="#" class="dropdown-menu" aria-labelledby="searchDropdown">-->
+<!--                                    <input type="text" placeholder="Search...">-->
+<!--                                    <button><i class="fa fa-search" aria-hidden="true"></i></button>-->
+<!--                                </form>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
                 </div>
 

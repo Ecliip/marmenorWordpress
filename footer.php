@@ -14,11 +14,11 @@
                             <div class="footer-widget about-column">
                                 <figure class="footer-logo"><a href="<?php echo site_url() ?>"><img src="<?php echo get_theme_file_uri('assets/images/logo/logomarmenor.png'); ?> " alt=""></a></figure>
 
-                                <div class="text"><p>When you give to us you know your donation is making a diffe. </p> </div>
+                                <div class="text"><p>Sólo podemos dominar la naturaleza si la obedecemos.</p> </div>
                                 <ul class="contact-info">
-                                    <li><span class="icon-signs"></span>22/121 Apple Street, New York, <br>NY 10012, USA</li>
+<!--                                    <li><span class="icon-signs"></span>22/121 Apple Street, New York, <br>NY 10012, USA</li>-->
                                     <li><span class="icon-phone-call"></span> Phone: +123-456-7890</li>
-                                    <li><span class="icon-note"></span>Supportus@Eco greenteam.com</li>
+                                    <li><span class="icon-note"></span>Email: salmarmenor@gmail.com</li>
                                 </ul>
                             </div>
                         </div>
@@ -82,12 +82,9 @@
                                 <p>We don’t do mail to spam & your mail <br>id is confidential.</p>
 
                                 <ul class="social-icon">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-feed"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                    <li><a target="_blank" href="https://www.facebook.com/Abracemos-al-MAR-MENOR-102408421266462"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a target="_blank" href="https://twitter.com/abrazamarmenor?lang=es"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a target="_blank" href="https://www.instagram.com/abracemos_al_mar_menor/"><i class="fa fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -108,11 +105,11 @@
 <section class="footer-bottom">
     <div class="container">
         <div class="pull-left copy-text">
-            <p><a href="#">Copyrights © 2017</a> All Rights Reserved. Powered by <a href="#">Eco green.</a></p>
+            <p><a href="#">Copyrights © 2021</a> Todos los derechos reservados. Desarrollado por <a href="#">Mykhaylo Rozumovskyy: mskiy@protonmail.com</a></p>
 
         </div><!-- /.pull-right -->
         <div class="pull-right get-text">
-            <a href="#">Join Us Now!</a>
+            <a href="<?php echo site_url('contactos') ?>">Únete al equipo</a>
         </div><!-- /.pull-left -->
     </div><!-- /.container -->
 </section>
