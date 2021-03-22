@@ -3,7 +3,6 @@ get_header();
 
 while(have_posts()) {
     the_post(); ?>
-    <!--    <div class="inner-banner has-base-color-overlay text-center" style="background: url(--><?php //echo get_theme_file_uri('/assets/images/background/4.jpg')?>/* );">*/
     <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php the_post_thumbnail_url('1920_280');?> );">
         <div class="container">
             <div class="box">

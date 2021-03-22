@@ -87,8 +87,8 @@ h1,h2,h3,h4,h5 {
 ul {list-style-type: none;}
 
 p {font-family: 'Open Sans', sans-serif;font-size: 18px;color: #fff;line-height: 26px; font-weight: 400; text-align: justify;}
-a {text-decoration: none;display: inline-block;outline: none;}
-a:hover,a:focus,a:visited {text-decoration: none; outline: none;}
+a {text-decoration: none;display: inline-block;outline: none; color: #DBC1B6;}
+a:hover,a:focus,a:visited {text-decoration: none; outline: none; color: #C16951;}
 
 img {max-width: 100%;display: inline-block;}
 
@@ -2927,7 +2927,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   top: 0px;
   width: 100%;
   height: 0%;
-  background: rgba(141, 198, 63, 0.9);
+  background: rgba(81, 172, 172, 0.9);
   transition: .7s cubic-bezier(0.34, -0.13, 0.34, 1.1);
   opacity: 0;
   visibility: hidden;
@@ -4461,7 +4461,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   line-height: 70px;
   width: 100%;
   height: 100%;
-  background: rgba(141, 198, 63, 0.9);
+  background: rgba(81, 172, 172, 0.9);
   color: #ffffff;
   opacity: 0;
   transition: .5s ease;
@@ -4683,7 +4683,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(141, 198, 63, 0.9);
+  background: rgba(81, 172, 172, 0.9);
   -webkit-transform: translate3d(0, 100px, 0);
   transform: translate3d(0, 100px, 0);
   opacity: 0;
@@ -5517,7 +5517,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   left: 0;
   top: 0;
   height: 100%;
-  background: rgba(141, 198, 63, 0.9);
+  background: rgba(81, 172, 172, 0.9);
   width: 100%;
   transform: scale(0.7,0);
   transition: .5s ease-in-out;
@@ -8235,7 +8235,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
     line-height: 80px;
     width: 100%;
     height: 100%;
-    background: rgba(141, 198, 63, 0.9);
+    background: rgba(81, 172, 172, 0.9);
     color: #ffffff;
     opacity: 0;
     transition: .5s ease;

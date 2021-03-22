@@ -87,7 +87,7 @@ get_header();
                                 <div class="img-box">
                                     <?php
                                     $theImageSm = wp_get_attachment_image_url( get_the_ID(), $size ='570_300' );
-                                    $theImageBig = wp_get_attachment_image_url( get_the_ID(), $size ='original' );
+                                    $theImageBig = wp_get_attachment_image_url( get_the_ID(), $size ='full' );
                                     ?>
                                     <img src="<?php echo $theImageSm ?>" alt="">
                                     <div class="overlay">
@@ -111,7 +111,7 @@ get_header();
 
 
 
-                <?php } ?>
+                <?php } wp_reset_postdata(); ?>
 
 
 

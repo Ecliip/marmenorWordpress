@@ -262,113 +262,79 @@ get_header();
 
 <!--TODO has to do gallery section-->
 <?php $galleryPage = get_post(160) ?>
-<!--    <section class="gallery sec-padd3 style-2" style="background-image: url(--><?php //echo get_theme_file_uri('/assets/images/background/8.jpg') ?>/* )";>*/
+
     <section class="gallery sec-padd3 style-2" style="background: url(<?php echo get_the_post_thumbnail_url(160, '1920_790') ?> ) rgb(0,0,0)" ;>
         <div class="container">
             <div class="section-title">
                 <h2><?php echo $galleryPage->post_permalink; ?></h2>
             </div>
-            <ul class="post-filter style-3 list-inline float_right">
-                <li class="active" data-filter=".filter-item">
-                    <span>View All</span>
-                </li>
-                <li data-filter=".Ecology">
-                    <span>Ecology</span>
-                </li>
-                <li data-filter=".Wild-Animals">
-                    <span>Wild Animals</span>
-                </li>
-                <li data-filter=".Recycling">
-                    <span>Recycling</span>
-                </li>
-                <li data-filter=".Water">
-                    <span>Water</span>
-                </li>
-                <li data-filter=".Pollution">
-                    <span>Pollution</span>
-                </li>
-            </ul>
+<!--            <ul class="post-filter style-3 list-inline float_right">-->
+<!--                <li class="active" data-filter=".filter-item">-->
+<!--                    <span>View All</span>-->
+<!--                </li>-->
+<!--                <li data-filter=".Ecology">-->
+<!--                    <span>Ecology</span>-->
+<!--                </li>-->
+<!--                <li data-filter=".Wild-Animals">-->
+<!--                    <span>Wild Animals</span>-->
+<!--                </li>-->
+<!--                <li data-filter=".Recycling">-->
+<!--                    <span>Recycling</span>-->
+<!--                </li>-->
+<!--                <li data-filter=".Water">-->
+<!--                    <span>Water</span>-->
+<!--                </li>-->
+<!--                <li data-filter=".Pollution">-->
+<!--                    <span>Pollution</span>-->
+<!--                </li>-->
+<!--            </ul>-->
 
             <div class="row filter-layout">
+                <?php
+                    $espArgs = array(
+                        'post_status' => 'inherit',
+                        'posts_per_page' => 4,
+                        'post_type' => 'attachment',
+                    );
+                    $espArgs['tax_query'] = array(
+                        array(
+                            'taxonomy' => 'categoria-galeria',
+                            'terms' => array( 'especies' ),
+                            'field' => 'slug',
+                        ),
+                    );
+                    $especiesQuery =  new WP_Query( $espArgs );
 
-                <article class="col-md-3 col-sm-6 col-xs-12 filter-item Wild-Animals Pollution Water">
+                    if ($especiesQuery->have_posts()) {
+                        while($especiesQuery->have_posts()) {
+                            $especiesQuery->the_post();
+                ?>
+
+                            <article class="col-md-3 col-sm-6 col-xs-12 filter-item Wild-Animals Pollution Water">
                     <div class="item" style="background: #0d3b3b96">
                         <div class="img-box">
-                            <img src="<?php echo get_theme_file_uri('/assets/images/project/1.jpg') ?> " alt="">
+                            <img src="<?php echo wp_get_attachment_image_url( get_the_ID(), $size ='570_300' ); ?> " alt="">
                             <div class="overlay">
                                 <div class="inner-box">
                                     <div class="content-box">
-                                        <a data-group="1" href="<?php echo get_theme_file_uri('/assets/images/project/1.jpg') ?> " class="img-popup"><i class="fa fa-search-plus"></i></a>
+                                        <a data-group="1" href="<?php echo wp_get_attachment_image_url( get_the_ID(), $size ='full' ) ?> " class="img-popup"><i class="fa fa-search-plus"></i></a>
                                         <a href="single-gallery.html"><i class="fa fa-link"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="content center">
-                            <h4>Environment</h4>
-                            <p>Pollution</p>
+                            <h4><?php the_title(); ?></h4>
                         </div>
                     </div>
                 </article>
-                <article class="col-md-3 col-sm-6 col-xs-12 filter-item Wild-Animals Pollution Ecology Recycling">
-                    <div class="item">
-                        <div class="img-box">
-                            <img src="<?php echo get_theme_file_uri('/assets/images/project/2.jpg') ?> " alt="">
-                            <div class="overlay">
-                                <div class="inner-box">
-                                    <div class="content-box">
-                                        <a data-group="1" href="<?php echo get_theme_file_uri('/assets/images/project/2.jpg') ?> " class="img-popup"><i class="fa fa-search-plus"></i></a>
-                                        <a href="single-gallery.html"><i class="fa fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content center">
-                            <h4>Windmill Power</h4>
-                            <p>Ecology, Recycling</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="col-md-3 col-sm-6 col-xs-12 filter-item Wild-Animals Pollution Ecology Recycling">
-                    <div class="item">
-                        <div class="img-box">
-                            <img src="<?php echo get_theme_file_uri('/assets/images/project/3.jpg') ?> " alt="">
-                            <div class="overlay">
-                                <div class="inner-box">
-                                    <div class="content-box">
-                                        <a data-group="1" href="<?php echo get_theme_file_uri('/assets/images/project/3.jpg') ?> " class="img-popup"><i class="fa fa-search-plus"></i></a>
-                                        <a href="single-gallery.html"><i class="fa fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content center">
-                            <h4>Save White Tiger</h4>
-                            <p>Wild Animals</p>
-                        </div>
-                    </div>
-                </article>
-                <article class="col-md-3 col-sm-6 col-xs-12 filter-item Wild-Animals Pollution Water">
-                    <div class="item">
-                        <div class="img-box">
-                            <img src="<?php echo get_theme_file_uri('/assets/images/project/4.jpg') ?> " alt="">
-                            <div class="overlay">
-                                <div class="inner-box">
-                                    <div class="content-box">
-                                        <a data-group="1" href="<?php echo get_theme_file_uri('/assets/images/project/4.jpg') ?> " class="img-popup"><i class="fa fa-search-plus"></i></a>
-                                        <a href="single-gallery.html"><i class="fa fa-link"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content center">
-                            <h4>Wiliwili Recycling</h4>
-                            <p>Recycling</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
 
+                <?php
+                        }
+                    } wp_reset_postdata();
+                ?>
+            </div>
+            <a class="thm-btn" href="<?php echo site_url('/galerias'); ?>">Ir a galería</a>
         </div>
     </section>
 
