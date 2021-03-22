@@ -107,6 +107,8 @@
                                 </ul>
                             </li>
 
+
+
                             <li  <?php if (get_post_type() === 'post') echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo site_url('blog') ?>">Blog</a></li>
 
 

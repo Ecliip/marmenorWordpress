@@ -58,6 +58,12 @@ function marmenor_adjust_queries($query) {
         $query->set('orderby', 'meta_value_num');
         $query->set('order', 'DESC');
     }
+
+    if (!is_admin() and is_page('galeria') and $query->is_main_query()) {
+        $query->set('posts_per_page', 2);
+        $query->set('post_type', 'page');
+        $query->set('post_parent', 160);
+    }
 }
 
 add_action('pre_get_posts', 'marmenor_adjust_queries');
