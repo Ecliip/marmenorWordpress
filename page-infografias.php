@@ -14,10 +14,10 @@ get_header();
             <div class="pull-left">
                 <ul class="list-inline link-list" style="display: block">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="<?php echo site_url() ?>">Inicio</a>
                     </li>
                     <li>
-                        <a href="gallery-1.html">gallery</a>
+                        <a href="<?php echo site_url('galeria') ?>">Galería</a>
                     </li>
 
                     <li>

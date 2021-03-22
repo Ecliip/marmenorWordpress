@@ -34,7 +34,7 @@ while(have_posts()) {
                 <?php  } else { ?>
                     <ul class="list-inline link-list">
                         <li>
-                            <a href="<?php echo site_url(); ?>">Home</a>
+                            <a href="<?php echo site_url() ?>">Inicio</a>
                         </li>
 
                         <li>

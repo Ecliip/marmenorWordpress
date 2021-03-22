@@ -107,7 +107,14 @@
                                 </ul>
                             </li>
 
-
+                            <li <?php if (is_page('conocenos') or wp_get_post_parent_id(0) == 160) echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo get_permalink(160) ?>"><?php echo get_the_title(160) ?></a>
+                                <ul class="dropdown">
+                                    <?php wp_list_pages(array(
+                                        'title_li' => NULL,
+                                        'child_of' => 160,
+                                    )) ?>
+                                </ul>
+                            </li>
 
                             <li  <?php if (get_post_type() === 'post') echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo site_url('blog') ?>">Blog</a></li>
 
