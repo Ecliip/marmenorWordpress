@@ -12,7 +12,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
 
                             <div class="footer-widget about-column">
-                                <figure class="footer-logo"><a href="<?php echo site_url() ?>"><img src="<?php echo get_theme_file_uri('assets/images/logo/logo2.png'); ?> " alt=""></a></figure>
+                                <figure class="footer-logo"><a href="<?php echo site_url() ?>"><img src="<?php echo get_theme_file_uri('assets/images/logo/logomarmenor.png'); ?> " alt=""></a></figure>
 
                                 <div class="text"><p>When you give to us you know your donation is making a diffe. </p> </div>
                                 <ul class="contact-info">
