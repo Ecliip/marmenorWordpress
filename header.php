@@ -64,10 +64,10 @@
 
     <section class="theme_menu stricky">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="main-logo">
-                        <a href="<?php echo site_url() ?>"><img src="<?php echo get_theme_file_uri('/assets/images/logo/logo.png'); ?>" alt=""></a>
+            <div class="row" style="display: flex; align-items: center">
+                <div class="col-md-3" style="display: flex; justify-content: center; align-items: center; width: auto">
+                    <div class="main-logo" style="width: 150px">
+                        <a href="<?php echo site_url() ?>"><img src="<?php echo get_theme_file_uri('/assets/images/logo/logomarmenor.png'); ?>" style="max-width: 100%; overflow: hidden" alt=""></a>
                     </div>
                 </div>
                 <div class="col-md-9 menu-column">
