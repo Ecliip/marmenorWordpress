@@ -142,8 +142,9 @@ get_header();
                     <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
                         <div class="item">
                             <div class="icon"><i class="icon-heart2"></i></div>
-                            <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="30">0</span>+</div>
-                            <h4 class="counter-title">Year Of Experience</h4>
+<!--                            TODO calculate dynamically-->
+                            <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="2">0</span>+</div>
+                            <h4 class="counter-title">Años de experiencia</h4>
                         </div>
 
                     </article>
@@ -152,8 +153,8 @@ get_header();
                     <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
                         <div class="item">
                             <div class="icon"><i class="icon-money"></i></div>
-                            <div class="count-outer">$<span class="count-text" data-speed="3000" data-stop="34500">0</span></div>
-                            <h4 class="counter-title">Funds Collected</h4>
+                            <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="40">0</span>+</div>
+                            <h4 class="counter-title">Actividades realizadas</h4>
                         </div>
                     </article>
 
@@ -162,7 +163,7 @@ get_header();
                         <div class="item">
                             <div class="icon"><i class="icon-people3"></i></div>
                             <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="347">0</span></div>
-                            <h4 class="counter-title">Volunteers Involved</h4>
+                            <h4 class="counter-title">Voluntarios participando</h4>
                         </div>
                     </article>
 
@@ -170,8 +171,8 @@ get_header();
                     <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
                         <div class="item">
                             <div class="icon"><i class="icon-animals"></i></div>
-                            <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="485">0</span>%</div>
-                            <h4 class="counter-title">Animals Saved</h4>
+                            <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="485">0</span>kg</div>
+                            <h4 class="counter-title">De basura recogida</h4>
                         </div>
                     </article>
                 </div>
@@ -260,10 +261,12 @@ get_header();
 
 
 <!--TODO has to do gallery section-->
-    <section class="gallery sec-padd3 style-2" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/background/8.jpg') ?> )";>
+<?php $galleryPage = get_post(160) ?>
+<!--    <section class="gallery sec-padd3 style-2" style="background-image: url(--><?php //echo get_theme_file_uri('/assets/images/background/8.jpg') ?>/* )";>*/
+    <section class="gallery sec-padd3 style-2" style="background: url(<?php echo get_the_post_thumbnail_url(160, '1920_790') ?> ) rgb(0,0,0)" ;>
         <div class="container">
             <div class="section-title">
-                <h2>Our Gallery</h2>
+                <h2><?php echo $galleryPage->post_permalink; ?></h2>
             </div>
             <ul class="post-filter style-3 list-inline float_right">
                 <li class="active" data-filter=".filter-item">
@@ -289,7 +292,7 @@ get_header();
             <div class="row filter-layout">
 
                 <article class="col-md-3 col-sm-6 col-xs-12 filter-item Wild-Animals Pollution Water">
-                    <div class="item">
+                    <div class="item" style="background: #0d3b3b96">
                         <div class="img-box">
                             <img src="<?php echo get_theme_file_uri('/assets/images/project/1.jpg') ?> " alt="">
                             <div class="overlay">
