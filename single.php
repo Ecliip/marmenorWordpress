@@ -57,18 +57,18 @@ get_header();
                         <div class="text">
                             <p><?php the_content(); ?></p>
                         </div>
-                        <div class="author">
-                            <!-- Image -->
-                            <img src="<?php echo get_theme_file_uri('assets/images/blog/author.jpg') ?>" alt="">
-                            <div class="author-comment">
-                                <div class="quote">
-                                    <i class="fa fa-quote-left"></i>
-                                </div>
-                                <p>They have got my project on time with competition seds with a highly skilled, well-organized and denouncing of pleasures experienced team of professional.</p>
-                                <h5>Dohn Gaskel</h5>
-                                <p class="a-title">Manager</p>
-                            </div>
-                        </div>
+<!--                        <div class="author">-->
+<!--                            Image -->
+<!--                            <img src="--><?php //echo get_theme_file_uri('assets/images/blog/author.jpg') ?><!--" alt="">-->
+<!--                            <div class="author-comment">-->
+<!--                                <div class="quote">-->
+<!--                                    <i class="fa fa-quote-left"></i>-->
+<!--                                </div>-->
+<!--                                <p>They have got my project on time with competition seds with a highly skilled, well-organized and denouncing of pleasures experienced team of professional.</p>-->
+<!--                                <h5>Dohn Gaskel</h5>-->
+<!--                                <p class="a-title">Manager</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
                         <div class="text">
                             <p>Know how to pursue pleasure rationally encounter consequences that are extremely painful seds or again is there anyone who loves or pursues or desires to obtain pain of itself, because seds our it pain, but because occasionally circumstances occur which toil and pain can  undertakes laborious physical exercise.</p>
                         </div>
