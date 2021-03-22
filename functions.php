@@ -61,3 +61,4 @@ function marmenor_adjust_queries($query) {
 }
 
 add_action('pre_get_posts', 'marmenor_adjust_queries');
+
