@@ -193,7 +193,7 @@ get_header();
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <figure class="img-box">
-                        <img src="<?php echo get_theme_file_uri('/assets/images/resource/8.jpg') ?> " alt="">
+                        <img src="<?php echo get_theme_file_uri('/assets/images/resource/water.jpg') ?> " alt="">
                     </figure>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12">
