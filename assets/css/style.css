@@ -4154,6 +4154,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 .blog-section {
   position: relative;
+    background: #05333e;
     background: linear-gradient(to bottom, #0c5061,#05333e);
 }
 .default-blog-news {

@@ -105,202 +105,57 @@ get_header();
                 </div>
                 <div class="col-md-3 col-sm-12">
                     <div class="blog-sidebar sec-padd">
-                        <div class="sidebar_search">
-                            <form action="#">
-                                <input type="text" placeholder="Search....">
-                                <button class="tran3s color1_bg"><i class="fa fa-search" aria-hidden="true"></i></button>
-                            </form>
-                        </div>
+<!--                        <div class="sidebar_search">-->
+<!--                            <form action="#">-->
+<!--                                <input type="text" placeholder="Search....">-->
+<!--                                <button class="tran3s color1_bg"><i class="fa fa-search" aria-hidden="true"></i></button>-->
+<!--                            </form>-->
+<!--                        </div>-->
+
+                        <?php
+                            $postQuery = new WP_Query(array(
+                                'post_type' => 'post',
+                                'post_per_page' => 3,
+                            ));
+
+                            if ($postQuery->have_posts()) {
+
+
+                        ?>
+
 
                         <div class="popular_news">
                             <div class="section-title style-2">
-                                <h4>recent post</h4>
+                                <h4>Últimas publicaciones</h4>
                             </div>
 
                             <div class="popular-post">
-                                <div class="item">
-                                    <div class="post-thumb"><a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/thumb3.jpg') ?>" alt=""></a></div>
-                                    <a href="blog-details.html"><h4>Change the lives of 40 <br> disabled people </h4></a>
-                                    <div class="post-info"><i class="fa fa-calendar"></i>October 21, 2016 </div>
-                                </div>
-                                <div class="item">
-                                    <div class="post-thumb"><a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/thumb4.jpg') ?>" alt=""></a></div>
-                                    <a href="blog-details.html"><h4>Gorantalo earthquake <br> Relief Project </h4></a>
-                                    <div class="post-info"><i class="fa fa-calendar"></i>January 14, 2016</div>
-                                </div>
-                                <div class="item">
-                                    <div class="post-thumb"><a href="blog-details.html"><img src="<?php echo get_theme_file_uri('/assets/images/blog/thumb5.jpg') ?>" alt=""></a></div>
-                                    <a href="blog-details.html"><h4>Used equipments can <br> treat poor patients</h4></a>
-                                    <div class="post-info"><i class="fa fa-calendar"></i>December 17, 2015 </div>
-                                </div>
+                                <?php
+                                while ($postQuery->have_posts()) {
+                                    $postQuery->the_post();
+                                    ?>
+
+                                    <div class="item" style="display: flex; padding: 0 5px 15px; justify-content: space-between">
+                                        <div class="post-thumb" style="position: unset; margin-right: 15px; display: block; width: 75px; height: 75px;"><a href="<?php the_permalink(); ?>"><img style="max-width: 100%" src="<?php the_post_thumbnail_url('thumbnail'); ?>" alt=""></a></div>
+                                        <div style="flex: 1 1;">
+                                            <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
+                                            <div class="post-info"><i class="fa fa-calendar"></i><?php the_time('d M, Y') ?></div>
+                                        </div>
+                                    </div>
+
+                                 <?php    } wp_reset_postdata(); // end while ?>
                             </div>
                         </div>
-
-                        <div class="sidebar-archive">
-                            <div class="section-title style-2">
-                                <h4>Blog Archives</h4>
-                            </div>
-                            <select class="text-capitalize selectpicker" name="form_subject" data-style="g-select" data-width="100%">
-                                <option value="0" selected="">September</option>
-                                <option value="1">August</option>
-                                <option value="2">November</option>
-                                <option value="3">December</option>
-                            </select>
-                        </div>
-
-                        <div class="sidebar-intsgram">
-                            <div class="section-title style-2">
-                                <h4>Instagram</h4>
-                            </div>
-                            <ul class="list-inline clearfix">
-                                <li>
-                                    <div class="inner-box">
-                                        <img src="<?php echo get_theme_file_uri('/assets/images/blog/i1.jpg') ?>" alt="Awesome Image">
-                                        <div class="overlay">
-                                            <div class="box">
-                                                <div class="content">
-                                                    <a href="#"><i class="fa fa-link"></i></a>
-                                                </div><!-- /.content -->
-                                            </div><!-- /.box -->
-                                        </div><!-- /.overlay -->
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="inner-box">
-                                        <img src="<?php echo get_theme_file_uri('/assets/images/blog/i2.jpg') ?>" alt="Awesome Image">
-                                        <div class="overlay">
-                                            <div class="box">
-                                                <div class="content">
-                                                    <a href="#"><i class="fa fa-link"></i></a>
-                                                </div><!-- /.content -->
-                                            </div><!-- /.box -->
-                                        </div><!-- /.overlay -->
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="inner-box">
-                                        <img src="<?php echo get_theme_file_uri('/assets/images/blog/i3.jpg') ?>" alt="Awesome Image">
-                                        <div class="overlay">
-                                            <div class="box">
-                                                <div class="content">
-                                                    <a href="#"><i class="fa fa-link"></i></a>
-                                                </div><!-- /.content -->
-                                            </div><!-- /.box -->
-                                        </div><!-- /.overlay -->
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="inner-box">
-                                        <img src="<?php echo get_theme_file_uri('/assets/images/blog/i4.jpg') ?>" alt="Awesome Image">
-                                        <div class="overlay">
-                                            <div class="box">
-                                                <div class="content">
-                                                    <a href="#"><i class="fa fa-link"></i></a>
-                                                </div><!-- /.content -->
-                                            </div><!-- /.box -->
-                                        </div><!-- /.overlay -->
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="inner-box">
-                                        <img src="<?php echo get_theme_file_uri('/assets/images/blog/i5.jpg') ?>" alt="Awesome Image">
-                                        <div class="overlay">
-                                            <div class="box">
-                                                <div class="content">
-                                                    <a href="#"><i class="fa fa-link"></i></a>
-                                                </div><!-- /.content -->
-                                            </div><!-- /.box -->
-                                        </div><!-- /.overlay -->
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="inner-box">
-                                        <img src="<?php echo get_theme_file_uri('/assets/images/blog/i6.jpg') ?>" alt="Awesome Image">
-                                        <div class="overlay">
-                                            <div class="box">
-                                                <div class="content">
-                                                    <a href="#"><i class="fa fa-link"></i></a>
-                                                </div><!-- /.content -->
-                                            </div><!-- /.box -->
-                                        </div><!-- /.overlay -->
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="inner-box">
-                                        <img src="<?php echo get_theme_file_uri('/assets/images/blog/i7.jpg') ?>" alt="Awesome Image">
-                                        <div class="overlay">
-                                            <div class="box">
-                                                <div class="content">
-                                                    <a href="#"><i class="fa fa-link"></i></a>
-                                                </div><!-- /.content -->
-                                            </div><!-- /.box -->
-                                        </div><!-- /.overlay -->
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="inner-box">
-                                        <img src="<?php echo get_theme_file_uri('/assets/images/blog/i8.jpg') ?>" alt="Awesome Image">
-                                        <div class="overlay">
-                                            <div class="box">
-                                                <div class="content">
-                                                    <a href="#"><i class="fa fa-link"></i></a>
-                                                </div><!-- /.content -->
-                                            </div><!-- /.box -->
-                                        </div><!-- /.overlay -->
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="inner-box">
-                                        <img src="<?php echo get_theme_file_uri('/assets/images/blog/i9.jpg') ?>" alt="Awesome Image">
-                                        <div class="overlay">
-                                            <div class="box">
-                                                <div class="content">
-                                                    <a href="#"><i class="fa fa-link"></i></a>
-                                                </div><!-- /.content -->
-                                            </div><!-- /.box -->
-                                        </div><!-- /.overlay -->
-                                    </div>
-                                </li>
+                               <?php } //end if ?>
 
 
-                            </ul>
-                        </div>
 
 
                         <div class="feed-area">
                             <div class="section-title style-2">
                                 <h4>Follow On Facebook</h4>
                             </div>
-                            <div class="facebook-feed">
-                                <figure class="img-box">
-                                    <img src="<?php echo get_theme_file_uri('/assets/images/blog/feedbg.jpg') ?>" alt="">
-                                    <div class="overlay">
-                                        <div class="inner-box">
-                                            <div class="logo"><img src="<?php echo get_theme_file_uri('/assets/images/logo/1.jpg') ?>" alt=""></div>
-                                            <h4>The Ecogreen</h4>
-                                            <div class="like">890 likes</div>
-                                        </div>
-                                        <div class="link clearfix">
-                                            <a href="#" class="float_left"><i class="fa fa-facebook fb-icon"></i>Like page</a>
-                                            <a href="contact.html" class="float_right"><i class="fa fa-envelope mail"></i>contact us</a>
-                                        </div>
-                                    </div>
-                                </figure>
-                                <div class="like-people">
-                                    <p>Be the first of your friends to like this</p>
-                                    <ul class="list_inline">
-                                        <li><a href="#"><img src="<?php echo get_theme_file_uri('/assets/images/blog/p1.jpg') ?>" alt=""></a></li>
-                                        <li><a href="#"><img src="<?php echo get_theme_file_uri('/assets/images/blog/p1.jpg') ?>" alt=""></a></li>
-                                        <li><a href="#"><img src="<?php echo get_theme_file_uri('/assets/images/blog/p1.jpg') ?>" alt=""></a></li>
-                                        <li><a href="#"><img src="<?php echo get_theme_file_uri('/assets/images/blog/p1.jpg') ?>" alt=""></a></li>
-                                        <li><a href="#"><img src="<?php echo get_theme_file_uri('/assets/images/blog/p1.jpg') ?>" alt=""></a></li>
-                                        <li><a href="#"><img src="<?php echo get_theme_file_uri('/assets/images/blog/p1.jpg') ?>" alt=""></a></li>
-                                        <li><a href="#"><img src="<?php echo get_theme_file_uri('/assets/images/blog/p1.jpg') ?>" alt=""></a></li>
-                                        <li><a href="#"><img src="<?php echo get_theme_file_uri('/assets/images/blog/p1.jpg') ?>" alt=""></a></li>
-                                    </ul>
-                                </div>
 
-                            </div>
                         </div>
 
                         <div class="sidebar_tags wow fadeInUp">
