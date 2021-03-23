@@ -99,6 +99,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .boxed_wrapper {
     width: 100%;
     background: #2E4F57;
+    background: linear-gradient(177deg, #467a86, #05333e);
     overflow-x: hidden;
 }
 .sec-padd {
@@ -169,21 +170,23 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 .thm-btn {
   position: relative;
-  background: #71B1BD;
+  background: #2594a7;
   font-size: 14px;
   line-height: 48px;
   border-radius: 25px;
   color: #ffffff;
   border: 1px solid #71B1BD;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
   display: inline-block;
   padding: 0 38px;
   transition: all .5s cubic-bezier(0.4, 0, 1, 1);
 }
 .thm-btn:hover {
   background: transparent;
+  background: rgba(0, 40, 43, .5);
   color: #71B1BD;
+    font-weight: 900;
   transition: all .5s cubic-bezier(0.4, 0, 1, 1);
 }
 
@@ -980,7 +983,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   position: relative;
   line-height: 48px;
   z-index: 999;
-  background: #2E4F57;
+  background: #112024;
   padding: 6px 0;
 }
 
@@ -5108,6 +5111,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .main-footer {
   position:relative;
   background:#2E4F57;
+  background:#112024;
   padding: 25px 0 80px;
 }
 
