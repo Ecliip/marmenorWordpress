@@ -137,10 +137,10 @@ get_header();
     <section class="call-out">
         <div class="container">
             <div class="float_left">
-                <h4>Join Our Mission to Improve a Child's Feature, Pet’s Life and Our Planet.</h4>
+                <h4>¿Qué sería la juventud sin el mar? ¡Conservámoslo para las generaciones futuras!</h4>
             </div>
             <div class="float_right">
-                <a href="#" class="thm-btn style-3">Get Involeved</a>
+                <a href="<?php echo site_url('contactos'); ?>" class="thm-btn style-3">Participar</a>
             </div>
 
         </div>
