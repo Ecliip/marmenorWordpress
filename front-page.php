@@ -485,7 +485,7 @@ get_header();
                                     </div>
 
                                     <ul class="post-meta list_inline" style="background: rgba(11,11,11, .6);  ">
-                                        <li><i class="fa fa-clock-o"></i>Empieza a las: <span style="font-size: 25px; font-weight: 600; color: whitesmoke"><?php echo get_field('hora_de_evento'); ?></span></li> |&nbsp;&nbsp;&nbsp;
+                                        <li><i class="fa fa-clock-o"></i>Empieza a las: <span style="font-size: 25px; font-weight: 600; color: whitesmoke"><?php echo get_field('hora_de_evento'); ?></span></li>
                                         <li><i class="fa fa-map-marker"></i>Lugar: <span style="font-size: 25px; font-weight: 600; color: whitesmoke"><?php echo $eventLocation; ?></span></li>
                                     </ul>
                                 </div>

@@ -59,11 +59,21 @@ while(have_posts()) {
             </figure>
             <div class="lower-content">
                 <?php
-                    $eventDate = new DateTime(get_field('fecha_de_evento'));
+                $eventDate =  new DateTime(get_field('fecha_de_evento'));
+                $eventHour =  new DateTime(get_field('hora_de_evento'));
+                $eventLocation = get_field('sitio_de_evento');
                 ?>
 
 
-                <div class="date"><?php echo $eventDate->format('d/m/Y'); ?></div>
+<!--                <div class="date">-->
+
+                    <ul class="post-meta list_inline date" style="background: rgba(11,11,11, .6);  display: flex; flex-direction: column; color: snow">
+                        <li style="margin-bottom: 1rem"><i class="fa fa-calendar"></i>&nbspEmpieza a las: <span style="font-size: 25px; font-weight: 600; color: whitesmoke"><?php echo $eventDate->format('d/M/y'); ?></span></li>
+                        <li style="margin-bottom: 1rem"><i class="fa fa-clock-o"></i>&nbspEmpieza a las: <span style="font-size: 25px; font-weight: 600; color: whitesmoke"><?php echo get_field('hora_de_evento'); ?></span></li>
+                        <li style="margin-bottom: 1rem"><i class="fa fa-map-marker"></i>&nbspLugar: <span style="font-size: 25px; font-weight: 600; color: whitesmoke"><?php echo $eventLocation; ?></span></li>
+                    </ul>
+
+<!--                </div>-->
 <!--                TODO figure out how to add custom categories and taxonomies-->
 
                 <h4><?php the_title(); ?></h4>
@@ -75,6 +85,11 @@ while(have_posts()) {
 <!--                    --><?php //the_post_thumbnail();?>
 <!--                </figure>-->
                 <p> <?php the_content(); ?></p>
+                <ul class="post-meta list_inline" style="background: rgba(11,11,11, .6);  display: flex; flex-direction: column; color: snow; align-items: center">
+                    <li style="margin-bottom: 1rem"><i class="fa fa-calendar"></i>&nbspEmpieza a las: <span style="font-size: 25px; font-weight: 600; color: whitesmoke"><?php echo $eventDate->format('d/M/y'); ?></span></li>
+                    <li style="margin-bottom: 1rem"><i class="fa fa-clock-o"></i>&nbspEmpieza a las: <span style="font-size: 25px; font-weight: 600; color: whitesmoke"><?php echo get_field('hora_de_evento'); ?></span></li>
+                    <li style="margin-bottom: 1rem"><i class="fa fa-map-marker"></i>&nbspLugar: <span style="font-size: 25px; font-weight: 600; color: whitesmoke"><?php echo $eventLocation; ?></span></li>
+                </ul>
             </div>
             <div class="author">
                 <!-- Image -->
