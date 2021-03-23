@@ -6,7 +6,7 @@ while(have_posts()) {
     the_post();
     ?>
 
-    <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php the_post_thumbnail_url('1920_280') ?>) center ;">
+    <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php the_post_thumbnail_url('1920_280') ?>) center; background-size: cover">
         <div class="container">
             <div class="box">
                 <h1> <?php the_title(); ?></h1>
