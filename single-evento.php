@@ -105,7 +105,7 @@ while(have_posts()) {
                         <li><a href="#">Energy,</a></li>
                     </ul>
                     <div class="social-box pull-right">
-                        <span>Share <i class="fa fa-share-alt"></i></span>
+                        <span>Compartir <i class="fa fa-share-alt"></i></span>
                         <ul class="list-inline social">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>

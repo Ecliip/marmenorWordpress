@@ -700,7 +700,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   line-height: 55px;
   border:1px solid rgba(229, 229, 229, 0.57);
   text-align: center;
-  color: #252525;
+  color: #ff8e00;
   font-size: 18px;
   border-radius: 50%;
 }
@@ -742,7 +742,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 
 .page_pagination2 .icon-holder a i {
-  color: #252525;
+  color: #ff8e00;
   font-size: 24px;
   position: relative;
   top: 4px;
@@ -2540,7 +2540,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .single-cause .share .social-box span {
-  color: #252525;
+  color: #ff8e00;
   margin-right: 13px;
   font-size: 18px;
   font-family: 'Roboto Slab', serif;
@@ -3125,7 +3125,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 .single-gallery .project-info-list li .text-holder {}
 .single-gallery .project-info-list li .text-holder h5 {
-  color: #252525;
+  color: #ff8e00;
   font-size: 16px;
   font-weight: 400;
   text-transform: capitalize;
@@ -4805,7 +4805,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .share-box .social-box span {
-  color: #252525;
+  color: #ff8e00;
   margin-right: 13px;
   font-size: 18px;
   font-family: 'Roboto Slab', serif;
@@ -4887,7 +4887,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   font-size:18px;
   text-transform:capitalize;
   font-weight: 600;
-  color: #252525;
+  color: #ff8e00;
 }
 .post-author ul li{
   margin: 0;
@@ -5897,7 +5897,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   border: 1px solid #c5c5c5;
   background: #fff none repeat scroll 0 0;
   border: 1px solid #777;
-  color: #252525;
+  color: #ff8e00;
   font-family: "Roboto Slab",sans-serif;
   font-size: 14px;
   border-radius: 0px;
@@ -5952,7 +5952,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   background: #fff none repeat scroll 0 0;
   border: 1px solid #ddd;
   border-radius: 3px;
-  color: #252525;
+  color: #ff8e00;
   display: block;
   font-size: 12px;
   font-weight: 400;
@@ -6145,7 +6145,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .single-event .share .social-box span {
-  color: #252525;
+  color: #ff8e00;
   margin-right: 13px;
   font-size: 18px;
   font-family: 'Roboto Slab', serif;
@@ -6756,7 +6756,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   content: "";
 }
 .checkout-area .coupon h5 {
-  color: #252525;
+  color: #ff8e00;
   font-size: 16px;
   font-weight: 300;  
 }
@@ -6920,7 +6920,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   border: 1px solid #ccc;
   border-radius: 0 !important;
   box-shadow: none;
-  color: #252525;
+  color: #ff8e00;
   display: block;
   font-size: 18px;
   font-weight: 400;
@@ -7207,7 +7207,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .single-shop-item .content-box h4 a{
-  color: #252525;
+  color: #ff8e00;
 }
 
 .single-shop-item .content-box .rating{
@@ -7424,7 +7424,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   background: #71B1BD;
 }
 .single-sidebar.price-ranger .ui-slider .ui-slider-range {
-  background: #252525;
+  background: #ff8e00;
 }
 .single-sidebar.price-ranger .ui-slider-horizontal .ui-slider-handle {
   top: -5px;
@@ -7921,7 +7921,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   font-size: 26px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #252525;
+  color: #ff8e00;
 }
 
 .tab-title-h4 h4 {
