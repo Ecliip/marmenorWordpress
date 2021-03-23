@@ -347,7 +347,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
     padding: 12px 30px;
     margin: 0px;
     padding-right: 50px;
-    border: 1px solid #f4f4f4;
+    border: 1px solid #50767d;
 }
 
 .accordion .acc-btn.active {
@@ -542,7 +542,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   height: 50px;
   font-size:16px;
   box-shadow: none;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   padding:12px 15px;
   background: #2E4F57;
   border-radius: 0px;
@@ -555,7 +555,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   height: 100px;
 }
 .default-form .bootstrap-select {
-    border: 1px solid #f4f4f4;
+    border: 1px solid #50767d;
     background: #2E4F57;
     color: #a2a2a2;
     padding: 10px 0;
@@ -716,8 +716,8 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   padding-bottom: 22px;
   padding-top: 22px;
   margin: 0;
-  border-top: 1px solid #f4f4f4;
-  border-bottom: 1px solid #f4f4f4;
+  border-top: 1px solid #50767d;
+  border-bottom: 1px solid #50767d;
   margin-top: 30px;
 }
 .page_pagination2 .button a {
@@ -867,7 +867,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
     font-family: 'Roboto Slab', serif;
     font-weight: normal;
     background: #2E4F57;
-    border: 1px solid #f4f4f4;
+    border: 1px solid #50767d;
     color: #000;
     padding: 8px 27px;
     text-align: center;
@@ -1191,7 +1191,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   color: white;
   font-weight: 700;
   text-transform: capitalize;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #50767d;
   transition: .5s ease-in-out;
   font-size: 14px;
 }
@@ -1239,7 +1239,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
     color: #848484;
     transition: .5s ease-in-out;
     font-size: 14px;
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid #50767d;
     width: 100%;
 }
 
@@ -1566,7 +1566,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .our-mission .mission-bg {
   background: #2E4F57;
   padding: 75px 0 0;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
 }
 .our-mission .default-title h3 {
   line-height: 34px;
@@ -1593,7 +1593,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   top: 0;
   right: 0;
   width: 1px;
-  background: #f4f4f4;
+  background: #50767d;
   transition: .5s ease;
 }
 .our-mission .column:last-child:before {
@@ -1605,7 +1605,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   height: 90px;
   width: 90px;
   text-align: center;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   border-radius: 50%;
   color: #71B1BD;
   font-size: 40px;
@@ -1626,7 +1626,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   left: 0;
   right: 0;
   height: 25px;
-  background: #f4f4f4;
+  background: #50767d;
   transition: .5s ease;
 }
 .our-mission .column:hover .icon-box:before {
@@ -1661,7 +1661,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 .service .service-item {
   margin-bottom: 30px;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   padding: 28px 14px 25px;
   position: relative;
 }
@@ -1702,7 +1702,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .service .service-item .icon-box:before {
   position: absolute;
   content: "";
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   height: 100%;
   width: 100%;
   border-radius: 5px;
@@ -1888,7 +1888,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   position:relative;
   padding: 34px;
   padding-bottom: 0px;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
 }
 
 .tabs-style-one .tab .text-content{
@@ -2012,7 +2012,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   position: relative;
   padding: 20px;
   padding-bottom: 30px;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   border-top: 0px;
 }
 .urgent-cause2 .content h4 {
@@ -2082,7 +2082,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   border-radius: 50%;
   width: 45px;
   line-height: 41px;
-  border: 2px solid #f4f4f4;
+  border: 2px solid #50767d;
   font-weight: 700;
   text-align: center;
   margin-left: 1px;
@@ -2190,7 +2190,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   width: 50000%;
   background: #2E4F57;
   top: 0;
-  border-right: 1px solid #f4f4f4;
+  border-right: 1px solid #50767d;
   bottom: 0;
   right: 10px;
 }
@@ -2210,7 +2210,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   position: relative;
   float: left;
   width: 55%;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   padding: 25px 30px 27px;
 }
 
@@ -2276,7 +2276,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   position: relative;
   padding: 20px;
   padding-bottom: 30px;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   border-top: 0px;
 }
 .urgent-cause .content h4 {
@@ -2286,7 +2286,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   font-family: 'Roboto Slab', serif;
   color: #fff;
   font-size: 16px;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #50767d;
   padding-bottom: 16px;
   margin-bottom: 20px;
 }
@@ -2349,7 +2349,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   border-radius: 50%;
   width: 45px;
   line-height: 41px;
-  border: 2px solid #f4f4f4;
+  border: 2px solid #50767d;
   font-weight: 700;
   text-align: center;
   margin-left: 1px;
@@ -2519,8 +2519,8 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   padding-bottom: 8px;
   margin-top: 30px;
   margin-bottom: 70px;
-  border-top: 1px solid #f4f4f4;
-  border-bottom: 1px solid #f4f4f4;
+  border-top: 1px solid #50767d;
+  border-bottom: 1px solid #50767d;
 }
 .single-cause .share .tag-box span {
   font-size: 14px;
@@ -2783,7 +2783,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 .why-chooseus .item {
   padding: 30px 18px 24px;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   margin-bottom: 30px;
   transition: .5s ease;
 }
@@ -2981,7 +2981,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 .gallery.massonary-page .content {
   padding: 20px;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   border-top: 0px;
   padding-top: 0px;
   overflow: hidden;
@@ -3037,7 +3037,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .post-filter.style-2 li span {
   background: transparent;
   color: #fff;
-  border-color: #f4f4f4;
+  border-color: #50767d;
 }
 .post-filter li:hover span,
 .post-filter li.active span {
@@ -3376,7 +3376,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
     border-radius: 50%;
     width: 45px;
     line-height: 41px;
-    border: 2px solid #f4f4f4;
+    border: 2px solid #50767d;
     font-weight: 700;
     text-align: center;
     margin-left: 1px;
@@ -3408,7 +3408,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   transition: .5s ease-in-out;
   margin-bottom: 50px;
   overflow: hidden;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
 }
 
 .event-style2 .item .img-column {
@@ -3486,7 +3486,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .event-style2 .item .post-meta{
   color: #71B1BD;
   font-size: 15px;
-  border-top: 1px solid #f4f4f4;
+  border-top: 1px solid #50767d;
   padding: 17px 19px;
 }
 .event-style2 .item .post-meta li {
@@ -3591,7 +3591,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
     border-radius: 50%;
     width: 45px;
     line-height: 41px;
-    border: 2px solid #f4f4f4;
+    border: 2px solid #50767d;
     font-weight: 700;
     text-align: center;
     margin-left: 1px;
@@ -3621,7 +3621,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   margin-bottom: 50px;
   max-height: 340px;
   overflow: hidden;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
 }
 
 .event-section .item .img-column {
@@ -3795,7 +3795,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
     border-radius: 50%;
     width: 45px;
     line-height: 41px;
-    border: 2px solid #f4f4f4;
+    border: 2px solid #50767d;
     font-weight: 700;
     text-align: center;
     margin-left: 1px;
@@ -3846,7 +3846,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .event-section.style-2 .item .lower-content .text p {
     margin-bottom: 25px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid #50767d;
 }
 
 .event-section.style-2 .overlay2 {
@@ -3946,7 +3946,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .event-section.style-3 .item .lower-content .text p {
     margin-bottom: 23px;
     padding-bottom: 22px;
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid #50767d;
 }
 
 
@@ -4094,7 +4094,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 .testimonial2 .item {
   position: relative;
-  border: 2px solid #f4f4f4;
+  border: 2px solid #50767d;
   margin-bottom: 60px;
 }
 
@@ -4113,7 +4113,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   position: relative;
   max-width: 190px;
   margin: 22px auto 20px;
-  border-top: 1px solid #f4f4f4;
+  border-top: 1px solid #50767d;
   padding-top: 18px;
 }
  
@@ -4167,7 +4167,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .default-blog-news .lower-content{
   position:relative;
   padding: 30px 0px 20px;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #50767d;
 }
 
 .default-blog-news .lower-content:before {
@@ -4328,7 +4328,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .blog-single-post .post-area,
 .blog-large .post-area {
   padding: 80px 62px 80px 0px;
-  border-right: 1px solid #f4f4f4;
+  border-right: 1px solid #50767d;
   margin-right: 38px;
 }
 
@@ -4785,7 +4785,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   padding-top: 20px;
   margin-top: 35px;
   margin-bottom: 50px;
-  border-top: 1px solid #f4f4f4;
+  border-top: 1px solid #50767d;
 }
 .share-box .tag-box span {
   font-size: 14px;
@@ -4863,7 +4863,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   position:relative;
   padding: 33px 35px 30px 15px;
   min-height:160px;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   text-align: center;
 }
 
@@ -4919,7 +4919,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .single-comment .text-holder {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   padding: 20px;
 }
 .single-comment .text-holder .top {
@@ -5083,7 +5083,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
     border-radius: 50%;
     width: 45px;
     line-height: 41px;
-    border: 2px solid #f4f4f4;
+    border: 2px solid #50767d;
     font-weight: 700;
     text-align: center;
     margin-left: 1px;
@@ -5362,7 +5362,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .breadcumb-wrapper {
   background: #2E4F57;
   padding: 19px 0;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #50767d;
 }
 .breadcumb-wrapper ul,
 .breadcumb-wrapper li {
@@ -5432,7 +5432,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .our-mission2 h3 {
   background: #2E4F57;
   color: #71B1BD;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   width: 65px;
   text-align: center;
   margin: 0 auto;
@@ -5582,7 +5582,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .single-team-member .author-info {
   position: relative;
   overflow: hidden;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   padding: 15px 20px;
 }
 
@@ -5597,7 +5597,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 }
 
-.single-team-member ul {border-top: 1px solid #f4f4f4;padding-top: 10px;}
+.single-team-member ul {border-top: 1px solid #50767d;padding-top: 10px;}
 .single-team-member ul li {color: #848484;margin: 4px 0;}
 .single-team-member ul li a {color: #848484;}
 .single-team-member .author-info ul li i {
@@ -5634,7 +5634,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 .faq-section .default-form-area {
     background: #2E4F57;
-    border: 1px solid #f4f4f4;
+    border: 1px solid #50767d;
     padding: 30px 30px 10px;
     margin-bottom: 50px;
 }
@@ -5685,7 +5685,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 .faq-section2 .default-form-area {
     background: #2E4F57;
-    border: 1px solid #f4f4f4;
+    border: 1px solid #50767d;
     padding: 30px 30px 10px;
     margin-bottom: 50px;
 }
@@ -5759,7 +5759,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
     margin: 25px 0 0;
 }
 .get-touch-area .single-item {
-    border: 1px solid #f4f4f4;
+    border: 1px solid #50767d;
     display: block;
     padding: 39px 20px 31px;
 }
@@ -5780,7 +5780,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .get-touch-area .single-item .text-holder .border {
     height: 1px;
     width: 60px;
-    background: #f4f4f4;
+    background: #50767d;
     display: inline-block;
 }
 .get-touch-area .single-item .text-holder p {
@@ -5804,7 +5804,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 
 .contact-form-area .default-form-area {
-    border: 2px solid #f4f4f4;
+    border: 2px solid #50767d;
     padding: 28px 28px 0;
     margin-bottom: 50px;
 }
@@ -6006,7 +6006,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   width: 12px;
   border-radius: 50%;
   background: #2E4F57;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   left: 0;
   top: 5px;
 }
@@ -6045,12 +6045,12 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 /*============ even-single ============*/
 
-.single-event {border-right: 1px solid #f4f4f4;margin-right: 37px;padding-right: 62px;}
+.single-event {border-right: 1px solid #50767d;margin-right: 37px;padding-right: 62px;}
 
 .single-event .content {
   padding: 20px 30px 40px;
-  border-left: 1px solid #f4f4f4;
-  border-right: 1px solid #f4f4f4;
+  border-left: 1px solid #50767d;
+  border-right: 1px solid #50767d;
 }
 
 .single-event .section-title {
@@ -6124,8 +6124,8 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   background: #2E4F57;
   padding: 20px 30px 8px;
   margin-bottom: 70px;
-  border-top: 1px solid #f4f4f4;
-  border-bottom: 1px solid #f4f4f4;
+  border-top: 1px solid #50767d;
+  border-bottom: 1px solid #50767d;
 }
 .single-event .share .tag-box span {
   font-size: 14px;
@@ -6264,7 +6264,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   width: 12px;
   border-radius: 50%;
   background: #2E4F57;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   left: 0;
   top: 5px;
 }
@@ -6536,7 +6536,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 .cart-section .totals-table {
   position: relative;
-  border: 2px solid #f4f4f4;
+  border: 2px solid #50767d;
 }
 
 .cart-section .totals-table .col {
@@ -6552,14 +6552,14 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .cart-section .totals-table .col-title {
   font-size: 16px;
   color: lightgrey;
-  border-right: 1px solid #f4f4f4;
+  border-right: 1px solid #50767d;
   font-weight: 400;
   font-family: "Roboto Slab", sans-serif;
 }
 
 .cart-section .totals-table li {
   position: relative;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #50767d;
 }
 
 .cart-section .totals-table li:last-child {
@@ -6638,7 +6638,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   border-radius: 67px;
   height: 50px;
   overflow: hidden;
-  border: 2px solid #f4f4f4;
+  border: 2px solid #50767d;
 }
 
 .cart-section .thm-btn.update-cart {
@@ -6665,7 +6665,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .cart-section .estimate-form input {
-  border-color: #f4f4f4;
+  border-color: #50767d;
 }
 
 .cart-section .estimate-form .select-box .btn-group.bootstrap-select .btn {
@@ -7180,7 +7180,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 .single-shop-item .content-box {
   position:relative;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   border-top: 0px;
 }
 
@@ -7727,7 +7727,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .product-tab-box {
   padding: 30px;
   padding-top: 0;
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
 }
 .product-tab-box .tab-menu {
   border-bottom: 1px solid #2E4F57;
@@ -7778,7 +7778,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .single-review-box .text-holder {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   padding: 20px;
 }
 .single-review-box .text-holder .top {
@@ -8347,7 +8347,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .testimonials-section2 .slide-item {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #50767d;
   padding: 30px 20px 25px;
   transition: .5s ease;
   margin-bottom: 15px;
@@ -8361,7 +8361,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 article.slide-item.center {}
 
 .testimonials-section2 .slide-text span {
-  color: #f4f4f4;
+  color: #50767d;
   font-size: 40px;
   transition: .5s ease;
 }
