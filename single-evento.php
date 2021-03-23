@@ -66,9 +66,6 @@ while(have_posts()) {
                 <div class="date"><?php echo $eventDate->format('d/m/Y'); ?></div>
 <!--                TODO figure out how to add custom categories and taxonomies-->
 
-
-                <div class="post-meta">Categorías:</div>
-                <div class="post-meta">Categorías: <?php echo get_the_ID(); ?></div>
                 <h4><?php the_title(); ?></h4>
             </div>
         </article>
