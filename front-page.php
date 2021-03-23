@@ -461,7 +461,10 @@ get_header();
                     while($homepageEvents->have_posts()) {
                         $homepageEvents->the_post();
 
-                        $eventDate =  new DateTime(get_field('fecha_de_evento'))
+                        $eventDate =  new DateTime(get_field('fecha_de_evento'));
+                        $eventHour =  new DateTime(get_field('hora_de_evento'));
+                        $eventLocation = get_field('sitio_de_evento');
+
                         ?>
                         <article class="col-md-6 col-sm-12 col-xs-12">
                             <div class="item style-1" style="background: rgba(0,110,120, .5)">
@@ -469,7 +472,7 @@ get_header();
                                     <figure class="img-holder">
 <!--                                        <a href="--><?php //the_permalink(); ?><!--"><img src="--><?php //echo get_theme_file_uri('/assets/images/resource/1.jpg') ?><!-- " alt=""></a>-->
                                         <a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url('570_300'); ?> " alt=""></a>
-                                        <div class="date"><?php echo $eventDate->format('d'); ?> <br><span><?php echo $eventDate->format('m'); ?></span></div>
+                                        <div class="date"><?php echo $eventDate->format('d'); ?> <br><span><?php echo $eventDate->format('M'); ?></span></div>
                                     </figure>
                                 </div>
                                 <div class="text-column">
@@ -480,9 +483,10 @@ get_header();
                                             <p><?php echo wp_trim_words(get_the_content(), 18) ?></p>
                                         </div>
                                     </div>
-                                    <ul class="post-meta list_inline">
-                                        <li><i class="fa fa-clock-o"></i>Started On: 11.00am </li> |&nbsp;&nbsp;&nbsp;
-                                        <li><i class="fa fa-map-marker"></i> New Grand Street, California</li>
+
+                                    <ul class="post-meta list_inline" style="background: rgba(11,11,11, .6);  ">
+                                        <li><i class="fa fa-clock-o"></i>Empieza a las: <span style="font-size: 25px; font-weight: 600; color: whitesmoke"><?php echo get_field('hora_de_evento'); ?></span></li> |&nbsp;&nbsp;&nbsp;
+                                        <li><i class="fa fa-map-marker"></i>Lugar: <span style="font-size: 25px; font-weight: 600; color: whitesmoke"><?php echo $eventLocation; ?></span></li>
                                     </ul>
                                 </div>
                             </div>
