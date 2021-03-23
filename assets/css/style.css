@@ -4199,7 +4199,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .default-blog-news .date {
   position: absolute;
   left: 0px;
-  top: -200px;
+  top: -100px;
   background: #71B1BD;
   line-height: 20px;
   padding: 5px 15px;
