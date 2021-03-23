@@ -266,7 +266,7 @@ get_header();
     <section class="gallery sec-padd3 style-2" style="background: url(<?php echo get_the_post_thumbnail_url(160, '1920_790') ?> ) rgb(0,0,0)" ;>
         <div class="container">
             <div class="section-title">
-                <h2><?php echo $galleryPage->post_permalink; ?></h2>
+                <h2 style="display: inline-block; background: rgba(0,0,0, .5); padding: 1rem;">Especies del Mar Menor</h2>
             </div>
 <!--            <ul class="post-filter style-3 list-inline float_right">-->
 <!--                <li class="active" data-filter=".filter-item">-->
@@ -339,50 +339,57 @@ get_header();
     </section>
 
 
-    <!--            TODO do WP loop with events here-->
+<?php
+$espArgs = array(
+    'post_status' => 'inherit',
+    'posts_per_page' => 6,
+    'post_type' => 'attachment',
+);
+$espArgs['tax_query'] = array(
+    array(
+        'taxonomy' => 'categoria-galeria',
+        'terms' => array( 'infografias' ),
+        'field' => 'slug',
+    ),
+);
+$especiesQuery =  new WP_Query( $espArgs );
+
+if ($especiesQuery->have_posts()) {
+        ?>
+
+
     <section class="urgent-cause2 sec-padd">
         <div class="container">
             <div class="section-title">
-                <h2>Campañas actuales</h2>
-                <p>Incorpórate y cambiamos el Mar Menor juntos</p>
+                <h2>Infografías</h2>
+                <p>Vivimos en la tierra como si tuviéramos otra a la que ir</p>
             </div>
 
             <div class="cause-carousel">
+                <?php
+                while($especiesQuery->have_posts()) {
+                    $especiesQuery->the_post();
+                ?>
+
+
+
                 <div class="item clearfix">
                     <figure class="img-box">
-                        <img src="<?php echo get_theme_file_uri('/assets/images/resource/9.jpg') ?> " alt="">
-                        <div class="overlay"><div class="inner-box"><div class="content-box"><button class="thm-btn style-2 donate-box-btn">donate now</button></div></div></div>
+                            <img src="<?php echo wp_get_attachment_image_url( get_the_ID(), $size ='570_300' ); ?> " alt="">
+                            <div class="overlay">
+                                <div class="inner-box">
+                                    <div class="content-box">
+                                        <a data-group="1" href="<?php echo wp_get_attachment_image_url( get_the_ID(), $size ='full' ) ?> " class="img-popup"><i class="fa fa-search-plus"></i></a>
+                                        <a href="single-gallery.html"><i class="fa fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                     </figure>
 
                     <div class="content">
 
                         <div class="text center">
-                            <a href="#"><h4 class="title">Wind Power Grows Up</h4></a>
-                            <p>We are dedicated to ending homelessness by delive- ring life-changing services for change the poor childrens life...</p>
-                        </div>
-<!--                        <div class="progress-box">-->
-<!--                            <div class="bar">-->
-<!--                                <div class="bar-inner animated-bar" data-percent="48%"><div class="count-text">48%</div></div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="donate clearfix">-->
-<!--                            <div class="donate float_left"><span>Goal: $54000 </span></div>-->
-<!--                            <div class="donate float_right">Raised: $24000</div>-->
-<!--                        </div>-->
-
-                    </div>
-
-                </div>
-                <div class="item clearfix">
-                    <figure class="img-box">
-                        <img src="<?php echo get_theme_file_uri('/assets/images/resource/10.jpg') ?> " alt="">
-                        <div class="overlay"><div class="inner-box"><div class="content-box"><button class="thm-btn style-2 donate-box-btn">donate now</button></div></div></div>
-                    </figure>
-
-                    <div class="content">
-
-                        <div class="text center">
-                            <a href="#"><h4 class="title">Save White Tiger</h4></a>
+                            <a href="#"><h4 class="title"><?php the_title(); ?></h4></a>
                             <p>We are dedicated to ending homelessness by delive- ring life-changing services for change the poor childrens life...</p>
                         </div>
 <!--                        <div class="progress-box">-->
@@ -394,36 +401,12 @@ get_header();
 <!--                            <div class="donate float_left"><span>Goal: $92000 </span></div>-->
 <!--                            <div class="donate float_right">Raised: $69000</div>-->
 <!--                        </div>-->
-
                     </div>
-
                 </div>
-                <div class="item clearfix">
-                    <figure class="img-box">
-                        <img src="<?php echo get_theme_file_uri('/assets/images/resource/11.jpg') ?> " alt="">
-                        <div class="overlay"><div class="inner-box"><div class="content-box"><button class="thm-btn style-2 donate-box-btn">donate now</button></div></div></div>
-                    </figure>
-
-                    <div class="content">
-
-                        <div class="text center">
-                            <a href="#"><h4 class="title">Go Green Movement</h4></a>
-                            <p>We are dedicated to ending homelessness by delive- ring life-changing services for change the poor childrens life...</p>
-                        </div>
-<!--                        <div class="progress-box">-->
-<!--                            <div class="bar">-->
-<!--                                <div class="bar-inner animated-bar" data-percent="48%"><div class="count-text">48%</div></div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="donate clearfix">-->
-<!--                            <div class="donate float_left"><span>Goal: $78000 </span></div>-->
-<!--                            <div class="donate float_right">Raised: $49000</div>-->
-<!--                        </div>-->
-
-                    </div>
-
-                </div>
-
+                        <?php
+                    }
+                } wp_reset_postdata();
+                ?>
             </div>
         </div>
     </section>
