@@ -26,16 +26,16 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="footer-widget link-column">
                                 <div class="section-title">
-                                    <h4>Quick Links</h4>
+                                    <h4>Enlaces de interés</h4>
                                 </div>
                                 <div class="widget-content">
                                     <ul class="list">
-                                        <li><a href="<?php echo site_url('about-us') ?>">About Our Eco green</a></li>
-                                        <li><a href="Eco-System.html">Eco System</a></li>
-                                        <li><a href="Organic-Living.html">Organic Living</a></li>
-                                        <li><a href="Good-Nature">Good Nature</a></li>
-                                        <li><a href="testimonial">Testimonials</a></li>
-                                        <li><a href="Events.html">Upcoming Events</a></li>
+                                        <li><a href="<?php echo site_url('en-prensa') ?>">Conoce al Mar Menor</a></li>
+                                        <li><a href="<?php echo site_url('conocenos') ?>">Ecosistema</a></li>
+                                        <li><a href="<?php echo site_url('objetivos') ?>">Qué podemos hacer</a></li>
+                                        <li><a href="<?php echo site_url('eventos') ?>">Actividades</a></li>
+                                        <li><a href="<?php echo site_url('blog') ?>">Noticias</a></li>
+                                        <li><a href="<?php echo site_url('contactos') ?>">Contactos</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="footer-widget post-column">
                                 <div class="section-title">
-                                    <h4>Upcoming Events</h4>
+                                    <h4>Próximas actividades</h4>
                                 </div>
                                 <div class="post-list">
                                     <div class="post">
@@ -71,15 +71,16 @@
                         <!--Footer Column-->
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="footer-widget contact-column">
-                                <div class="section-title">
-                                    <h4>Subscribe Us</h4>
-                                </div>
-                                <h5>Subscribe to our newsletter!</h5>
-                                <form action="#">
-                                    <input type="email" placeholder="Email address....">
-                                    <button type="submit"><i class="fa fa-paper-plane"></i></button>
-                                </form>
-                                <p>We don’t do mail to spam & your mail <br>id is confidential.</p>
+<!--                                <div class="section-title">-->
+<!--                                    <h4>Subscribe Us</h4>-->
+<!--                                </div>-->
+<!--                                <h5>Subscribe to our newsletter!</h5>-->
+<!--                                <form action="#">-->
+<!--                                    <input type="email" placeholder="Email address....">-->
+<!--                                    <button type="submit"><i class="fa fa-paper-plane"></i></button>-->
+<!--                                </form>-->
+                                <p>Nunca sabremos el valor del agua hasta que el pozo esté seco</p>
+                                <p>Si crees que la economía es más importante que el medio ambiente, intenta aguantar la respiración mientras cuentas tu dinero</p>
 
                                 <ul class="social-icon">
                                     <li><a target="_blank" href="https://www.facebook.com/Abracemos-al-MAR-MENOR-102408421266462"><i class="fa fa-facebook"></i></a></li>

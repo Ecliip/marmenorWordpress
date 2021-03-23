@@ -44,7 +44,7 @@ while(have_posts()) {
 
             </div>
             <div class="pull-right">
-                <a href="#" class="get-qoute"><i class="fa fa-arrow-circle-right"></i>Become a Volunteer</a>
+                <a href="<?php echo site_url('/contactos') ?>" class="get-qoute"><i class="fa fa-arrow-circle-right"></i>¿Quieres ayudar al Mar Menor?</a>
             </div>
         </div>
     </div>
