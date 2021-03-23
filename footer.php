@@ -49,23 +49,56 @@
 
                         <!--Footer Column-->
                         <div class="col-md-6 col-sm-6 col-xs-12">
+                            <?php
+
+                            $theEventQuery = new WP_Query(array(
+                                'posts_per_page' => 2,
+                                'meta_key' => 'fecha_de_evento',
+                                'orderby' => 'meta_value_num',
+                                'post_type' => 'evento',
+                                'order' => 'ASC',
+                                'meta_query' => array(
+                                    array(
+                                        'key' => 'fecha_de_evento',
+                                        'compare' => '>=',
+                                        'value' => date('Ymd'),
+                                        'type' => 'numeric'
+                                    )
+                                )
+                            ));
+                            if ($theEventQuery->have_posts()) {
+
+
+                            ?>
+
+
                             <div class="footer-widget post-column">
                                 <div class="section-title">
                                     <h4>Próximas actividades</h4>
                                 </div>
                                 <div class="post-list">
-                                    <div class="post">
-                                        <div class="post-thumb"><a href="#"><img src="<?php echo get_theme_file_uri('assets/images/blog/thumb1.jpg'); ?> " alt=""></a></div>
-                                        <a href="#"><h5>Marathon 2017: <br>Run for Cancer People</h5></a>
-                                        <div class="post-info"><i class="fa fa-calendar"></i>  15 Mar, 2017</div>
-                                    </div>
-                                    <div class="post">
-                                        <div class="post-thumb"><a href="#"><img src="<?php echo get_theme_file_uri('assets/images/blog/thumb2.jpg'); ?> " alt=""></a></div>
-                                        <a href="#"><h5>Let’s walk to the poor <br>children edu...</h5></a>
-                                        <div class="post-info"><i class="fa fa-calendar"></i> 21 Apr, 2017</div>
-                                    </div>
+                                    <?php
+                                    while($theEventQuery->have_posts()) {
+                                        $theEventQuery->the_post();
+                                        $eventDate =  new DateTime(get_field('fecha_de_evento'));
+                                        $eventHour =  get_field('hora_de_evento');
+                                        $eventLocation = get_field('sitio_de_evento');
+                                    ?>
+                                        <div class="post">
+                                            <div class="post-thumb"><a href="<?php the_permalink(); ?>"><img src="<?php the_post_thumbnail_url('thumbnail'); ?> " alt=""></a></div>
+                                            <a href="<?php the_permalink(); ?>"><h5><?php the_title(); ?></h5></a>
+                                            <div class="post-info"><i class="fa fa-calendar" style="margin-right: 5px"></i><?php echo $eventDate->format('d M, Y') ?></div>
+                                            <div class="post-info"><i class="fa fa-clock-o" style="margin-right: 5px"></i><?php echo $eventHour ?></div>
+                                            <div class="post-info"><i class="fa fa-map-pin" style="margin-right: 5px"></i><?php echo $eventLocation ?></div>
+                                        </div>
+
+
+                                        <?php
+                                    }
+                                    ?>
                                 </div>
                             </div>
+                            <?php } // endif ?>
                         </div>
 
                         <!--Footer Column-->
