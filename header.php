@@ -74,7 +74,7 @@
                     <nav class="menuzord" id="main_menu">
                         <ul class="menuzord-menu">
                             <li><a href="<?php echo site_url() ?>"><?php echo get_the_title(40); ?></a></li>
-                            <li <?php if (is_page('conocenos') or wp_get_post_parent_id(0) == 42) echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo get_permalink(42) ?>"><?php echo get_the_title(42) ?></a>
+                            <li <?php if (is_page('conocenos') or wp_get_post_parent_id(0) == 42) echo 'style="background: #1d6165"' ?>><a href="<?php echo get_permalink(42) ?>"><?php echo get_the_title(42) ?></a>
                                 <ul class="dropdown">
                                     <?php wp_list_pages(array(
                                         'title_li' => NULL,
@@ -83,7 +83,7 @@
                                 </ul>
                             </li>
 
-                            <li <?php if (is_page('colabora') or wp_get_post_parent_id(0) == 50) echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo get_permalink(50) ?>"><?php echo get_the_title(50) ?></a>
+                            <li <?php if (is_page('colabora') or wp_get_post_parent_id(0) == 50) echo 'style="background: #1d6165"' ?>><a href="<?php echo get_permalink(50) ?>"><?php echo get_the_title(50) ?></a>
                                 <ul class="dropdown">
                                     <?php wp_list_pages(array(
                                         'title_li' => NULL,
@@ -92,7 +92,7 @@
                                 </ul>
                             </li>
 
-                            <li <?php if (get_post_type() === 'evento') echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo site_url('/eventos') ?>"><?php echo get_the_title(63) ?></a>
+                            <li <?php if (get_post_type() === 'evento') echo 'style="background: #1d6165"' ?>><a href="<?php echo site_url('/eventos') ?>"><?php echo get_the_title(63) ?></a>
                                 <ul class="dropdown">
 
                                     <li><a href="<?php echo site_url('/category/recogidadebasura/'); ?>">Recogidas de basura</a></li>
@@ -107,7 +107,7 @@
                                 </ul>
                             </li>
 
-                            <li <?php if (is_page('conocenos') or wp_get_post_parent_id(0) == 160) echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo get_permalink(160) ?>"><?php echo get_the_title(160) ?></a>
+                            <li <?php if (is_page('galerias') or wp_get_post_parent_id(0) == 160) echo 'style="background: #1d6165"' ?>><a href="<?php echo get_permalink(160) ?>"><?php echo get_the_title(160) ?></a>
                                 <ul class="dropdown">
                                     <?php wp_list_pages(array(
                                         'title_li' => NULL,
@@ -116,7 +116,7 @@
                                 </ul>
                             </li>
 
-                            <li  <?php if (get_post_type() === 'post') echo 'style="background: lightgoldenrodyellow"' ?>><a href="<?php echo site_url('blog') ?>">Blog</a></li>
+                            <li  <?php if (get_post_type() === 'post') echo 'style="background: #1d6165"' ?>><a href="<?php echo site_url('blog') ?>">Blog</a></li>
 
 
 
