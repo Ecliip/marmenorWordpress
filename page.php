@@ -3,7 +3,7 @@ get_header();
 
 while(have_posts()) {
     the_post(); ?>
-    <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php the_post_thumbnail_url('1920_280');?> );">
+    <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php echo get_theme_file_uri('/assets/images/background/sea-surface.jpg') ?> );">
         <div class="container">
             <div class="box">
                 <h1><?php the_title(); ?></h1>

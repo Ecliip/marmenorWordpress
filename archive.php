@@ -27,7 +27,7 @@ get_header();
             </ul>
         </div>
         <div class="pull-right">
-            <a href="#" class="get-qoute"><i class="fa fa-arrow-circle-right"></i>Become a Volunteer</a>
+            <a href="<?php echo site_url('/contactos') ?>" class="get-qoute"><i class="fa fa-arrow-circle-right"></i>Haz volntariado</a>
         </div>
     </div>
 </div>

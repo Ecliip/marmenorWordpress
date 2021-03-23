@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-    <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php echo get_theme_file_uri('/assets/images/background/4.jpg') ?>);">
+    <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php echo get_theme_file_uri('/assets/images/background/sea-surface.jpg') ?> );">
         <div class="container">
             <div class="box">
                 <h1>Todos los eventos</h1>
@@ -22,7 +22,7 @@ get_header();
                 </ul>
             </div>
             <div class="pull-right">
-                <a href="#" class="get-qoute"><i class="fa fa-arrow-circle-right"></i>Hazte voluntario</a>
+                <a href="<?php echo site_url('/contactos') ?>" class="get-qoute"><i class="fa fa-arrow-circle-right"></i>Haz volntariado</a>
             </div>
         </div>
     </div>
