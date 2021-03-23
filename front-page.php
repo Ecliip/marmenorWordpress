@@ -81,7 +81,7 @@ get_header();
     <!--SLIDER END-->
 
 
-
+<!-- create a WP page for this section and serve it dynamically-->
     <section class="service sec-padd3">
         <div class="container">
 
@@ -262,6 +262,22 @@ get_header();
 
 <!--TODO has to do gallery section-->
 <?php $galleryPage = get_post(160) ?>
+                <?php
+                    $espArgs = array(
+                        'post_status' => 'inherit',
+                        'posts_per_page' => 4,
+                        'post_type' => 'attachment',
+                    );
+                    $espArgs['tax_query'] = array(
+                        array(
+                            'taxonomy' => 'categoria-galeria',
+                            'terms' => array( 'especies' ),
+                            'field' => 'slug',
+                        ),
+                    );
+                    $especiesQuery =  new WP_Query( $espArgs );
+
+                    if ($especiesQuery->have_posts()) { ?>
 
     <section class="gallery sec-padd3 style-2" style="background: url(<?php echo get_the_post_thumbnail_url(160, '1920_790') ?> ) rgb(0,0,0)" ;>
         <div class="container">
@@ -291,21 +307,6 @@ get_header();
 
             <div class="row filter-layout">
                 <?php
-                    $espArgs = array(
-                        'post_status' => 'inherit',
-                        'posts_per_page' => 4,
-                        'post_type' => 'attachment',
-                    );
-                    $espArgs['tax_query'] = array(
-                        array(
-                            'taxonomy' => 'categoria-galeria',
-                            'terms' => array( 'especies' ),
-                            'field' => 'slug',
-                        ),
-                    );
-                    $especiesQuery =  new WP_Query( $espArgs );
-
-                    if ($especiesQuery->have_posts()) {
                         while($especiesQuery->have_posts()) {
                             $especiesQuery->the_post();
                 ?>
@@ -330,13 +331,14 @@ get_header();
                 </article>
 
                 <?php
-                        }
-                    } wp_reset_postdata();
+                        } wp_reset_postdata();
+
                 ?>
             </div>
             <a class="thm-btn" href="<?php echo site_url('/galerias'); ?>">Ir a galería</a>
         </div>
     </section>
+                        <?php } // end if?>
 
 
 <?php
