@@ -6,7 +6,7 @@ while(have_posts()) {
     the_post();
     ?>
 
-    <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php echo get_theme_file_uri('assets/images/background/4.jpg') ?>);">
+    <div class="inner-banner has-base-color-overlay text-center" style="background: url(<?php the_post_thumbnail_url('1920_280') ?>) center ;">
         <div class="container">
             <div class="box">
                 <h1> <?php the_title(); ?></h1>
@@ -40,7 +40,7 @@ while(have_posts()) {
     <section class="blog-single-post blog-section">
     <div class="container">
     <div class="row">
-    <div class="col-md-9 col-sm-12">
+        <div class="col-md-9 col-sm-12">
     <div class="post-area">
         <?php
 
@@ -281,14 +281,7 @@ while(have_posts()) {
         </div>
 
     </div>
-    <?php
-}
-?>
-
-
-
-    </div>
-    <div class="col-md-3 col-sm-12">
+        <div class="col-md-3 col-sm-12">
         <div class="blog-sidebar sec-padd">
             <div class="sidebar_search">
                 <form action="#">
@@ -508,6 +501,14 @@ while(have_posts()) {
             </div>
 
         </div>
+    </div>
+
+    <?php
+}
+?>
+
+
+
     </div>
 
     </div>

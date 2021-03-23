@@ -434,7 +434,7 @@ get_header();
             <div class="row">
                 <div class="col-md-9 col-sm-10 col-xs-12">
                     <div class="section-title">
-                        <h2>UpComing Events</h2>
+                        <h2 style="display: inline-block; background: rgba(0,0,0, .5); padding: 1rem;">Participa en actividades</h2>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-2 col-xs-12">
