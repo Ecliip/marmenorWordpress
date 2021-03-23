@@ -640,7 +640,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 .default-form .dropdown-menu>li>a:focus {
     background-color: #fff;
-    color: #1F1F1F;
+    color: lightgrey;
 }
 .default-form .dropdown-menu>li>a:hover {
     background-color: #71B1BD !important;
@@ -721,7 +721,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   margin-top: 30px;
 }
 .page_pagination2 .button a {
-  color: #1F1F1F;
+  color: lightgrey;
   font-size: 18px;
   font-weight: 400;
   transition: all 500ms ease;
@@ -1290,7 +1290,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .event-section2 .item .lower-content h4 a{
-  color:#1F1F1F;
+  color:lightgrey;
   transition: all 300ms ease;
   font-size: 18px;
 }
@@ -1313,7 +1313,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 .event-section2 .item .lower-content .default_link {
   text-transform: uppercase;
-  color: #1F1F1F;
+  color: lightgrey;
   font-weight: 700;
   transition: .5s ease;
 }
@@ -1767,7 +1767,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .default-sidebar .service-catergory li a {
   display: block;
   font-size: 16px;
-  color: #1F1F1F;
+  color: lightgrey;
   line-height: 30px;
   border-left: 5px solid transparent;
   font-weight: 600;
@@ -2135,7 +2135,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   border-radius: 5px;
   height:26px;
   background:#71B1BD;
-  color: #1F1F1F;
+  color: lightgrey;
   line-height:26px;
   font-size:13px;
   font-weight:600;
@@ -2410,7 +2410,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   width:46px;
   height:26px;
   background:#71B1BD;
-  color: #1F1F1F;
+  color: lightgrey;
   line-height:26px;
   font-size:13px;
   font-weight:600;
@@ -2650,7 +2650,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .fact-counter.style-1 h5 {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
-  color: #1F1F1F;
+  color: lightgrey;
 }
 .fact-counter.style-1 .link {
   margin-top: 40px;
@@ -2714,7 +2714,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   font-weight: 400;
   padding: 0px 10px 5px;
   font-family: 'Roboto Slab', Sans-serif;
-  color: #1F1F1F;
+  color: lightgrey;
 }
 .fact-counter.style-2 .count-outer:before {
 }
@@ -3284,7 +3284,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 .event-style1 .item .lower-content .default_link {
   text-transform: uppercase;
-  color: #1F1F1F;
+  color: lightgrey;
   font-weight: 700;
   transition: .5s ease;
 }
@@ -3498,7 +3498,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 .event-style2 .item .lower-content .default_link {
   text-transform: uppercase;
-  color: #1F1F1F;
+  color: lightgrey;
   font-weight: 700;
   transition: .5s ease;
 }
@@ -3677,7 +3677,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .event-section .item .lower-content h4 a{
-  color:#1F1F1F;
+  color:lightgrey;
   transition: all 300ms ease;
   font-size: 18px;
 }
@@ -3699,7 +3699,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 .event-section .item .lower-content .default_link {
   text-transform: uppercase;
-  color: #1F1F1F;
+  color: lightgrey;
   font-weight: 700;
   transition: .5s ease;
 }
@@ -4213,7 +4213,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .default-blog-news .lower-content h4 {
-  color:#1F1F1F;
+  color:lightgrey;
   font-weight: 400;
   margin-top: 7px;
   margin-bottom: 12px;
@@ -4236,7 +4236,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 .default-blog-news .lower-content .default_link {
   text-transform: uppercase;
-  color: #1F1F1F;
+  color: lightgrey;
   font-weight: 700;
   transition: .5s ease;
 }
@@ -5375,7 +5375,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   color: #71B1BD;
 }
 .breadcumb-wrapper ul.link-list li a {
-  color: #1F1F1F;
+  color: lightgrey;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -5575,7 +5575,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 
 .single-team-member h4 {
-  color: #1F1F1F;
+  color: lightgrey;
   margin-top: 12px;
   margin-bottom: 6px;
 }
@@ -6395,7 +6395,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   margin: 0;
   margin-top: 20px;
   margin-bottom: 5px;
-  color: #1F1F1F;
+  color: lightgrey;
   text-transform: capitalize;
 }
 
@@ -6445,7 +6445,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   width: 100%;
   font-size: 20px;
   position: relative;
-  color: #1F1F1F;
+  color: lightgrey;
 }
 
 .cart-table tbody .available-info {
@@ -6551,7 +6551,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 .cart-section .totals-table .col-title {
   font-size: 16px;
-  color: #1F1F1F;
+  color: lightgrey;
   border-right: 1px solid #f4f4f4;
   font-weight: 400;
   font-family: "Roboto Slab", sans-serif;
@@ -6653,7 +6653,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .cart-section .thm-btn.update-cart {
-  color: #1F1F1F;
+  color: lightgrey;
   border-color: #F7F7F7;
   text-shadow: none;
 }
@@ -6768,7 +6768,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 
 
 .checkout-area .form form .field-label {
-  color: #1F1F1F;
+  color: lightgrey;
   font-family: "Roboto Slab", Sans-serif;
   text-transform: capitalize;
   font-weight: 400;
@@ -7115,7 +7115,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 .single-shop-item .text-box h3 {
   font-size: 18px;
   line-height: 50px;
-  color: #1F1F1F;
+  color: lightgrey;
   margin-top: 10px;
 }
 .single-shop-item .text-box p {
@@ -7198,7 +7198,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   font-size: 16px;
   margin:0px 0px;
   line-height:1.4em;
-  color: #1F1F1F;
+  color: lightgrey;
   margin-bottom: 6px;
 }
 
@@ -7418,7 +7418,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 2px solid #1F1F1F;
+  border: 2px solid lightgrey;
   margin-left: -4px;
   outline: none;
   background: #71B1BD;
@@ -7478,7 +7478,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .best_sellers .best_selling_item .text h4 {
-  color: #1F1F1F;
+  color: lightgrey;
 }
 
 .best_sellers .best_selling_item .text h6 {
@@ -7587,7 +7587,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   margin-left: -50px;
 }
 .product-content-box .content-box h3 {
-  color: #1F1F1F;
+  color: lightgrey;
   font-size: 24px;
   font-weight: 400;
   margin: 0 0 10px;
@@ -8266,7 +8266,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .not-found-content h3 {
-  color: #1F1F1F;
+  color: lightgrey;
   font-size: 18px;
   font-weight: 400;
   margin: 0 0 20px;
