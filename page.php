@@ -58,74 +58,84 @@ while(have_posts()) {
                 <h2><?php the_title(); ?></h2>
                 <p><?php the_field('subtitulo') ?></p>
             </div>
-            <div class="row" style="display: flex;  align-items: center; flex-wrap: wrap; width: 100vw;">
+            <div class="row">
+                <div class="col-md-3 col-sm-12" >
 
-                <!--CHILD PAGES BLOCK-->
-                <?php
-                $pages = get_pages(array(
-                    'child_of' => get_the_ID()
-                ));
-                if ($parentID or $pages) { ?>
-                    <div class="col-lg-3 col-md-4 col-sm-12" style="flex: 0 1 300px; margin-right: 20px">
-                        <div class="default-sidebar">
-                            <h2 style="margin-bottom: 20px"><a href="<?php echo get_permalink($parentID) ?>"><?php echo get_the_title($parentID) ?></a></h2>
-                            <ul class="service-catergory">
-
-                                <?php if ($parentID) {
-                                    $findChildrenOf = $parentID;
-                                } else {
-                                    $findChildrenOf = get_the_ID();
-                                }?>
-
-                                <?php wp_list_pages(array(
-                                    'title_li' => NULL,
-                                    'child_of' => $findChildrenOf,
-                                )) ?>
-                                <!--                            <li><a href="recycling.html">Recycling</a></li>-->
-                                <!--                            <li><a href="Eco-System.html">Eco System</a></li>-->
-                                <!--                            <li><a href="Save-Water.html">Save Water</a></li>-->
-                                <!--                            <li><a href="Save-Animals.html">Save Animals</a></li>-->
-                                <!--                            <li><a href="Organic-Living.html">Organic Living</a></li>-->
-                                <!--                            <li><a href="Good-Nature.html">Good Nature</a></li>-->
-                            </ul>
-                            <!--                        <div class="link"><a href="#" class="thm-btn style-2">Become a Volunteer</a></div>-->
-                        </div>
-                    </div>
+                    <!--CHILD PAGES BLOCK-->
                     <?php
-                    wp_reset_query(); // this function fixes a bug...
-                } ?>
-                <!--END CHILD PAGES BLOCK-->
+                    $pages = get_pages(array(
+                        'child_of' => get_the_ID()
+                    ));
+                    if ($parentID or $pages) { ?>
+                        <div class="col-lg-3 col-md-4 col-sm-12" style=" width: 100%;">
+                            <div class="default-sidebar">
+                                <h2 style="margin-bottom: 20px"><a href="<?php echo get_permalink($parentID) ?>"><?php echo get_the_title($parentID) ?></a></h2>
+                                <ul class="service-catergory">
 
-<!--                <div class="col-md-6 col-sm-12" style="display: flex; justify-content: center; width: 100%; flex: 1 1 300px">-->
-<!--                    <iframe src="https://player.vimeo.com/video/9519939" width="570" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>-->
-<!--                </div>-->
+                                    <?php if ($parentID) {
+                                        $findChildrenOf = $parentID;
+                                    } else {
+                                        $findChildrenOf = get_the_ID();
+                                    }?>
 
-
-                <figure class="img-holder" style="margin-bottom: 20px;">
-                    <!--                <img src="--><?php //echo get_theme_file_uri('assets/images/blog/l1.jpg') ?><!--" alt="News">-->
-                    <img src="<?php the_post_thumbnail_url('770_430'); ?>" alt="News">
-                </figure>
-            </div>
-            <div class="row" style="display: flex; flex-direction: column; align-items: center; justify-content: center">
-                <div class="link" style="margin-bottom: 2rem"><a href="#" class="thm-btn style-2">Become a Volunteer</a></div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-
-
-                    <div class="content">
-<!--                        <h2>Together we can make a difference</h2>-->
-
-                        <div class="text">
-                            <?php the_content(); ?>
+                                    <?php wp_list_pages(array(
+                                        'title_li' => NULL,
+                                        'child_of' => $findChildrenOf,
+                                    )) ?>
+                                    <!--                            <li><a href="recycling.html">Recycling</a></li>-->
+                                    <!--                            <li><a href="Eco-System.html">Eco System</a></li>-->
+                                    <!--                            <li><a href="Save-Water.html">Save Water</a></li>-->
+                                    <!--                            <li><a href="Save-Animals.html">Save Animals</a></li>-->
+                                    <!--                            <li><a href="Organic-Living.html">Organic Living</a></li>-->
+                                    <!--                            <li><a href="Good-Nature.html">Good Nature</a></li>-->
+                                </ul>
+                                <!--                        <div class="link"><a href="#" class="thm-btn style-2">Become a Volunteer</a></div>-->
+                            </div>
                         </div>
-                        <h4>Our Partner</h4>
-                        <div class="text">
-                            <p>We partner with over 320 amazing projects worldwide, and have given over $150 million in cash and product grants to other groups since 2011. We also operate our own dynamic suite of Signature Programs.</p>
-                        </div>
+                        <?php
+                        wp_reset_query(); // this function fixes a bug...
+                    } ?>
+                    <!--END CHILD PAGES BLOCK-->
 
-                    </div>
+                    <!--                <div class="col-md-6 col-sm-12" style="display: flex; justify-content: center; width: 100%; flex: 1 1 300px">-->
+                    <!--                    <iframe src="https://player.vimeo.com/video/9519939" width="570" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen autoplay></iframe>-->
+                    <!--                </div>-->
+
+                    <?php
+                    if (the_post_thumbnail_url('700_430')) { ?>
+                        <figure class="img-holder" style="margin-bottom: 20px;">
+                            <!--                <img src="--><?php //echo get_theme_file_uri('assets/images/blog/l1.jpg') ?><!--" alt="News">-->
+                            <img src="<?php the_post_thumbnail_url('770_430'); ?>" alt="News">
+                        </figure>
+                    <?php }
+
+                    ?>
+
                 </div>
-                <div class="link"><a href="#" class="thm-btn style-2">Join With Us</a></div>
+                <div class="col-md-9 col-sm-12" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="link" style="margin-bottom: 2rem"><a href="<?php echo site_url('/contactos'); ?>" class="thm-btn style-2">Únete al equipo</a></div>
+                    <div class="col-md-10 col-sm-6 col-xs-12">
+
+
+                        <div class="content">
+                            <!--                        <h2>Together we can make a difference</h2>-->
+
+                            <div class="text">
+                                <?php the_content(); ?>
+                            </div>
+                            <h4>Our Partner</h4>
+                            <div class="text">
+                                <p>We partner with over 320 amazing projects worldwide, and have given over $150 million in cash and product grants to other groups since 2011. We also operate our own dynamic suite of Signature Programs.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="link"><a href="#" class="thm-btn style-2">Join With Us</a></div>
+                </div>
             </div>
+
+
+
         </div>
     </section>
     <div class="border-bottom"></div>
