@@ -199,9 +199,10 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 
 .thm-btn.style-3 {
-  background: transparent;
-  color: #fff;
-  border-color: #fff;
+    background: rgba(0,114,118, .5);
+    font-weight: 500;
+    color: #fff;
+    border-color: #fff;
 }
 .thm-btn.style-3:hover {
   background: #FFF;
@@ -2689,7 +2690,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
 }
 .fact-counter.style-2 .item {
   position: relative;
-  background: #3B6D6A;
+  background: rgba(0, 129, 146, .7);
   padding: 17px 0 25px;
   border: 1px solid #0f3e68;
 }
@@ -2699,7 +2700,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   position: relative;
   right: 5px;
   margin-bottom: 5px;
-  color: #71B1BD;
+  color: #d1f8ff;
   transition:all 500ms ease;
   -moz-transition:all 500ms ease;
   -webkit-transition:all 500ms ease;
@@ -2722,7 +2723,7 @@ input,textarea {font-family: 'Open Sans', sans-serif;display: block; font-size: 
   position:relative;
   font-size: 18px;
   font-weight: 300;
-  color: #71B1BD;
+  color: #d1f8ff;
 }
 
 

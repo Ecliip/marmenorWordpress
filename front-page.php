@@ -36,7 +36,7 @@ get_header();
                     <div class="slide-content-box">
                         <h1><?php the_title() ?></h1>
                         <h3 style="width: 50vw; white-space: break-spaces"><?php the_field('subtitulo'); ?></h3>
-                        <p><?php echo wp_trim_words(get_the_content(), 20) ?></p>
+                        <p style="font-weight: 500; color: white; padding: .5rem 1rem; background: rgba(0,114,118, .5);"><?php echo wp_trim_words(get_the_content(), 20) ?></p>
                     </div>
                 </div>
                 <div class="tp-caption tp-resizeme"
@@ -134,7 +134,7 @@ get_header();
     <section class="fact-counter style-2 sec-padd" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/background/5.jpg') ?> );">
         <div class="container">
             <div class="section-title center">
-                <h2>¿Sabías que...?</h2>
+                <h2 style="display: inline-block; background: rgba(0,0,0, .5); padding: 1rem;">¿Sabías que...?</h2>
             </div>
             <div class="row clearfix">
                 <div class="counter-outer clearfix">
@@ -143,7 +143,7 @@ get_header();
                         <div class="item">
                             <div class="icon"><i class="icon-heart2"></i></div>
 <!--                            TODO calculate dynamically-->
-                            <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="2">0</span>+</div>
+                            <div style="color: antiquewhite" class="count-outer"><span class="count-text" data-speed="3000" data-stop="2">0</span>+</div>
                             <h4 class="counter-title">Años de experiencia</h4>
                         </div>
 
@@ -153,7 +153,7 @@ get_header();
                     <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
                         <div class="item">
                             <div class="icon"><i class="icon-money"></i></div>
-                            <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="40">0</span>+</div>
+                            <div style="color: antiquewhite" class="count-outer"><span class="count-text" data-speed="3000" data-stop="40">0</span>+</div>
                             <h4 class="counter-title">Actividades realizadas</h4>
                         </div>
                     </article>
@@ -162,7 +162,7 @@ get_header();
                     <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
                         <div class="item">
                             <div class="icon"><i class="icon-people3"></i></div>
-                            <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="347">0</span></div>
+                            <div style="color: antiquewhite" class="count-outer"><span class="count-text" data-speed="3000" data-stop="347">0</span></div>
                             <h4 class="counter-title">Voluntarios participando</h4>
                         </div>
                     </article>
@@ -171,7 +171,7 @@ get_header();
                     <article class="column counter-column col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-duration="0ms">
                         <div class="item">
                             <div class="icon"><i class="icon-animals"></i></div>
-                            <div class="count-outer"><span class="count-text" data-speed="3000" data-stop="485">0</span>kg</div>
+                            <div style="color: antiquewhite" class="count-outer"><span class="count-text" data-speed="3000" data-stop="485">0</span>kg</div>
                             <h4 class="counter-title">De basura recogida</h4>
                         </div>
                     </article>
@@ -206,7 +206,7 @@ get_header();
                         <div class="text">
                             <p>We partner with over 320 amazing projects worldwide, and have given over $150 million in cash and product grants to other groups since 2011. We also operate our own dynamic suite of Signature Programs.</p>
                         </div>
-                        <div class="link"><a href="<?php echo site_url('/contactos') ?>" class="thm-btn style-2">Join With Us</a></div>
+                        <div class="link"><a href="<?php echo site_url('/contactos') ?>" class="thm-btn style-2">Únete también</a></div>
                     </div>
                 </div>
             </div>
@@ -311,7 +311,7 @@ get_header();
                 ?>
 
                             <article class="col-md-3 col-sm-6 col-xs-12 filter-item Wild-Animals Pollution Water">
-                    <div class="item" style="background: #0d3b3b96">
+                    <div class="item" style="background: rgba(14,94,94,0.59)">
                         <div class="img-box">
                             <img src="<?php echo wp_get_attachment_image_url( get_the_ID(), $size ='570_300' ); ?> " alt="">
                             <div class="overlay">
@@ -438,7 +438,7 @@ get_header();
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-2 col-xs-12">
-                    <a href="#" class="thm-btn style-2 float_right">All Events</a>
+                    <a style="background: rgba(0,88,104, .5); color: whitesmoke;" href="#" class="thm-btn style-2 float_right">All Events</a>
                 </div>
             </div>
             <div class="row">
@@ -464,7 +464,7 @@ get_header();
                         $eventDate =  new DateTime(get_field('fecha_de_evento'))
                         ?>
                         <article class="col-md-6 col-sm-12 col-xs-12">
-                            <div class="item style-1">
+                            <div class="item style-1" style="background: rgba(0,110,120, .5)">
                                 <div class="img-column">
                                     <figure class="img-holder">
 <!--                                        <a href="--><?php //the_permalink(); ?><!--"><img src="--><?php //echo get_theme_file_uri('/assets/images/resource/1.jpg') ?><!-- " alt=""></a>-->
@@ -552,32 +552,32 @@ get_header();
 
 
 <!-- photos de voluntarios -->
-    <section class="clients-section sec-padd">
-        <div class="container">
-            <div class="section-title center">
-                <h2>Voluntarios y voluntaris</h2>
-            </div>
-            <div class="client-carousel owl-carousel owl-theme">
-
-                <div class="item tool_tip" title="media partner">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/clients/1.jpg') ?> " alt="Awesome Image">
-                </div>
-                <div class="item tool_tip" title="media partner">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/clients/2.jpg') ?> " alt="Awesome Image">
-                </div>
-                <div class="item tool_tip" title="media partner">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/clients/3.jpg') ?> " alt="Awesome Image">
-                </div>
-                <div class="item tool_tip" title="media partner">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/clients/4.jpg') ?> " alt="Awesome Image">
-                </div>
-                <div class="item tool_tip" title="media partner">
-                    <img src="<?php echo get_theme_file_uri('/assets/images/clients/5.jpg') ?> " alt="Awesome Image">
-                </div>
-
-            </div>
-        </div>
-    </section>
+<!--    <section class="clients-section sec-padd">-->
+<!--        <div class="container">-->
+<!--            <div class="section-title center">-->
+<!--                <h2>Voluntarios y voluntaris</h2>-->
+<!--            </div>-->
+<!--            <div class="client-carousel owl-carousel owl-theme">-->
+<!---->
+<!--                <div class="item tool_tip" title="media partner">-->
+<!--                    <img src="--><?php //echo get_theme_file_uri('/assets/images/clients/1.jpg') ?><!-- " alt="Awesome Image">-->
+<!--                </div>-->
+<!--                <div class="item tool_tip" title="media partner">-->
+<!--                    <img src="--><?php //echo get_theme_file_uri('/assets/images/clients/2.jpg') ?><!-- " alt="Awesome Image">-->
+<!--                </div>-->
+<!--                <div class="item tool_tip" title="media partner">-->
+<!--                    <img src="--><?php //echo get_theme_file_uri('/assets/images/clients/3.jpg') ?><!-- " alt="Awesome Image">-->
+<!--                </div>-->
+<!--                <div class="item tool_tip" title="media partner">-->
+<!--                    <img src="--><?php //echo get_theme_file_uri('/assets/images/clients/4.jpg') ?><!-- " alt="Awesome Image">-->
+<!--                </div>-->
+<!--                <div class="item tool_tip" title="media partner">-->
+<!--                    <img src="--><?php //echo get_theme_file_uri('/assets/images/clients/5.jpg') ?><!-- " alt="Awesome Image">-->
+<!--                </div>-->
+<!---->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
     <section class="call-out">
         <div class="container">
