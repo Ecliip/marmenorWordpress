@@ -70,7 +70,7 @@
                         <a href="<?php echo site_url() ?>"><img src="<?php echo get_theme_file_uri('/assets/images/logo/logomarmenor.png'); ?>" style="max-width: 100%; overflow: hidden" alt=""></a>
                     </div>
                 </div>
-                <div class="col-md-9 menu-column">
+                <div class="col-md-10 menu-column">
                     <nav class="menuzord" id="main_menu">
                         <ul class="menuzord-menu">
                             <li><a href="<?php echo site_url() ?>"><?php echo get_the_title(40); ?></a></li>
@@ -82,6 +82,9 @@
                                     )) ?>
                                 </ul>
                             </li>
+<!--                            <li>-->
+<!---->
+<!--                            </li>-->
 
                             <li <?php if (is_page('colabora') or wp_get_post_parent_id(0) == 50) echo 'style="background: #1d6165"' ?>><a href="<?php echo get_permalink(50) ?>"><?php echo get_the_title(50) ?></a>
                                 <ul class="dropdown">
@@ -116,7 +119,7 @@
                                 </ul>
                             </li>
 
-                            <li  <?php if (get_post_type() === 'post') echo 'style="background: #1d6165"' ?>><a href="<?php echo site_url('blog') ?>">Blog</a></li>
+                            <li  <?php if (get_post_type() === 'post') echo 'style="background: #1d6165"' ?>><a href="<?php echo site_url('noticias') ?>"><?php echo get_the_title(34); ?></a></li>
 
 
 
