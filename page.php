@@ -54,10 +54,7 @@ while(have_posts()) {
         <div class="container">
 
 
-            <div class="section-title center">
-                <h2><?php the_title(); ?></h2>
-                <p><?php the_field('subtitulo') ?></p>
-            </div>
+
             <div class="row">
                 <div class="col-md-3 col-sm-12" >
 
@@ -113,6 +110,10 @@ while(have_posts()) {
 
                 </div>
                 <div class="col-md-9 col-sm-12" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="section-title center">
+                        <h2 style="margin-bottom: 2rem"><?php the_title(); ?></h2>
+                        <h3><?php the_field('subtitulo') ?></h3>
+                    </div>
                     <div class="link" style="margin-bottom: 2rem"><a href="<?php echo site_url('/contactos'); ?>" class="thm-btn style-2">Únete al equipo</a></div>
                     <div class="col-md-10 col-sm-6 col-xs-12">
 
@@ -139,114 +140,6 @@ while(have_posts()) {
         </div>
     </section>
     <div class="border-bottom"></div>
-<!--    <section class="our-team sec-padd2">-->
-<!--        <div class="container">-->
-<!--            <div class="section-title">-->
-<!--                <h2>Meat Our team</h2>-->
-<!--                <a href="#" class="thm-btn style-2">VIEW ALL</a>-->
-<!--            </div>-->
-<!--            <div class="row">-->
-<!--                <article class="col-md-3 col-sm-6 col-xs-12">-->
-<!--                    <div class="single-team-member">-->
-<!--                        <figure class="img-box">-->
-<!--                            <a href="#"><img src="--><?php //echo get_theme_file_uri('/assets/images/team/t1.jpg')?><!-- " alt=""></a>-->
-<!--                            <div class="overlay">-->
-<!--                                <div class="inner-box">-->
-<!--                                    <ul class="social">-->
-<!--                                        <li><a href="#"><i class="fa fa-link"></i></a></li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!---->
-<!--                            </div>-->
-<!--                        </figure>-->
-<!--                        <div class="author-info">-->
-<!--                            <a href="#"><h4>Felicity BNovak</h4></a>-->
-<!--                            <p>CEO & Founder</p>-->
-<!--                            <ul>-->
-<!--                                <li><i class="fa fa-phone-square"></i>Phone: +123-456-7890</li>-->
-<!--                                <li><i class="fa fa-envelope-square"></i><a href="#">Felicity@Experts.com</a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!---->
-<!--                    </div>-->
-<!--                </article>-->
-<!--                <article class="col-md-3 col-sm-6 col-xs-12">-->
-<!--                    <div class="single-team-member">-->
-<!--                        <figure class="img-box">-->
-<!--                            <a href="#"><img src="--><?php //echo get_theme_file_uri('/assets/images/team/t2.jpg')?><!-- " alt=""></a>-->
-<!--                            <div class="overlay">-->
-<!--                                <div class="inner-box">-->
-<!--                                    <ul class="social">-->
-<!--                                        <li><a href="#"><i class="fa fa-link"></i></a></li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!---->
-<!--                            </div>-->
-<!--                        </figure>-->
-<!--                        <div class="author-info">-->
-<!--                            <a href="#"><h4>Mark Richarson</h4></a>-->
-<!--                            <p>Board of Trustee</p>-->
-<!--                            <ul>-->
-<!--                                <li><i class="fa fa-phone-square"></i>Phone: +123-456-7890</li>-->
-<!--                                <li><i class="fa fa-envelope-square"></i><a href="#">Felicity@Experts.com</a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!---->
-<!--                    </div>-->
-<!--                </article>-->
-<!--                <article class="col-md-3 col-sm-6 col-xs-12">-->
-<!--                    <div class="single-team-member">-->
-<!--                        <figure class="img-box">-->
-<!--                            <a href="#"><img src="--><?php //echo get_theme_file_uri('/assets/images/team/t3.jpg')?><!-- " alt=""></a>-->
-<!--                            <div class="overlay">-->
-<!--                                <div class="inner-box">-->
-<!--                                    <ul class="social">-->
-<!--                                        <li><a href="#"><i class="fa fa-link"></i></a></li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!---->
-<!--                            </div>-->
-<!--                        </figure>-->
-<!--                        <div class="author-info">-->
-<!--                            <a href="#"><h4>Jom Caraleno</h4></a>-->
-<!--                            <p>Board of Trustee</p>-->
-<!--                            <ul>-->
-<!--                                <li><i class="fa fa-phone-square"></i>Phone: +123-456-7890</li>-->
-<!--                                <li><i class="fa fa-envelope-square"></i><a href="#">Felicity@Experts.com</a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!---->
-<!--                    </div>-->
-<!--                </article>-->
-<!--                <article class="col-md-3 col-sm-6 col-xs-12">-->
-<!--                    <div class="single-team-member">-->
-<!--                        <figure class="img-box">-->
-<!--                            <a href="#"><img src="--><?php //echo get_theme_file_uri('/assets/images/team/t4.jpg')?><!-- " alt=""></a>-->
-<!--                            <div class="overlay">-->
-<!--                                <div class="inner-box">-->
-<!--                                    <ul class="social">-->
-<!--                                        <li><a href="#"><i class="fa fa-link"></i></a></li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!---->
-<!--                            </div>-->
-<!--                        </figure>-->
-<!--                        <div class="author-info">-->
-<!--                            <a href="#"><h4>Asahtan Marsh</h4></a>-->
-<!--                            <p>Board of Advisor</p>-->
-<!--                            <ul>-->
-<!--                                <li><i class="fa fa-phone-square"></i>Phone: +123-456-7890</li>-->
-<!--                                <li><i class="fa fa-envelope-square"></i><a href="#">Felicity@Experts.com</a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!---->
-<!--                    </div>-->
-<!--                </article>-->
-<!---->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--    </section>-->
 
 
 
