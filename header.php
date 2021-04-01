@@ -82,48 +82,49 @@
                                     )) ?>
                                 </ul>
                             </li>
-<!--                            <li>-->
-<!---->
-<!--                            </li>-->
-
-                            <li <?php if (is_page('colabora') or wp_get_post_parent_id(0) == 50) echo 'style="background: #1d6165"' ?>><a href="<?php echo get_permalink(50) ?>"><?php echo get_the_title(50) ?></a>
-                                <ul class="dropdown">
-                                    <?php wp_list_pages(array(
-                                        'title_li' => NULL,
-                                        'child_of' => 50,
-                                    )) ?>
-                                </ul>
-                            </li>
-
-                            <li <?php if (get_post_type() === 'evento') echo 'style="background: #1d6165"' ?>><a href="<?php echo site_url('/eventos') ?>"><?php echo get_the_title(63) ?></a>
-                                <ul class="dropdown">
-
-                                    <li><a href="<?php echo site_url('/category/recogidadebasura/'); ?>">Recogidas de basura</a></li>
-                                    <li><a href="<?php echo site_url('/category/firmas/'); ?>">Campañas de firmas</a></li>
-                                    <li><a href="<?php echo site_url('/category/exposiciones/'); ?>">Exposiciones</a></li>
-
-
-                                    <?php wp_list_pages(array(
-                                        'title_li' => NULL,
-                                        'child_of' => 63,
-                                    )) ?>
-                                </ul>
-                            </li>
-
-                            <li <?php if (is_page('galerias') or wp_get_post_parent_id(0) == 160) echo 'style="background: #1d6165"' ?>><a href="<?php echo get_permalink(160) ?>"><?php echo get_the_title(160) ?></a>
-                                <ul class="dropdown">
-                                    <?php wp_list_pages(array(
-                                        'title_li' => NULL,
-                                        'child_of' => 160,
-                                    )) ?>
-                                </ul>
-                            </li>
-
+                            <li><a>Mar Menor Ecocidio</a></li>
+                            <li><a>Paraíso</a></li>
                             <li  <?php if (get_post_type() === 'post') echo 'style="background: #1d6165"' ?>><a href="<?php echo site_url('noticias') ?>"><?php echo get_the_title(34); ?></a></li>
-
-
-
                             <li><a href="<?php echo site_url('/contactos') ?>">Contáctanos</a></li>
+                            <li><a>De Interés</a>
+                                <ul class="dropdown">
+                                    <li <?php if (is_page('colabora') or wp_get_post_parent_id(0) == 50) echo 'style="background: #1d6165"' ?>><a href="<?php echo get_permalink(50) ?>"><?php echo get_the_title(50) ?></a>
+                                        <ul class="dropdown">
+                                            <?php wp_list_pages(array(
+                                                'title_li' => NULL,
+                                                'child_of' => 50,
+                                            )) ?>
+                                        </ul>
+                                    </li>
+                                    <li <?php if (get_post_type() === 'evento') echo 'style="background: #1d6165"' ?>><a href="<?php echo site_url('/eventos') ?>"><?php echo get_the_title(63) ?></a>
+                                        <ul class="dropdown">
+
+                                            <li><a href="<?php echo site_url('/category/recogidadebasura/'); ?>">Recogidas de basura</a></li>
+                                            <li><a href="<?php echo site_url('/category/firmas/'); ?>">Campañas de firmas</a></li>
+                                            <li><a href="<?php echo site_url('/category/exposiciones/'); ?>">Exposiciones</a></li>
+
+
+                                            <?php wp_list_pages(array(
+                                                'title_li' => NULL,
+                                                'child_of' => 63,
+                                            )) ?>
+                                        </ul>
+                                    </li>
+                                    <li <?php if (is_page('galerias') or wp_get_post_parent_id(0) == 160) echo 'style="background: #1d6165"' ?>><a href="<?php echo get_permalink(160) ?>"><?php echo get_the_title(160) ?></a>
+                                        <ul class="dropdown">
+                                            <?php wp_list_pages(array(
+                                                'title_li' => NULL,
+                                                'child_of' => 160,
+                                            )) ?>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+
+
+
+                            </li>
+
 
 
                         </ul>
