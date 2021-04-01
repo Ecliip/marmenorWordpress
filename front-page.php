@@ -131,7 +131,7 @@ get_header();
     </section>
 
 
-    <section class="fact-counter style-2 sec-padd" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/background/5.jpg') ?> );">
+    <section class="fact-counter style-2 sec-padd" style="background-image: url(<?php echo get_theme_file_uri('/assets/images/background/tractor.jpeg') ?> );">
         <div class="container">
             <div class="section-title center">
                 <h2 style="display: inline-block; background: rgba(0,0,0, .5); padding: 1rem;">¿Sabías que...?</h2>
@@ -284,26 +284,6 @@ get_header();
             <div class="section-title">
                 <h2 style="display: inline-block; background: rgba(0,0,0, .5); padding: 1rem;">Especies del Mar Menor</h2>
             </div>
-<!--            <ul class="post-filter style-3 list-inline float_right">-->
-<!--                <li class="active" data-filter=".filter-item">-->
-<!--                    <span>View All</span>-->
-<!--                </li>-->
-<!--                <li data-filter=".Ecology">-->
-<!--                    <span>Ecology</span>-->
-<!--                </li>-->
-<!--                <li data-filter=".Wild-Animals">-->
-<!--                    <span>Wild Animals</span>-->
-<!--                </li>-->
-<!--                <li data-filter=".Recycling">-->
-<!--                    <span>Recycling</span>-->
-<!--                </li>-->
-<!--                <li data-filter=".Water">-->
-<!--                    <span>Water</span>-->
-<!--                </li>-->
-<!--                <li data-filter=".Pollution">-->
-<!--                    <span>Pollution</span>-->
-<!--                </li>-->
-<!--            </ul>-->
 
             <div class="row filter-layout">
                 <?php
@@ -373,8 +353,6 @@ if ($especiesQuery->have_posts()) {
                     $especiesQuery->the_post();
                 ?>
 
-
-
                 <div class="item clearfix">
                     <figure class="img-box">
                             <img src="<?php echo wp_get_attachment_image_url( get_the_ID(), $size ='570_300' ); ?> " alt="">
@@ -394,15 +372,6 @@ if ($especiesQuery->have_posts()) {
                             <a href="#"><h4 class="title"><?php the_title(); ?></h4></a>
                             <p>We are dedicated to ending homelessness by delive- ring life-changing services for change the poor childrens life...</p>
                         </div>
-<!--                        <div class="progress-box">-->
-<!--                            <div class="bar">-->
-<!--                                <div class="bar-inner animated-bar" data-percent="48%"><div class="count-text">48%</div></div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="donate clearfix">-->
-<!--                            <div class="donate float_left"><span>Goal: $92000 </span></div>-->
-<!--                            <div class="donate float_right">Raised: $69000</div>-->
-<!--                        </div>-->
                     </div>
                 </div>
                         <?php
@@ -481,8 +450,6 @@ if ($especiesQuery->have_posts()) {
 
                 ?>
 
-
-
             </div>
         </div>
     </section>
@@ -540,34 +507,6 @@ if ($especiesQuery->have_posts()) {
 
     <div class="border-bottom"></div>
 
-
-<!-- photos de voluntarios -->
-<!--    <section class="clients-section sec-padd">-->
-<!--        <div class="container">-->
-<!--            <div class="section-title center">-->
-<!--                <h2>Voluntarios y voluntaris</h2>-->
-<!--            </div>-->
-<!--            <div class="client-carousel owl-carousel owl-theme">-->
-<!---->
-<!--                <div class="item tool_tip" title="media partner">-->
-<!--                    <img src="--><?php //echo get_theme_file_uri('/assets/images/clients/1.jpg') ?><!-- " alt="Awesome Image">-->
-<!--                </div>-->
-<!--                <div class="item tool_tip" title="media partner">-->
-<!--                    <img src="--><?php //echo get_theme_file_uri('/assets/images/clients/2.jpg') ?><!-- " alt="Awesome Image">-->
-<!--                </div>-->
-<!--                <div class="item tool_tip" title="media partner">-->
-<!--                    <img src="--><?php //echo get_theme_file_uri('/assets/images/clients/3.jpg') ?><!-- " alt="Awesome Image">-->
-<!--                </div>-->
-<!--                <div class="item tool_tip" title="media partner">-->
-<!--                    <img src="--><?php //echo get_theme_file_uri('/assets/images/clients/4.jpg') ?><!-- " alt="Awesome Image">-->
-<!--                </div>-->
-<!--                <div class="item tool_tip" title="media partner">-->
-<!--                    <img src="--><?php //echo get_theme_file_uri('/assets/images/clients/5.jpg') ?><!-- " alt="Awesome Image">-->
-<!--                </div>-->
-<!---->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
 
     <section class="call-out">
         <div class="container">
